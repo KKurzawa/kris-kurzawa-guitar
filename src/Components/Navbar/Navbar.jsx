@@ -8,6 +8,8 @@ import { FaYoutube } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
 import { FaSpotify } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
+import { HiBars3 } from "react-icons/hi2";
+
 
 const navLinks = [
   {
@@ -96,34 +98,34 @@ const Navbar = () => {
               ))}
             </li>
           </ol>
-        </nav>
+        </nav>2
       </main>
       {/* small and medium */}
       <main className='lg:hidden text-[whitesmoke] bg-black'>
         <header className='flex justify-between w-full'>
-          <div className='invisible pl-2 text-7xl content-center justify-end text-gray-300 hover:text-white hover:bg-gray-600 '>
+          <div className='invisible pl-2 text-5xl content-center justify-end text-gray-300 hover:text-white hover:bg-gray-600 '>
             <FaHome />
           </div>
           <div className='justify-center text-center pt-3'>
-            <h1 className='text-6xl'>Kris Kurzawa</h1>
-            <h2 className='text-2xl pb-2'>Guitarist/ Compsoser/Music Educator</h2>
+            <h1 className='text-4xl'>Kris Kurzawa</h1>
+            <h2 className='text-sm'>Guitarist/Compsoser/Music Educator</h2>
           </div>
-          <button type='button' onClick={handleMenu} className=' pr-2 text-6xl content-center justify-end '>
+          <button type='button' onClick={handleMenu} className=' pr-2 text-4xl content-center justify-end '>
             <span className='sr-only'>Open Main Menu</span>
-            {open == true ? <FaTimes /> : <FaBars />}
+            {open == true ? <FaTimes /> : <HiBars3 />}
           </button>
         </header>
         {open ? (
           <div className='lg:hidden h-screen'>
-            <div className='text-5xl py-3 flex flex-col text-center ox-2'>
+            <div className='text-5xl pb-3 pt-2 flex flex-col text-center ox-2'>
               {navLinks.map((link, index) => (
                 <a
-                  key={index} href={link.link} className='py-5'>{link.title}</a>
+                  key={index} href={link.link} className='py-1'>{link.title}</a>
               ))}
             </div>
             <i className='flex justify-center'>
               {icons.map((icon) => (
-                <a className='px-7 text-6xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
+                <a className='px-2 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
                   {icon.symbol}
                 </a>
               ))}
