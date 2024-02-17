@@ -8,8 +8,6 @@ import { FaYoutube } from "react-icons/fa";
 import { SiApplemusic } from "react-icons/si";
 import { FaSpotify } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
-import { HiBars3 } from "react-icons/hi2";
-
 
 const navLinks = [
   {
@@ -72,7 +70,7 @@ const Navbar = () => {
   return (
     <>
       {/* // large screen  */}
-      <main className='hidden lg:block text-[whitesmoke] bg-black'>
+      <main className='hidden lg:block text-[whitesmoke] bg-[#97161D]'>
         <header className='flex justify-between w-full items-baseline'>
           <div className='justify-start pt-3 pb-1'>
             <h1 className='pl-4 text-6xl'>Kris Kurzawa</h1>
@@ -98,10 +96,10 @@ const Navbar = () => {
               ))}
             </li>
           </ol>
-        </nav>2
+        </nav>
       </main>
       {/* small and medium */}
-      <main className='lg:hidden text-[whitesmoke] bg-black'>
+      <main className='lg:hidden text-[whitesmoke] bg-[#971522]'>
         <header className='flex justify-between w-full'>
           <div className='invisible pl-2 text-5xl content-center justify-end text-gray-300 hover:text-white hover:bg-gray-600 '>
             <FaHome />
@@ -112,11 +110,11 @@ const Navbar = () => {
           </div>
           <button type='button' onClick={handleMenu} className=' pr-2 text-4xl content-center justify-end '>
             <span className='sr-only'>Open Main Menu</span>
-            {open == true ? <FaTimes /> : <HiBars3 />}
+            {open == true ? <FaTimes /> : <FaBars />}
           </button>
         </header>
         {open ? (
-          <div className='lg:hidden h-screen'>
+          <div className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen'>
             <div className='text-5xl pb-3 pt-2 flex flex-col text-center ox-2'>
               {navLinks.map((link, index) => (
                 <a
