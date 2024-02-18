@@ -1,7 +1,7 @@
 .section2,
 .section1{
     border-radius: 15px;
-    border: 2px solid rgba(255, 255, 255, 0.247);
+    border: 2px solid #ffffff3f;
     box-shadow: 0 0 20px rgba(245, 245, 245, 0.271);
     overflow: hidden;
     backdrop-filter: blur(3px);

@@ -5,3 +5,7 @@
 .dropdown{
     animation: show 1s ease-in-out forwards;
 }
+
+.navbar{
+    border-bottom: 2px solid #eed29bb1;
+}

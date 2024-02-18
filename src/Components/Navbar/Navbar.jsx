@@ -70,12 +70,12 @@ const Navbar = () => {
   return (
     <>
       {/* // large screen  */}
-      <main className='hidden lg:block text-[whitesmoke] bg-[#97161D]'>
+      <main className='navbar hidden lg:block text-[whitesmoke] bg-[#97161D]'>
         <header className='flex justify-between w-full items-baseline'>
           <div className='justify-start pt-3 pb-1'>
             <h1 className='pl-4 text-6xl'>Kris Kurzawa</h1>
           </div>
-          <i className='flex justify-end pr-5'>
+          <i className='flex justify-end'>
             {icons.map((icon) => (
               <a className='px-7 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
                 {icon.symbol}
@@ -87,7 +87,7 @@ const Navbar = () => {
           <header className='justify-start'>
             <h2 className='pl-4 text-xl'>Guitarist/ Compsoser/Music Educator</h2>
           </header>
-          <ol className='flex justify-end pr-4'>
+          <ol className='flex justify-end'>
             <li className='px-5 text-xl'>
               {navLinks.map((link, index) => (
                 <Link
@@ -99,14 +99,14 @@ const Navbar = () => {
         </nav>
       </main>
       {/* small and medium */}
-      <main className='lg:hidden text-[whitesmoke] bg-[#971522]'>
+      <main className='navbar lg:hidden text-[whitesmoke] bg-[#971522]'>
         <header className='flex justify-between w-full'>
           <div className='invisible pl-2 text-5xl content-center justify-end text-gray-300 hover:text-white hover:bg-gray-600 '>
             <FaHome />
           </div>
           <div className='justify-center text-center pt-3'>
             <h1 className='text-4xl'>Kris Kurzawa</h1>
-            <h2 className='text-md'>Guitarist/Compsoser/Music Educator</h2>
+            <h2 className='text-md pb-3'>Guitarist/Compsoser/Music Educator</h2>
           </div>
           <button type='button' onClick={handleMenu} className=' pr-2 text-4xl content-center justify-end '>
             <span className='sr-only'>Open Main Menu</span>
