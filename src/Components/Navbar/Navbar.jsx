@@ -105,8 +105,8 @@ const Navbar = () => {
             <FaHome />
           </div>
           <div className='justify-center text-center pt-3'>
-            <h1 className='text-4xl'>Kris Kurzawa</h1>
-            <h2 className='text-sm'>Guitarist/Compsoser/Music Educator</h2>
+            <h1 className='text-5xl'>Kris Kurzawa</h1>
+            <h2 className='text-md'>Guitarist/Compsoser/Music Educator</h2>
           </div>
           <button type='button' onClick={handleMenu} className=' pr-2 text-4xl content-center justify-end '>
             <span className='sr-only'>Open Main Menu</span>
