@@ -10,8 +10,8 @@ ul {
 .mainMusic {
   width: 360px;
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 20px rgba(7, 15, 15, 0.5);
+  border: 1px solid #ffffff3f;
+  box-shadow: 0 0 20px rgba(245, 245, 245, 0.271);
   overflow: hidden;
   /* position: relative; */
   backdrop-filter: blur(3px);
