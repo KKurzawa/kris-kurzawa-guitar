@@ -14,9 +14,9 @@ const Music = () => {
                 </section>
             </article>
             <header className='text-[whitesmoke] text-center text-3xl py-3'>Download</header>
-            <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><img src={Sly} className='w-[325px] h-auto py-4' /></a>
             <a href='https://www.amazon.com/Zap-Toro/dp/B004P91DSU' target="_blank" rel="noreferrer"><img src={ZapToro} className='w-[325px] h-auto py-4' /></a>
-            <a href='https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC' target="_blank" rel="noreferrer"><img src={VisionQuest} className='w-[325px] h-auto py-4 mb-4' /></a>
+            <a href='https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC' target="_blank" rel="noreferrer"><img src={VisionQuest} className='w-[325px] h-auto py-4 ' /></a>
+            <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><img src={Sly} className='w-[325px] h-auto py-4 mb-4' /></a>
         </main>
 
     )
