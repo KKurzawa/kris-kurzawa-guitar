@@ -1,6 +1,5 @@
 import './Home.css'
 import KrisKurzawaGuitar from '../../assets/images/KrisKurzawaGuitar.jpg'
-import Background from '../../Components/Background/Background'
 
 const awards = [
     { title: '2023 Outstanding Tribute Band' },

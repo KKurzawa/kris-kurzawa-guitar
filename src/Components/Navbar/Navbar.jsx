@@ -110,7 +110,7 @@ const Navbar = () => {
           </div>
           <button type='button' onClick={handleMenu} className=' pr-2 text-4xl content-center justify-end '>
             <span className='sr-only'>Open Main Menu</span>
-            {open == true ? <FaTimes /> : <FaBars />}
+            {open == true ? <FaTimes className='text-3xl' /> : <FaBars className='text-3xl' />}
           </button>
         </header>
         {open ? (
