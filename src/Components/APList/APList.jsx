@@ -1,5 +1,5 @@
 import './APList.css'
-import Musics from '../../assets/data';
+import Musics from '../../assets/data/mp3s';
 import { MdOutlineQueueMusic } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import { useState, useEffect, useRef } from 'react';

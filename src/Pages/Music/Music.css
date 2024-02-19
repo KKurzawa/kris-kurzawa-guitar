@@ -38,3 +38,12 @@ input[type="range"]::-webkit-slider-thumb{
   width: 10px;
   height: 10px;
 }
+
+.downloads {
+  border-radius: 15px;
+    border: 1px solid #ffffff3f;
+    box-shadow: 0 0 20px  rgba(245, 245, 245, 0.167);
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+    width: fit-content;
+}

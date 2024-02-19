@@ -1,5 +1,5 @@
 import './APCard.css'
-import Musics from '../../assets/data/index.jsx';
+import Musics from '../../assets/data/mp3s.jsx';
 import { MdOutlineQueueMusic } from "react-icons/md";
 import { IoPlaySkipBackSharp } from "react-icons/io5";
 import { IoPlaySkipForward } from "react-icons/io5";

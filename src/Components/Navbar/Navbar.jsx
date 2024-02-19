@@ -101,16 +101,16 @@ const Navbar = () => {
       {/* small and medium */}
       <main className='navbar lg:hidden text-[whitesmoke] bg-[#971522]'>
         <header className='flex justify-between w-full'>
-          <div className='invisible pl-2 text-5xl content-center justify-end text-gray-300 hover:text-white hover:bg-gray-600 '>
+          <div className='invisible pl-4 text-3xl content-center justify-end text-gray-300 hover:text-white hover:bg-gray-600 '>
             <FaHome />
           </div>
           <div className='justify-center text-center pt-3'>
             <h1 className='text-4xl'>Kris Kurzawa</h1>
             <h2 className='text-md pb-3'>Guitarist/Compsoser/Music Educator</h2>
           </div>
-          <button type='button' onClick={handleMenu} className=' pr-2 text-4xl content-center justify-end '>
+          <button type='button' onClick={handleMenu} className=' pr-4 pb-6 text-4xl content-center justify-end '>
             <span className='sr-only'>Open Main Menu</span>
-            {open == true ? <FaTimes className='text-2xl' /> : <FaBars className='text-2xl' />}
+            {open == true ? <FaTimes className='text-3xl' /> : <FaBars className='text-3xl' />}
           </button>
         </header>
         {open ? (
