@@ -13,13 +13,23 @@ const videoLinks = [
     },
     {
         id: 3,
-        link: "https://www.youtube.com/embed/9fNWY-U0X_c?si=p_UMoMo3n5K9ZYMP",
-        title: "Cliffs of Dover"
+        link: "https://www.youtube.com/embed/HaUMSr3trCk?si=AmAfs6SxqcdUiuzS",
+        title: "Improv on E.S.P. in 5/4"
     },
     {
         id: 4,
-        link: "https://www.youtube.com/embed/9fNWY-U0X_c?si=p_UMoMo3n5K9ZYMP",
-        title: "Cliffs of Dover"
+        link: "https://www.youtube.com/embed/7054EyEpI2E?si=KFqCkrQkaEbnTvNE",
+        title: "All The Things You Are ala John Scofield"
+    },
+    {
+        id: 5,
+        link: "https://www.youtube.com/embed/zbQuCEi5Y2k?si=sCiuqEszwFYCx7nS",
+        title: "Lyresto"
+    },
+    {
+        id: 6,
+        link: "https://www.youtube.com/embed/GjqZPAoe4cE?si=iZdruLuOBaVzaXNW",
+        title: "Falling Grace"
     },
 ]
 
