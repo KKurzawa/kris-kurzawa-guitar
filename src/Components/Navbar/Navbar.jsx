@@ -73,7 +73,7 @@ const Navbar = () => {
       <main className='navbar hidden lg:block text-[whitesmoke] bg-[#97161D]'>
         <header className='flex justify-between w-full items-baseline'>
           <div className='justify-start pt-3 pb-1'>
-            <h1 className='pl-4 text-6xl'>Kris Kurzawa</h1>
+            <h1 className='pl-4 text-6xl font-bold'>Kris Kurzawa</h1>
           </div>
           <i className='flex justify-end'>
             {icons.map((icon) => (

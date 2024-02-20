@@ -41,15 +41,15 @@ const Home = () => {
                         in Wayne State Universities jazz studies program.</h2>
                 </section>
                 <section className='section2 flex flex-col items-center p-4 lg:p-10 my-5'>
-                    <a href='https://www.detroitmusicawards.net/' target="_blank" rel="noreferrer" className='text-3xl lg:text-4xl mb-2'>Detroit Music Awards</a>
+                    <a href='https://www.detroitmusicawards.net/' target="_blank" rel="noreferrer" className='text-3xl lg:text-4xl mb-2 font-bold'>Detroit Music Awards</a>
                     <ul className='mb-5'>
-                        <header className="text-2xl lg:text-3xl mb-1">Awards</header>
+                        <header className="text-2xl lg:text-3xl mb-1 font-bold">Awards</header>
                         {awards.map((award) => (
                             <li className='text-lg lg:text-2xl' key={award.index}>{award.title}</li>
                         ))}
                     </ul>
                     <ul className='mb-5'>
-                        <header className="text-2xl lg:text-3xl mb-1">Nominations</header>
+                        <header className="text-2xl lg:text-3xl mb-1 font-bold">Nominations</header>
                         {nominations.map((nomination) => (
                             <li className='text-lg lg:text-2xl' key={nomination.index}>{nomination.title}</li>
                         ))}
