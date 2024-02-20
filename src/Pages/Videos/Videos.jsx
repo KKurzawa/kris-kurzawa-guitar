@@ -66,7 +66,7 @@ const Videos = () => {
                 </section>
             </main>
             {/* small-medium */}
-            <main className='lg:hidden flex flex-col items-center text-2xl pb-5 font-semibold'>
+            <main className='lg:hidden flex flex-col items-center text-xl pb-5 font-semibold'>
                 {videoLinks.map((video) => (
                     <article key={video.id} className='videoContainer text-[whitesmoke] flex flex-col py-5'>
                         <header>{video.title}</header>
