@@ -51,7 +51,7 @@ const Videos = () => {
                 <section className='flex flex-col py-10'>
                     {videoLinks.map((video, index) => index % 2 === 0 && (
                         <article key={video.id} className='text-[whitesmoke] flex flex-col py-5'>
-                            <header>{video.title}</header>
+                            <header className='pb-1'>{video.title}</header>
                             <iframe className='video' width="560" height="315" src={video.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </article>
                     ))}
@@ -59,7 +59,7 @@ const Videos = () => {
                 <section className='flex flex-col py-10'>
                     {videoLinks.map((video, index) => index % 2 !== 0 && (
                         <article key={video.id} className='text-[whitesmoke] flex flex-col py-5'>
-                            <header>{video.title}</header>
+                            <header className='pb-1'>{video.title}</header>
                             <iframe className='video' width="560" height="315" src={video.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </article>
                     ))}
@@ -69,7 +69,7 @@ const Videos = () => {
             <main className='lg:hidden flex flex-col items-center text-xl pb-5 font-semibold'>
                 {videoLinks.map((video) => (
                     <article key={video.id} className='videoContainer text-[whitesmoke] flex flex-col py-5'>
-                        <header>{video.title}</header>
+                        <header className='pb-1'>{video.title}</header>
                         <iframe className='video' width="350" height="196.875" src={video.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </article>
                 ))}

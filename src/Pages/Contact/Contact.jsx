@@ -85,7 +85,7 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-button w-[40%] lg:w-[25%]' type='submit'>Submit</button>
+                <button className='submit-button w-[40%] lg:w-[17.5%]' type='submit'>Submit</button>
             </form>
             {errorMessage && (
                 <article>
