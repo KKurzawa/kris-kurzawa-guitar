@@ -80,7 +80,7 @@ const gravy = [
 ]
 const Gear = () => {
     return (
-        <main className='text-[whitesmoke] flex flex-col lg:flex-row lg:justify-evenly w-full items-center min-h-full lg:mb-10 py-5'>
+        <main className='text-[whitesmoke] flex flex-col lg:flex-row lg:justify-evenly w-full items-center min-h-full lg:mb-5 py-5'>
             <article className='gearContainer flex flex-col lg:pl-20 mb-5 lg:mb-0 lg:-mt-[6.65rem]'>
                 <h2 className='text-3xl font-bold pb-2'>Meat & Potatoes</h2>
                 <LazyLoadImage src={Guitar3} className='gear-image w-96 lg:w-[60.1%]' />
