@@ -1,5 +1,6 @@
 import './Home.css'
 import KrisKurzawaGuitar from '../../assets/images/KrisKurzawaGuitar.jpg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const awards = [
     { title: '2023 Outstanding Tribute Band' },
@@ -29,7 +30,7 @@ const Home = () => {
 
     return (
         <main className='mainHome flex flex-col justify-center text-[whitesmoke] text-center'>
-            <img src={KrisKurzawaGuitar}></img>
+            <LazyLoadImage src={KrisKurzawaGuitar} />
             <article className='flex flex-col items-center'>
                 <section className='section1 lg:mx-32 mx-3 my-5 p-4 lg:p-10'>
                     <h2 className=' text-md lg:text-2xl mx-5'>Kris Kurzawa’s versatility has led him to become one of Detroit area’s most in demand guitarists

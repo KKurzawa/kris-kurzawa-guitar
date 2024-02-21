@@ -1,8 +1,7 @@
 import './Gear.css'
-import Guitars from '../../assets/images/GuitarCollection.jpg'
 import PedalBoard from '../../assets/images/PedalBoard.jpg'
-import Guitar2 from '../../assets/images/Guitar2.jpg'
 import Guitar3 from '../../assets/images/Guitar3.jpg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const meatPot = [
     {
@@ -35,28 +34,68 @@ const meatPot = [
 const gravy = [
     {
         id: 1,
-        name: "",
-        link: ""
+        name: "Fulltone Full-Drive 2",
+        link: "https://www.fulltoneusa.com/"
+    },
+    {
+        id: 2,
+        name: "Fulltone Clyde Deluxe Wah",
+        link: "https://www.fulltoneusa.com/"
+    },
+    {
+        id: 3,
+        name: "Xotic EP Booster Mini Boost",
+        link: "https://xotic.us/"
+    },
+    {
+        id: 4,
+        name: "Ernie Ball Volume",
+        link: "https://www.ernieball.com/"
+    },
+    {
+        id: 5,
+        name: "TC Electronic Stereo Chorus +",
+        link: "https://www.tcelectronic.com/"
+    },
+    {
+        id: 6,
+        name: "Boss TR-2 Tremolo Pedal",
+        link: "https://www.boss.info/us/"
+    },
+    {
+        id: 7,
+        name: "MXR M68 Uni-Vibe",
+        link: "https://www.jimdunlop.com/products/electronics/mxr/"
+    },
+    {
+        id: 8,
+        name: "Line 6 ToneCore Echo Park Delay",
+        link: "https://line6.com/"
+    },
+    {
+        id: 9,
+        name: "TC Electronic Flashback Delay",
+        link: "https://www.tcelectronic.com/"
     }
 ]
 const Gear = () => {
     return (
-        <main className='text-[whitesmoke] flex flex-col lg:flex-row lg:justify-evenly py-10 w-full items-center'>
-            <article className='gearContainer flex flex-col lg:pl-20 mb-10 lg:mb-0'>
+        <main className='text-[whitesmoke] flex flex-col lg:flex-row lg:justify-evenly w-full items-center min-h-full lg:mb-10 py-5'>
+            <article className='gearContainer flex flex-col lg:pl-20 mb-5 lg:mb-0 lg:-mt-[6.65rem]'>
                 <h2 className='text-3xl font-bold pb-2'>Meat & Potatoes</h2>
-                <img src={Guitar3} className='gear-image w-96 lg:w-[60.1%]' />
+                <LazyLoadImage src={Guitar3} className='gear-image w-96 lg:w-[60.1%]' />
                 <ol className='gear-img mt-2'>
                     {meatPot.map((meat) => (
-                        <a key={meat.id} href={meat.link} target="_blank" rel="noreferrer" className='my-[.15rem]'><li className='text-2xl'>{meat.name}</li></a>
+                        <a key={meat.id} href={meat.link} target="_blank" rel="noreferrer" className='my-[.15rem]'><li className='text-xl'>{meat.name}</li></a>
                     ))}
                 </ol>
             </article>
-            <article className='gearContainer flex flex-col lg:pr-20'>
+            <article className='gearContainer flex flex-col lg:pr-20 '>
                 <h2 className='text-3xl font-bold pb-2'>Gravy</h2>
-                <img src={PedalBoard} className='gear-image w-96 lg:w-full' />
+                <LazyLoadImage src={PedalBoard} className='gear-image w-96 lg:w-full' />
                 <ol className='gear-img mt-2'>
-                    {meatPot.map((meat) => (
-                        <a key={meat.id} href={meat.link} target="_blank" rel="noreferrer" className='my-[.15rem]'><li className='text-2xl'>{meat.name}</li></a>
+                    {gravy.map((meat) => (
+                        <a key={meat.id} href={meat.link} target="_blank" rel="noreferrer" className='my-[.15rem]'><li className='text-xl'>{meat.name}</li></a>
                     ))}
                 </ol>
 

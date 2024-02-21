@@ -48,7 +48,7 @@ const Videos = () => {
         <>
             {/* large */}
             <main className='hidden lg:flex flex-row justify-evenly text-2xl font-semibold'>
-                <section className='flex flex-col py-10'>
+                <section className='flex flex-col py-3'>
                     {videoLinks.map((video, index) => index % 2 === 0 && (
                         <article key={video.id} className='text-[whitesmoke] flex flex-col py-5'>
                             <header className='pb-1'>{video.title}</header>
@@ -56,7 +56,7 @@ const Videos = () => {
                         </article>
                     ))}
                 </section>
-                <section className='flex flex-col py-10'>
+                <section className='flex flex-col py-3'>
                     {videoLinks.map((video, index) => index % 2 !== 0 && (
                         <article key={video.id} className='text-[whitesmoke] flex flex-col py-5'>
                             <header className='pb-1'>{video.title}</header>

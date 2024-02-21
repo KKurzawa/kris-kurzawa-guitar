@@ -2,11 +2,8 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { validateEmail } from '../../Utils/Helpers';
 import './Contact.css';
-import krisKurzawa from '../../assets/images/KrisKurzawaPhoto.jpg'
-import krisKurzawa2 from '../../assets/images/KrisKurzawa2.png'
-import krisKurzawa3 from '../../assets/images/KrisKurzawa3.svg'
-import krisKurzawa4 from '../../assets/images/KrisKurzawa4.png'
-import krisKurzawa6 from '../../assets/images/KrisKurzawa6.png'
+import krisKurzawa6 from '../../assets/images/KrisKurzawa6.png';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const Contact = () => {
@@ -51,9 +48,9 @@ const Contact = () => {
         console.log(templateParams);
     }
     return (
-        <main className='flex flex-col items-center min-h-screen'>
-            <h2 className="text-[whitesmoke] text-5xl font-bold lg:text-6xl mt-7">Contact Me</h2>
-            <img src={krisKurzawa6} className='kris opacity-80 mt-7 mb-5 w-[75%] h-auto' />
+        <main className='flex flex-col items-center'>
+            <h2 className="text-[whitesmoke] text-3xl font-bold lg:text-6xl mt-5">Contact Me</h2>
+            <LazyLoadImage src={krisKurzawa6} className='kris opacity-80 mt-2  w-[75%] h-auto' />
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[75%] lg:w-[50%]'>
                 <input
                     className='input'

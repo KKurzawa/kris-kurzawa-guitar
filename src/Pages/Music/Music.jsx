@@ -3,6 +3,7 @@ import AudioPlayer from '../../Components/AudioPlayer/AudioPlayer'
 import Sly from '../../assets/images/Sly.jpg';
 import VisionQuest from '../../assets/images/VisionQuest.jpg'
 import ZapToro from '../../assets/images/ZapToro.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Music = () => {
     return (
@@ -16,9 +17,9 @@ const Music = () => {
                     </section>
                 </article>
                 <header className='text-[whitesmoke] text-center text-3xl mt-5 font-bold'>Download</header>
-                <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><img src={Sly} className='downloads w-[325px] h-auto my-4' /></a>
-                <a href='https://www.amazon.com/Zap-Toro/dp/B004P91DSU' target="_blank" rel="noreferrer"><img src={ZapToro} className='downloads w-[325px] h-auto my-4' /></a>
-                <a href='https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC' target="_blank" rel="noreferrer"><img src={VisionQuest} className='downloads w-[325px] h-auto mt-4 mb-10' /></a>
+                <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><LazyLoadImage src={Sly} className='downloads w-[325px] h-auto my-4' /></a>
+                <a href='https://www.amazon.com/Zap-Toro/dp/B004P91DSU' target="_blank" rel="noreferrer"><LazyLoadImage src={ZapToro} className='downloads w-[325px] h-auto my-4' /></a>
+                <a href='https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC' target="_blank" rel="noreferrer"><LazyLoadImage src={VisionQuest} className='downloads w-[325px] h-auto mt-4 mb-10' /></a>
             </main>
             {/* large */}
             <main className='hidden lg:flex w-full justify-center mt-5 mb-10'>
