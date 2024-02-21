@@ -88,7 +88,7 @@ const Navbar = () => {
             <h2 className='pl-4 text-xl'>Guitarist/ Compsoser/Music Educator</h2>
           </header>
           <ol className='flex justify-end'>
-            <li className='px-5 text-xl'>
+            <li className='pr-5 text-xl'>
               {navLinks.map((link, index) => (
                 <Link
                   key={index} className={currentPage === link.link ? 'nav-link active' : 'nav-link'} to={link.link}>{link.title}

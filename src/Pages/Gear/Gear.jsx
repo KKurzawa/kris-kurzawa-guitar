@@ -80,19 +80,19 @@ const gravy = [
 ]
 const Gear = () => {
     return (
-        <main className='text-[whitesmoke] flex flex-col lg:flex-row lg:justify-evenly w-full items-center min-h-full lg:mb-5 py-5'>
-            <article className='gearContainer flex flex-col lg:pl-20 mb-5 lg:mb-0 lg:-mt-[6.65rem]'>
+        <main className='text-[whitesmoke] flex flex-col lg:flex-row lg:justify-evenly items-center min-h-full lg:mb-5 py-5 '>
+            <article className='gearContainer flex flex-col mb-5 lg:mb-0 lg:-mt-[6.65rem]'>
                 <h2 className='text-3xl font-bold pb-2'>Meat & Potatoes</h2>
-                <LazyLoadImage src={Guitar3} className='gear-image w-96 lg:w-[60.1%]' />
+                <LazyLoadImage src={Guitar3} className='gear-image w-96 lg:max-w-full' />
                 <ol className='gear-img mt-2'>
                     {meatPot.map((meat) => (
                         <a key={meat.id} href={meat.link} target="_blank" rel="noreferrer" className='my-[.15rem]'><li className='text-xl'>{meat.name}</li></a>
                     ))}
                 </ol>
             </article>
-            <article className='gearContainer flex flex-col lg:pr-20 '>
+            <article className='gearContainer flex flex-col '>
                 <h2 className='text-3xl font-bold pb-2'>Gravy</h2>
-                <LazyLoadImage src={PedalBoard} className='gear-image w-96 lg:w-full' />
+                <LazyLoadImage src={PedalBoard} className='gear-image w-96 lg:max-w-92' />
                 <ol className='gear-img mt-2'>
                     {gravy.map((meat) => (
                         <a key={meat.id} href={meat.link} target="_blank" rel="noreferrer" className='my-[.15rem]'><li className='text-xl'>{meat.name}</li></a>
