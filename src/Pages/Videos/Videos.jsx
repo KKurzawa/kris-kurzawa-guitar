@@ -66,9 +66,9 @@ const Videos = () => {
                 </section>
             </main>
             {/* small-medium */}
-            <main className='lg:hidden flex flex-col items-center text-xl pb-5 font-semibold'>
+            <main className='lg:hidden flex flex-col items-center text-xl pt-3 pb-5 font-semibold'>
                 {videoLinks.map((video) => (
-                    <article key={video.id} className='videoContainer text-[whitesmoke] flex flex-col py-5'>
+                    <article key={video.id} className='videoContainer text-[whitesmoke] flex flex-col py-3'>
                         <header className='pb-1'>{video.title}</header>
                         <iframe className='video' width="350" height="196.875" src={video.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </article>

@@ -38,3 +38,9 @@
     backdrop-filter: blur(3px);
     color:rgb(176, 176, 176);
 }
+
+@media screen and (max-width: 1024px) {
+    .input {
+        margin-bottom: .5rem;
+    }
+     }

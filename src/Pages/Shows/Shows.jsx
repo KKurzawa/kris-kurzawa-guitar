@@ -16,18 +16,17 @@ const Shows = () => {
     }
 
     return (
-        <main>
+        <main className='flex flex-col items-center justify-center mb-8'>
             {ShowsList.map((item) => (
-                <ol key={item.index} className='flex flex-col items-center text-[whitesmoke] text-2xl'>
-                    <section className='flex flex-row'>
-                        <li className=''>{item.date}</li>
-                        <li className=''>{item.time}</li>
+                <ol key={item.index} className='show-container flex flex-col items-center justify-center text-[whitesmoke] text-base lg:text-2xl '>
+                    <section className='flex flex-row py-0 lg:py-[.1rem]'>
+                        <li className='pr-1'>{item.date}</li>
+                        <li className='pl-1'>{item.time}</li>
                     </section>
-                    <section className='flex flex-row'>
-                        <li className=''>{item.band}</li>
-                        <li>@</li>
-                        <a href={item.venueLink} target="_blank" rel="noreferrer"><li className=''>{item.venue}</li></a>
-                    </section>
+
+                    <li className='py-0 lg:py-[.1rem]'>{item.band}</li>
+                    <a href={item.venueLink} target="_blank" rel="noreferrer"><li className='py-0 lg:py-[.1rem]'>{item.venue}</li></a>
+
                     <li>
                         {item.ticketLink === false ? (
                             <button onClick={notYetAvailable} className='ticket-btn '>Tickets</button>
