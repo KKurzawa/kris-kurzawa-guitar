@@ -50,8 +50,8 @@ const Contact = () => {
     return (
         <main className='flex flex-col items-center'>
             <h2 className="text-[whitesmoke] text-3xl font-bold lg:text-6xl mt-5">Contact Me</h2>
-            <LazyLoadImage src={krisKurzawa6} className='kris opacity-80 mt-2  w-[75%] h-auto' />
-            <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[20px] w-[75%] lg:w-[50%]'>
+            <LazyLoadImage src={krisKurzawa6} className='kris opacity-80 mt-1 lg:mt-2  w-[75%] h-auto' />
+            <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[10px] lg:m-[20px] w-[75%] lg:w-[50%]'>
                 <input
                     className='input'
                     type='text'
