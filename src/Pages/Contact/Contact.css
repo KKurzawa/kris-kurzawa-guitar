@@ -18,7 +18,7 @@
 }
 
 .kris {
-    box-shadow: 0 0 20px rgba(245, 245, 245, 0.494);
+    box-shadow: 0 0 20px rgba(245, 245, 245, 0.33);
     overflow: hidden;
     backdrop-filter: blur(3px);
     border-radius:15px;
