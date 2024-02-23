@@ -2,6 +2,8 @@ import './Home.css'
 import KrisKurzawaGuitar from '../../assets/images/KrisKurzawaGuitar.jpg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Sly from '../../assets/images/Sly.jpg';
+import SingleShowCard from '../../Components/SingleShowCard/SingleShowCard';
+import { videoLinks } from '../../assets/data/videoLinks';
 
 const awards = [
     { title: '2023 Outstanding Tribute Band' },
@@ -28,6 +30,8 @@ const nominations = [
 ]
 
 const Home = () => {
+    const singleVideoLink = videoLinks[0].link;
+    const singleVideoTitle = videoLinks[0].title;
 
     return (
         <main className='mainHome text-[whitesmoke] flex flex-col'>
@@ -35,6 +39,11 @@ const Home = () => {
             <article className='flex flex-col items-center'>
                 <header className='text-[whitesmoke] text-3xl mt-5 font-bold'>Download</header>
                 <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><LazyLoadImage src={Sly} className=' sly w-[23rem] lg:w-[50rem] h-auto my-4' /></a>
+                <article className='text-[whitesmoke] flex flex-col py-5'>
+                    <header className='pb-1 text-center text-3xl font-bold'>{singleVideoTitle}</header>
+                    <iframe className='singleVideo' width="750" height="421.875" src={singleVideoLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+                <SingleShowCard />
                 <section className='section1 lg:mx-32 mx-3 my-5 p-4 lg:p-10 text-center'>
                     <h2 className=' text-md lg:text-2xl mx-5'>Kris Kurzawa’s versatility has led him to become one of Detroit area’s most in demand guitarists
                         since the early 2000’s; crossing multiple genres including jazz, fusion, rock, world music and
