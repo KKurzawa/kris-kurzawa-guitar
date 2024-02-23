@@ -32,9 +32,9 @@ const Home = () => {
     return (
         <main className='mainHome text-[whitesmoke] flex flex-col'>
             <LazyLoadImage src={KrisKurzawaGuitar} className='guitarPic w-full' />
-            <article className='flex flex-col'>
+            <article className='flex flex-col items-center'>
                 <header className='text-[whitesmoke] text-3xl mt-5 font-bold'>Download</header>
-                <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><LazyLoadImage src={Sly} className=' sly w-[50rem] h-auto my-4' /></a>
+                <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><LazyLoadImage src={Sly} className=' sly w-[23rem] lg:w-[50rem] h-auto my-4' /></a>
                 <section className='section1 lg:mx-32 mx-3 my-5 p-4 lg:p-10 text-center'>
                     <h2 className=' text-md lg:text-2xl mx-5'>Kris Kurzawa’s versatility has led him to become one of Detroit area’s most in demand guitarists
                         since the early 2000’s; crossing multiple genres including jazz, fusion, rock, world music and
