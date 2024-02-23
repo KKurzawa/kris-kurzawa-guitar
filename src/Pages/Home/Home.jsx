@@ -1,6 +1,7 @@
 import './Home.css'
 import KrisKurzawaGuitar from '../../assets/images/KrisKurzawaGuitar.jpg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Sly from '../../assets/images/Sly.jpg';
 
 const awards = [
     { title: '2023 Outstanding Tribute Band' },
@@ -29,10 +30,12 @@ const nominations = [
 const Home = () => {
 
     return (
-        <main className='mainHome flex flex-col justify-center text-[whitesmoke] text-center'>
-            <LazyLoadImage src={KrisKurzawaGuitar} />
-            <article className='flex flex-col items-center'>
-                <section className='section1 lg:mx-32 mx-3 my-5 p-4 lg:p-10'>
+        <main className='mainHome text-[whitesmoke] flex flex-col'>
+            <LazyLoadImage src={KrisKurzawaGuitar} className='guitarPic w-full' />
+            <article className='flex flex-col'>
+                <header className='text-[whitesmoke] text-3xl mt-5 font-bold'>Download</header>
+                <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><LazyLoadImage src={Sly} className=' sly w-[50rem] h-auto my-4' /></a>
+                <section className='section1 lg:mx-32 mx-3 my-5 p-4 lg:p-10 text-center'>
                     <h2 className=' text-md lg:text-2xl mx-5'>Kris Kurzawa’s versatility has led him to become one of Detroit area’s most in demand guitarists
                         since the early 2000’s; crossing multiple genres including jazz, fusion, rock, world music and
                         R+B. He released his first album ‘Sly’ in 2016 earning him his fifth Detroit Music Award. He
@@ -41,7 +44,7 @@ const Home = () => {
                         the head of the guitar department at the Detroit Institute of Music Education and adjunct faculty
                         in Wayne State Universities jazz studies program.</h2>
                 </section>
-                <section className='section2 flex flex-col items-center p-4 lg:p-10 my-5'>
+                <section className='section2 p-4 lg:p-10 my-5 text-center'>
                     <a href='https://www.detroitmusicawards.net/' target="_blank" rel="noreferrer" className='text-3xl lg:text-4xl mb-2 font-bold'>Detroit Music Awards</a>
                     <ul className='mb-5'>
                         <header className="text-2xl lg:text-3xl mb-1 font-bold">Awards</header>
