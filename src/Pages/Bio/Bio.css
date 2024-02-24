@@ -15,3 +15,7 @@
     overflow: hidden;
     backdrop-filter: blur(3px);
 }
+
+.bioGuitarPic {
+    border-bottom: 2px solid #eed29bb1;
+}

@@ -86,7 +86,7 @@ const Contact = () => {
             </form>
             {errorMessage && (
                 <article>
-                    <p className="error-text text-[whitesmoke] text-4xl mb-5">{errorMessage}</p>
+                    <p className="error-text text-[whitesmoke] font-light text-2xl lg:text-4xl mb-5">{errorMessage}</p>
                 </article>
             )}
         </main>
