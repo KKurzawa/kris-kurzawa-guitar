@@ -1,5 +1,5 @@
 .nav-link {
-    padding-left: 1.8em;
+    margin-left: 1.8em;
 }
   
 .nav-link {
@@ -19,11 +19,19 @@
     transform: scaleX(1);
 }
 
-.nav-link:hover{
+.nav-link:hover {
+    transition: 500ms ease-in-out; 
     color: #eed29b;
-    transition: 500ms ease-in-out;
 }
 
+.nav-link:focus
+{
+    color: #eed29b;
+}
+
+.small-nav-link:active{
+    color: #eed29b; 
+}
 
 .small-nav-link{
     width:fit-content;

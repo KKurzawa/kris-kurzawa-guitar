@@ -13,7 +13,7 @@
     width: inherit;
     border: solid .5px #eed29bd3;  
     transform: scaleX(0);  
-    transition: transform 300ms ease-in-out;
+    transition: transform 500ms ease-in-out;
 }
   
 .webdev-link:hover:after { 
@@ -22,12 +22,5 @@
 
 .webdev-link:hover{
     color: #eed29b;
-    transition: 300ms ease-in-out;
-    font-size: 1.13rem;
+    transition: 500ms ease-in-out;
 }
-
-@media screen and (max-width: 1024px) {
-    .webdev-link:hover{
-        font-size: .76rem;
-    }
-     }
