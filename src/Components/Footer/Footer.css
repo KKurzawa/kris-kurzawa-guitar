@@ -24,3 +24,24 @@
     color: #eed29b;
     transition: 500ms ease-in-out;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .webdev-link:after {
+        display:block;
+        content: '';
+        width: inherit;
+        border: solid .5px whitesmoke;  
+        transform: scaleX(0);  
+        transition: transform 500ms ease-in-out;
+    }
+      
+    .webdev-link:hover:after { 
+        transform: scaleX(1);
+    }
+    
+    .webdev-link:hover{
+        color: whitesmoke;
+        transition: 500ms ease-in-out;
+    }
+     }
