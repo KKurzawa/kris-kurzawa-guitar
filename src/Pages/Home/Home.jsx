@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <main className='mainHome text-[whitesmoke] flex flex-col'>
-            <LazyLoadImage src={KrisKurzawaGuitar} className='guitarPic w-full' />
+            {/* <LazyLoadImage src={KrisKurzawaGuitar} className='guitarPic w-full' /> */}
             <article className='flex flex-col items-center'>
                 <header className='text-[whitesmoke] text-3xl mt-5 font-bold'>Download</header>
                 <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><LazyLoadImage src={Sly} className=' sly w-[23rem] lg:w-[50rem] h-auto mt-1 mb-4' /></a>

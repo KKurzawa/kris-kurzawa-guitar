@@ -7,5 +7,21 @@
 }
 
 .navbar{
-    border-bottom: 2px solid #eed29bb1;
+    border-bottom: 1px solid #eed29bb1;
+    border-top: 1px solid #eed29bb1;
 }
+.navGuitarPic{
+    border-bottom: 1px solid #eed29bb1;
+    border-top: 1px solid #eed29bb1;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar{
+        border-bottom: 1px solid #eed29bb1;
+        border-top: 1px solid #eed29bb1;
+    }
+    .navGuitarPic{
+        border-bottom: 1px solid #eed29bb1;
+        border-top: 1px solid #eed29bb1;
+    }
+     }
