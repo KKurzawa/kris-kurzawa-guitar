@@ -1,108 +1,13 @@
-import './Gear.css'
+import './Bio.css'
 import PedalBoard from '../../assets/images/PedalBoard.jpg'
 import Guitar3 from '../../assets/images/Guitar3.jpg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { awards } from '../../assets/data/awards';
+import { nominations } from '../../assets/data/nominations';
+import { meatPot } from '../../assets/data/meatPot';
+import { gravy } from '../../assets/data/gravy';
 
-const awards = [
-    { title: '2023 Outstanding Tribute Band' },
-    { title: '2017 Outstanding Jazz Composer' },
-    { title: '2016 Outstanding Jazz Recording' },
-    { title: '2016 Outstanding Modern Jazz Artist' },
-    { title: '2015 Outstanding World Artist' },
-    { title: '2015 Outstanding World Songwriter' },
-    { title: '2011 Outstanding World Songwriter' }
-]
-
-const nominations = [
-    { title: '2015 Outstanding Jazz Composer' },
-    { title: '2015 Outstanding Jazz Instrumentalist' },
-    { title: '2015 Outstanding World Instrumentalist' },
-    { title: '2015 Outstanding Jazz Composer' },
-    { title: '2012 Outstanding Jazz Instrumentalist' },
-    { title: '2012 Outstanding World Instrumentalist' },
-    { title: '2012 Outstanding World Songwriter' },
-    { title: '2011 Outstanding World Instrumentalist' },
-    { title: '2011 Outstanding Urban Musician' },
-    { title: '2010 Outstanding Urban Musician' },
-    { title: '2009 Outstanding Urban Musician' },
-]
-
-const meatPot = [
-    {
-        id: 1,
-        name: "1997 Heritage 535",
-        link: "https://heritageguitars.com/"
-    },
-    {
-        id: 2,
-        name: "GHS Sub-Zero Boomers Medium",
-        link: "https://www.ghsstrings.com/"
-    },
-    {
-        id: 3,
-        name: "Wegen M150s",
-        link: "https://www.wegenpicks.com/"
-    },
-    {
-        id: 4,
-        name: "Fender '68 Custom Pro Reverb",
-        link: "https://www.fender.com/en-US/guitar-amplifiers/vintage-pro-tube/68-custom-pro-reverb/2278000000.html"
-    },
-    {
-        id: 5,
-        name: "Tech 21 Trademark 60",
-        link: "https://www.tech21nyc.com/archive/trademark60-original/"
-    }
-]
-
-const gravy = [
-    {
-        id: 1,
-        name: "Fulltone Full-Drive 2",
-        link: "https://www.fulltoneusa.com/"
-    },
-    {
-        id: 2,
-        name: "Fulltone Clyde Deluxe Wah",
-        link: "https://www.fulltoneusa.com/"
-    },
-    {
-        id: 3,
-        name: "Xotic EP Booster Mini Boost",
-        link: "https://xotic.us/"
-    },
-    {
-        id: 4,
-        name: "Ernie Ball Volume",
-        link: "https://www.ernieball.com/"
-    },
-    {
-        id: 5,
-        name: "TC Electronic Stereo Chorus +",
-        link: "https://www.tcelectronic.com/"
-    },
-    {
-        id: 6,
-        name: "Boss TR-2 Tremolo Pedal",
-        link: "https://www.boss.info/us/"
-    },
-    {
-        id: 7,
-        name: "MXR M68 Uni-Vibe",
-        link: "https://www.jimdunlop.com/products/electronics/mxr/"
-    },
-    {
-        id: 8,
-        name: "Line 6 ToneCore Echo Park Delay",
-        link: "https://line6.com/"
-    },
-    {
-        id: 9,
-        name: "TC Electronic Flashback Delay",
-        link: "https://www.tcelectronic.com/"
-    }
-]
-const Gear = () => {
+const Bio = () => {
     return (
         <main className='text-[whitesmoke] flex flex-col lg:mb-5 py-5 '>
             <article className='flex flex-col items-center'>
@@ -156,4 +61,4 @@ const Gear = () => {
     )
 }
 
-export default Gear
+export default Bio

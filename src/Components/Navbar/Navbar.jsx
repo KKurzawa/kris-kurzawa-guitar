@@ -1,63 +1,10 @@
-import './Navbar.css'
+import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { SiApplemusic } from "react-icons/si";
-import { FaSpotify } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
-
-const navLinks = [
-  {
-    title: 'Home',
-    link: '/',
-  },
-  {
-    title: 'Music',
-    link: '/Music',
-  },
-  {
-    title: 'Videos',
-    link: '/Videos',
-  },
-  {
-    title: 'Gear',
-    link: '/Gear',
-  },
-  {
-    title: 'Shows',
-    link: '/Shows',
-  },
-  {
-    title: 'Contact',
-    link: '/Contact',
-  },
-]
-
-const icons = [
-  {
-    symbol: <FaFacebook />,
-    link: 'https://www.facebook.com/KrisKurzawaGuitar',
-  },
-  {
-    symbol: <FaInstagramSquare />,
-    link: 'https://www.instagram.com/k_kurzawa/'
-  },
-  {
-    symbol: <FaYoutube />,
-    link: 'https://www.youtube.com/channel/UCosE-h5XuXSkR4dG_hBaCUg'
-  },
-  {
-    symbol: <SiApplemusic />,
-    link: 'https://music.apple.com/us/artist/kris-kurzawa/1071714493'
-  },
-  {
-    symbol: <FaSpotify />,
-    link: 'https://open.spotify.com/artist/6avBe32i2ADGGnJAFnQHYx'
-  }
-]
+import { navLinks } from '../../assets/data/navLinks';
+import { icons } from '../../assets/data/icons';
+import { FaHome } from 'react-icons/fa';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
