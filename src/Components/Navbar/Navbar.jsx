@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
           <i className='flex justify-end'>
             {icons.map((icon) => (
-              <a className='px-7 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
+              <a className='large-icons mx-5 p-2 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
                 {icon.symbol}
               </a>
             ))}
@@ -37,7 +37,7 @@ const Navbar = () => {
           <header className='justify-start'>
             <h2 className='pl-4 text-xl'>Guitarist/ Compsoser/Music Educator</h2>
           </header>
-          <ol className='flex justify-end'>
+          <ol className='nav-list flex justify-end'>
             <li className='pr-5 text-xl'>
               {navLinks.map((link, index) => (
                 <Link
@@ -66,15 +66,15 @@ const Navbar = () => {
         </article>
         {open ? (
           <div className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen'>
-            <div className='text-5xl pb-3 pt-2 flex flex-col text-center ox-2'>
+            <div className='text-5xl pb-3 pt-2 flex flex-col items-center'>
               {navLinks.map((link, index) => (
                 <a
-                  key={index} href={link.link} className='py-1'>{link.title}</a>
+                  key={index} href={link.link} className='small-nav-link py-1'>{link.title}</a>
               ))}
             </div>
             <i className='flex justify-center'>
               {icons.map((icon) => (
-                <a className='px-2 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
+                <a className='small-icons px-2 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
                   {icon.symbol}
                 </a>
               ))}

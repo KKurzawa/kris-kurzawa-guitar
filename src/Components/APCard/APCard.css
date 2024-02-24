@@ -109,12 +109,13 @@
 .card .controls .play {
     width: 3.2rem;
     height: 3.2rem;
-    background: linear-gradient(whitesmoke,  #0000006e);
+    background: radial-gradient(rgba(245, 245, 245, 0.857),whitesmoke);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    color: #100607
 }
 
 .card .controls .play::before{
