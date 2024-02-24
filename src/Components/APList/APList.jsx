@@ -2,7 +2,7 @@ import './APList.css'
 import Musics from '../../assets/data/mp3s';
 import { MdOutlineQueueMusic } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { timer } from '../../Utils/timer';
 
 const List = ({ props: { open, setOpen, musicNumber, setMusicNumber } }) => {

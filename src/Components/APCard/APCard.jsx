@@ -117,7 +117,7 @@ const APCard = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
 
     return (
         <div className="card">
-            <div className="nav">
+            <div className="apNav">
                 <i id='mobileRepeat' className="material-symbols-outlined" onClick={handleRepeat}>{repeat}</i>
                 {/* <i className="react-icons"><MdExpandMore /></i> */}
                 <span>Now Playing {musicNumber + 1}/{Musics.length}</span>
