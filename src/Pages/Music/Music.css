@@ -13,7 +13,7 @@ ul {
   border: 1px solid #ffffff3f;
   box-shadow: 0 0 20px rgba(245, 245, 245, 0.271);
   overflow: hidden;
-  /* position: relative; */
+  position: relative;
   backdrop-filter: blur(3px);
   display: flex;
   justify-content: center;
