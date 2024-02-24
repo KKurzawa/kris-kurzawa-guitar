@@ -18,9 +18,9 @@
     #mobileRepeat {
         visibility: visible;
     }
-/* #repeat, #volume {
+#repeat, #volume {
     visibility: hidden;
-} */
+}
 }
 
 .card .img {
