@@ -1,13 +1,5 @@
 export const ShowsList = [
     {
-        date: "February 24 2024",
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        venue: 'The Detroit Club',
-        venueLink: 'https://www.thedetroitclub.com/',
-        ticketLink: 1
-    },
-    {
         date: 'March 2 2024',
         time: '8:30pm',
         band: 'Revival: A Tribute to the Allman Brothers',

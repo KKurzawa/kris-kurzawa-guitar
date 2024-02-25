@@ -31,21 +31,21 @@ const SingleShowCard = () => {
                 </section>
 
                 <li className='py-0 lg:py-[.1rem]'>{band}</li>
-                <a href={venueLink} target="_blank" rel="noreferrer"><li className='py-0 lg:py-[.1rem]'>{venue}</li></a>
+                <a href={venueLink} target="_blank" rel="noreferrer"><li className='single-venue py-0 lg:py-[.1rem]'>{venue}</li></a>
 
                 <li>
                     {ticketLink === false ? (
-                        <button onClick={notYetAvailable} className='ticket-btn '>Tickets</button>
+                        <button onClick={notYetAvailable} className='single-ticket-btn '>Tickets</button>
                     ) :
                         ticketLink === 1 ? (
                             <button onClick={noCover}
-                                className='ticket-btn'>Tickets</button>
+                                className='single-ticket-btn'>Tickets</button>
                         ) :
                             ticketLink === 2 ? (
-                                <button onClick={reservations} className='ticket-btn'>Tickets</button>
+                                <button onClick={reservations} className='single-ticket-btn'>Tickets</button>
                             ) :
                                 (
-                                    <a href={ticketLink} target="_blank" rel="noreferrer" ><button className='ticket-btn'>Tickets</button></a>
+                                    <a href={ticketLink} target="_blank" rel="noreferrer" ><button className='single-ticket-btn'>Tickets</button></a>
                                 )}
                 </li>
             </ol>

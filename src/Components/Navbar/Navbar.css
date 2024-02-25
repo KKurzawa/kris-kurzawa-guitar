@@ -1,36 +1,29 @@
 .nav-link {
     margin-left: 1.8em;
-}
-  
-.nav-link {
     display: inline-block;
+    transition: 500ms ease-in-out;
 }
   
 .nav-link:after {
     display:block;
     content: '';
     width: inherit;
-    border: solid 1px #eed29bd3;  
+    border: solid 1px whitesmoke;  
     transform: scaleX(0);  
-    transition: transform 500ms ease-in-out;
+    transition: 500ms ease-in-out;
 }
   
 .nav-link:hover:after { 
     transform: scaleX(1);
+    border: solid 1px #eed29bd3;
 }
 
 .nav-link:hover {
-    transition: 500ms ease-in-out; 
     color: #eed29b;
 }
 
-.nav-link:focus
-{
+.nav-link:focus{
     color: #eed29b;
-}
-
-.small-nav-link:active{
-    color: #eed29b; 
 }
 
 .small-nav-link{
@@ -50,18 +43,13 @@
     transform: scaleX(1);
 }
 
-/* .small-nav-link:hover{
-    color: #eed29b;
-    transition: 500ms ease-in-out;
-} */
- 
 .large-icons {
     width: fit-content;
+    transition: all 500ms ease-in-out;
 }
 
 .large-icons:hover{
     color: #eed29b;
-    transition: all 500ms ease-in-out;
 }
 
 .dropdown{

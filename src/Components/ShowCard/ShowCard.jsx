@@ -23,7 +23,7 @@ const ShowCard = () => {
                     </section>
 
                     <li className='py-0 lg:py-[.1rem]'>{item.band}</li>
-                    <a href={item.venueLink} target="_blank" rel="noreferrer"><li className='py-0 lg:py-[.1rem]'>{item.venue}</li></a>
+                    <a href={item.venueLink} target="_blank" rel="noreferrer"><li className='venue py-0 lg:py-[.1rem]'>{item.venue}</li></a>
 
                     <li>
                         {item.ticketLink === false ? (

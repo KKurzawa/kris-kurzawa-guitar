@@ -1,10 +1,10 @@
 .input:focus {
     outline:none;
-    border: 2px solid #971522;
+    border: 1px solid #971522;
 }
 
 .input {
-    border: 2px solid gray;
+    border: 1px solid gray;
     font-size: x-large;
     padding-left: .5rem;
     padding-right: .5rem;
@@ -22,21 +22,38 @@
     overflow: hidden;
     backdrop-filter: blur(3px);
     border-radius:15px;
-    border: 2px solid gray;
+    border: 1px solid gray;
 }
 
-.submit-button {
-    border: 2px solid gray;
+.submit-btn {
+    border: 1px solid gray;
     font-size: x-large;
     padding-left: .75rem;
     padding-right: .75rem;
     margin-bottom: 1rem;
     border-radius: 7px;
     box-shadow: 0 0 20px rgba(245, 245, 245, 0.306);
-    background-color: #100607;
+    background-color: #97161D;
     overflow: hidden;
     backdrop-filter: blur(3px);
     color:rgb(176, 176, 176);
+    text-align: center;
+    transition: all 500ms ease-in-out;
+}
+
+.ticket-btn{
+    background-color: #97161D;
+    border-radius: 7.5px;
+    padding: 0 1rem 0 1rem; 
+    border: 1px solid #ffffff3f;
+    margin: .5rem 0 .4rem 0;
+    transition: all 500ms ease-in-out;
+}
+
+.submit-btn:hover{
+    background-color: #eed29b;
+    border: 1px solid #97161D;
+    color: #97161D;
 }
 
 @media screen and (max-width: 1024px) {

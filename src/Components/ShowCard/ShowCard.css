@@ -1,9 +1,39 @@
+.venue {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+  
+.venue:after {
+    display:block;
+    content: '';
+    width: inherit;
+    border: solid 1px whitesmoke;  
+    transform: scaleX(0);  
+    transition: 500ms ease-in-out;
+}
+  
+.venue:hover:after { 
+    transform: scaleX(1);
+    border: solid 1px #eed29bd3;
+}
+
+.venue:hover {
+    color: #eed29b;
+}
+
 .ticket-btn{
     background-color: #97161D;
     border-radius: 7.5px;
     padding: 0 1rem 0 1rem; 
     border: 1px solid #ffffff3f;
-    margin: .1rem 0 .1rem 0;
+    margin: .4rem 0 .4rem 0;
+    transition: all 500ms ease-in-out;
+}
+
+.ticket-btn:hover{
+    background-color: #eed29b;
+    border: 1px solid #97161D;
+    color: #97161D;
 }
 
 .show-container{
@@ -14,7 +44,7 @@
     backdrop-filter: blur(3px);
     width: 36rem;
     margin-bottom:2rem;
-    padding: 2rem 0 2rem 0;
+    padding: .75rem 0 .75rem 0;
     justify-content: center;
 }
 

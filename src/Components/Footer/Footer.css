@@ -5,24 +5,25 @@
 
 .webdev-link {
     display: inline-block;
+    transition: 500ms ease-in-out;
 }
   
 .webdev-link:after {
     display:block;
     content: '';
     width: inherit;
-    border: solid .5px #eed29bd3;  
+    border: solid .5px whitesmoke;  
     transform: scaleX(0);  
-    transition: transform 500ms ease-in-out;
+    transition: 500ms ease-in-out;
 }
   
 .webdev-link:hover:after { 
     transform: scaleX(1);
+    border: solid .5px #eed29bd3; 
 }
 
 .webdev-link:hover{
     color: #eed29b;
-    transition: 500ms ease-in-out;
 }
 
 
@@ -33,7 +34,7 @@
         width: inherit;
         border: solid .5px whitesmoke;  
         transform: scaleX(0);  
-        transition: transform 500ms ease-in-out;
+        transition: 500ms ease-in-out;
     }
       
     .webdev-link:hover:after { 
@@ -42,6 +43,5 @@
     
     .webdev-link:hover{
         color: whitesmoke;
-        transition: 500ms ease-in-out;
     }
      }
