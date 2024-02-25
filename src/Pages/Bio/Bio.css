@@ -19,3 +19,41 @@
 .bioGuitarPic {
     border-bottom: 2px solid #eed29bb1;
 }
+
+.meat,
+.gravy {
+    transition: 500ms ease-in-out;
+    width: fit-content;
+}
+  
+.meat:after,
+.gravy:after {
+    display:block;
+    content: '';
+    border: solid 1px whitesmoke;  
+    transform: scaleX(0);  
+    transition: 500ms ease-in-out;
+}
+  
+.meat:hover:after,
+.gravy:hover:after { 
+    transform: scaleX(1);
+    border: solid 1px #eed29bd3;
+}
+
+.meat:hover,
+.gravy:hover {
+    color: #eed29b;
+}
+
+/* @media (hover: hover) {
+    .meat,
+    .gravy{
+        color: #eed29b;
+    }
+    
+} */
+
+@media (hover: none) {
+
+}

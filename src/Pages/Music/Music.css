@@ -41,9 +41,15 @@ input[type="range"]::-webkit-slider-thumb{
 
 .downloads {
   border-radius: 15px;
-    border: 1px solid #ffffff3f;
-    box-shadow: 0 0 20px  rgba(245, 245, 245, 0.311);
-    overflow: hidden;
-    backdrop-filter: blur(3px);
-    width: fit-content;
+  border: 1px solid #ffffff3f;
+  box-shadow: 0 0 20px  rgba(245, 245, 245, 0.311);
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+  width: fit-content;
+  transition: all 500ms ease-in-out;
+}
+
+.downloads:hover {
+  box-shadow: 0 0 20px rgba(245, 245, 245, 0.758);
+  filter:saturate(2);
 }

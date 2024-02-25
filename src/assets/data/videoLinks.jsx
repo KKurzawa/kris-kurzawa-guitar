@@ -30,12 +30,12 @@ export const videoLinks = [
         title: "I've Never Been in Love Before"
     },
     {
-        id: 6,
+        id: 7,
         link: "https://www.youtube.com/embed/zbQuCEi5Y2k?si=sCiuqEszwFYCx7nS",
         title: "Lyresto"
     },
     {
-        id: 7,
+        id: 8,
         link: "https://www.youtube.com/embed/GjqZPAoe4cE?si=iZdruLuOBaVzaXNW",
         title: "Falling Grace"
     },
