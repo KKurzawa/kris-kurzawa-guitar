@@ -23,7 +23,9 @@ const ShowCard = () => {
                     </section>
 
                     <li className='py-0 lg:py-[.1rem]'>{item.band}</li>
-                    <a href={item.venueLink} target="_blank" rel="noreferrer"><li className='venue py-0 lg:py-[.1rem]'>{item.venue}</li></a>
+                    <button onClick={() => setTimeout(() =>
+                        window.open(item.venueLink, '_blank')
+                        , 500)}><li className='venue py-0 lg:py-[.1rem]'>{item.venue}</li></button>
 
                     <li>
                         {item.ticketLink === false ? (

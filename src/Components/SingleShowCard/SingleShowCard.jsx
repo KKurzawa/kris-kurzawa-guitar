@@ -21,6 +21,10 @@ const SingleShowCard = () => {
     const venueLink = ShowsList[0].venueLink;
     const ticketLink = ShowsList[0].ticketLink;
 
+    // const timeout = () => setTimeout(() =>
+    //     window.open(venueLink, '_blank')
+    //     , 500)
+
     return (
         <main>
             <header className='text-center text-[whitesmoke] text-3xl font-bold'>Next Show</header>
