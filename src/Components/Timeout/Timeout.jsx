@@ -1,19 +1,18 @@
-import { useState, useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
-export const DelayedMessage = () => {
-    const [message, setMessage] = useState('');
+export const DelayedLink = ({ delay, replace, state, to, ...props }) => {
+    const navigate = useNavigate();
+    const timerRef = useRef();
 
-    useEffect(() => {
-        // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
-        const timeoutId = setTimeout(() => {
-            setMessage('Delayed message after 2 seconds!');
-        }, 10000);
+    useEffect(() => () => clearTimeout(timerRef.current), [])
 
-        // Cleanup function to clear the timeout if the component unmounts
-        return () => clearTimeout(timeoutId);
-    }, []); // Empty dependency array ensures the effect runs only once
-
+    const clickHandler = (e) => {
+        e.preventDefault();
+        timerRef.current = setTimeout(navigate, delay, to, { replace, state })
+    };
     return (
-        console.log(message)
-    );
-};
+        <Link to={to} {...props} onClick={clickHandler} />
+    )
+}
+

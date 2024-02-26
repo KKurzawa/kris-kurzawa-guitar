@@ -44,7 +44,7 @@ const Bio = () => {
                     <LazyLoadImage src={Guitar3} className='gear-image w-96 lg:max-w-full' />
                     <ol className='gear-img mt-2 flex flex-col  items-center'>
                         {meatPot.map((meat) => (
-                            <a key={meat.id} href={meat.link} target="_blank" rel="noreferrer" className='meat-container'><li className='meat text-xl'>{meat.name}</li></a>
+                            <button key={meat.id} className='meat-container' onClick={() => setTimeout(() => window.open(meat.link, '_blank'), 500)}><li className='meat text-xl '>{meat.name}</li></button>
                         ))}
                     </ol>
                 </article>
@@ -53,7 +53,7 @@ const Bio = () => {
                     <LazyLoadImage src={PedalBoard} className='gear-image w-96 lg:max-w-92' />
                     <ol className='gear-img mt-2 flex flex-col  items-center'>
                         {gravy.map((gravy) => (
-                            <a key={gravy.id} href={gravy.link} target="_blank" rel="noreferrer" className='gravy-container'><li className='gravy text-xl '>{gravy.name}</li></a>
+                            <button key={gravy.id} className='gravy-container' onClick={() => setTimeout(() => window.open(gravy.link, '_blank'), 500)}><li className='gravy text-xl '>{gravy.name}</li></button>
                         ))}
                     </ol>
                 </article>
