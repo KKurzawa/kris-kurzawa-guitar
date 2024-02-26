@@ -1,9 +1,10 @@
 import './Music.css'
 import AudioPlayer from '../../Components/AudioPlayer/AudioPlayer'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { albumLinks } from '../../assets/data/albumLinks';
 import Sly from '../../assets/images/Sly.jpg';
 import VisionQuest from '../../assets/images/VisionQuest.jpg'
 import ZapToro from '../../assets/images/ZapToro.png'
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Music = () => {
     return (
@@ -17,9 +18,15 @@ const Music = () => {
                     </section>
                 </article>
                 <header className='text-[whitesmoke] text-center text-3xl mt-5 font-bold'>Download</header>
-                <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer"><LazyLoadImage src={Sly} className='downloads w-[325px] h-auto my-4' /></a>
-                <a href='https://www.amazon.com/Zap-Toro/dp/B004P91DSU' target="_blank" rel="noreferrer"><LazyLoadImage src={ZapToro} className='downloads w-[325px] h-auto my-4' /></a>
-                <a href='https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC' target="_blank" rel="noreferrer"><LazyLoadImage src={VisionQuest} className='downloads w-[325px] h-auto mt-4 mb-10' /></a>
+                <button onClick={() => setTimeout(() =>
+                    window.open('https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W', '_blank')
+                    , 500)}><LazyLoadImage src={Sly} className='downloads w-[325px] h-auto my-4' /></button>
+                <button onClick={() => setTimeout(() =>
+                    window.open('https://www.amazon.com/Zap-Toro/dp/B004P91DSU', '_blank')
+                    , 500)}><LazyLoadImage src={ZapToro} className='downloads w-[325px] h-auto my-4' /></button>
+                <button onClick={() => setTimeout(() =>
+                    window.open('https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC', '_blank')
+                    , 500)}><LazyLoadImage src={VisionQuest} className='downloads w-[325px] h-auto mt-4 mb-10' /></button>
             </main>
             {/* large */}
             <main className='hidden lg:flex w-full justify-center mt-5 mb-10'>
@@ -37,11 +44,11 @@ const Music = () => {
                             </section>
                             <article className='flex flex-col ml-20 mt-1'>
                                 <section className='flex flex-row mb-6'>
-                                    <a href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer" className=' h-[250px] mr-3'><img src={Sly} className='downloads w-[250px] h-auto my-4' /></a>
-                                    <a href='https://www.amazon.com/Zap-Toro/dp/B004P91DSU' target="_blank" rel="noreferrer" className='h-[250px] ml-3'><img src={ZapToro} className='downloads w-[279px] h-auto my-4' /></a>
+                                    <button href='https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W' target="_blank" rel="noreferrer" className=' h-[250px] mr-3'><img src={Sly} className='downloads w-[250px] h-auto my-4' /></button>
+                                    <button href='https://www.amazon.com/Zap-Toro/dp/B004P91DSU' target="_blank" rel="noreferrer" className='h-[250px] ml-3'><img src={ZapToro} className='downloads w-[279px] h-auto my-4' /></button>
                                 </section>
                                 <section className='w-[250px]'>
-                                    <a href='https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC' target="_blank" rel="noreferrer" className='h-[250px] '><img src={VisionQuest} className='downloads w-[250px] h-auto my-4 mb-4 ml-36' /></a>
+                                    <button href='https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC' target="_blank" rel="noreferrer" className='h-[250px] '><img src={VisionQuest} className='downloads w-[250px] h-auto my-4 mb-4 ml-36' /></button>
                                 </section>
                             </article>
 

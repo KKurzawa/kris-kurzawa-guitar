@@ -43,12 +43,14 @@
     transform: scaleX(1);
 }
 
-.large-icons {
+.large-icons,
+.small-icons {
     width: fit-content;
     transition: all 500ms ease-in-out;
 }
 
-.large-icons:hover{
+.large-icons:hover,
+.small-icons:hover{
     color: #eed29b;
 }
 

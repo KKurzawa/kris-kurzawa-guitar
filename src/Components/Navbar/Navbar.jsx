@@ -26,9 +26,9 @@ const Navbar = () => {
           </div>
           <i className='flex justify-end'>
             {icons.map((icon) => (
-              <a className='large-icons mx-5 p-2 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
+              <button className='large-icons mx-5 p-2 text-4xl' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
                 {icon.symbol}
-              </a>
+              </button>
             ))}
           </i>
         </header>
@@ -74,9 +74,9 @@ const Navbar = () => {
             </div>
             <i className='flex justify-center'>
               {icons.map((icon) => (
-                <a className='small-icons px-2 text-4xl' key={icon.index} href={icon.link} target="_blank" rel="noreferrer">
+                <button className='small-icons px-2 text-4xl' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
                   {icon.symbol}
-                </a>
+                </button>
               ))}
             </i>
           </div>

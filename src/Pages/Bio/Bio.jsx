@@ -1,5 +1,4 @@
 import './Bio.css'
-// import { useState, useEffect } from 'react';
 import PedalBoard from '../../assets/images/PedalBoard.jpg'
 import Guitar3 from '../../assets/images/Guitar3.jpg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
