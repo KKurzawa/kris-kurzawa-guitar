@@ -21,6 +21,7 @@ const Navbar = () => {
     setTimeout(() => window.open(link.link), 500);
     setOpen((prev) => !prev);
   }
+
   return (
     <>
       {/* // large screen  */}
@@ -74,7 +75,8 @@ const Navbar = () => {
             <div className='text-5xl pb-3 pt-2 flex flex-col items-center'>
               {navLinks.map((link, index) => (
                 <Link
-                  key={index} className={currentPage === link.link ? 'small-nav-link active' : 'small-nav-link'} to={link.link} onClick={handleMenu}>{link.title}
+                  key={index} className={currentPage === link.link ? 'small-nav-link active' : 'small-nav-link'} to={link.link} onClick={handleMenu
+                  }>{link.title}
                 </Link>
               ))}
             </div>

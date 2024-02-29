@@ -39,7 +39,7 @@ const ShowCard = () => {
                                     <button onClick={reservations} className='ticket-btn'>Tickets</button>
                                 ) :
                                     (
-                                        <a href={item.ticketLink} target="_blank" rel="noreferrer" ><button className='ticket-btn'>Tickets</button></a>
+                                        <button onClick={() => setTimeout(() => window.open(item.ticketLink, '_blank'), 500)} className='ticket-btn'>Tickets</button>
                                     )}
                     </li>
                 </ol>

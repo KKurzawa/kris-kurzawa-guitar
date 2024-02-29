@@ -51,7 +51,7 @@ const SingleShowCard = () => {
                                 <button onClick={reservations} className='single-ticket-btn'>Tickets</button>
                             ) :
                                 (
-                                    <a href={ticketLink} target="_blank" rel="noreferrer" ><button className='single-ticket-btn'>Tickets</button></a>
+                                    <button onClick={() => setTimeout(() => window.open(ticketLink, '_blank'), 500)} className='single-ticket-btn'>Tickets</button>
                                 )}
                 </li>
             </ol>
