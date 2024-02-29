@@ -16,6 +16,11 @@ const Navbar = () => {
     setOpen((prev) => !prev);
     console.log(open);
   };
+
+  const handleSmallMenu = () => {
+    setTimeout(() => window.open(link.link), 500);
+    setOpen((prev) => !prev);
+  }
   return (
     <>
       {/* // large screen  */}
@@ -68,8 +73,9 @@ const Navbar = () => {
           <div className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen'>
             <div className='text-5xl pb-3 pt-2 flex flex-col items-center'>
               {navLinks.map((link, index) => (
-                <a
-                  key={index} href={link.link} className='small-nav-link py-1'>{link.title}</a>
+                <Link
+                  key={index} className={currentPage === link.link ? 'small-nav-link active' : 'small-nav-link'} to={link.link} onClick={handleMenu}>{link.title}
+                </Link>
               ))}
             </div>
             <i className='flex justify-center'>
