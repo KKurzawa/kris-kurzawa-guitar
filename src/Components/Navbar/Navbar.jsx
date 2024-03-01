@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { navLinks } from '../../assets/data/navLinks';
 import { icons } from '../../assets/data/icons';
 import { FaHome } from 'react-icons/fa';
@@ -10,16 +10,54 @@ import KrisKurzawaGuitar2 from '../../assets/images/KrisKurzawaGuitar2.jpg'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const currentPage = useLocation().pathname;
+
+  const navigate = useNavigate();
+
+  function wait(time) {
+    return new Promise(resolve => {
+      setTimeout(resolve, time);
+    });
+  }
 
   const handleMenu = () => {
     setOpen((prev) => !prev);
-    console.log(open);
   };
 
-  const handleSmallMenu = () => {
-    setTimeout(() => window.open(link.link), 500);
-    setOpen((prev) => !prev);
+  async function goToHome() {
+    await wait(500);
+    navigate(navLinks[0].link);
+    handleMenu();
+  }
+
+
+  async function goToMusic() {
+    await wait(500);
+    navigate(navLinks[1].link);
+    handleMenu();
+  }
+
+  async function goToVideo() {
+    await wait(500);
+    navigate(navLinks[2].link);
+    handleMenu();
+  }
+
+  async function goToBio() {
+    await wait(500);
+    navigate(navLinks[3].link);
+    handleMenu();
+  }
+
+  async function goToShows() {
+    await wait(500);
+    navigate(navLinks[4].link);
+    handleMenu();
+  }
+
+  async function goToContact() {
+    await wait(500);
+    navigate(navLinks[5].link);
+    handleMenu();
   }
 
   return (
@@ -45,11 +83,12 @@ const Navbar = () => {
           </header>
           <ol className='nav-list flex justify-end'>
             <li className='pr-5 text-xl'>
-              {navLinks.map((link, index) => (
-                <Link
-                  key={index} className={currentPage === link.link ? 'nav-link active' : 'nav-link'} to={link.link}>{link.title}
-                </Link>
-              ))}
+              <button onClick={goToHome} className='nav-link'>{navLinks[0].title}</button>
+              <button onClick={goToMusic} className='nav-link'>{navLinks[1].title}</button>
+              <button onClick={goToVideo} className='nav-link'>{navLinks[2].title}</button>
+              <button onClick={goToBio} className='nav-link'>{navLinks[3].title}</button>
+              <button onClick={goToShows} className='nav-link'>{navLinks[4].title}</button>
+              <button onClick={goToContact} className='nav-link'>{navLinks[5].title}</button>
             </li>
           </ol>
         </nav>
@@ -73,12 +112,12 @@ const Navbar = () => {
         {open ? (
           <div className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen'>
             <div className='text-5xl pb-3 pt-2 flex flex-col items-center'>
-              {navLinks.map((link, index) => (
-                <Link
-                  key={index} className={currentPage === link.link ? 'small-nav-link active' : 'small-nav-link'} to={link.link} onClick={handleMenu
-                  }>{link.title}
-                </Link>
-              ))}
+              <button onClick={goToHome} className='small-nav-link'>{navLinks[0].title}</button>
+              <button onClick={goToMusic} className='small-nav-link'>{navLinks[1].title}</button>
+              <button onClick={goToVideo} className='small-nav-link'>{navLinks[2].title}</button>
+              <button onClick={goToBio} className='small-nav-link'>{navLinks[3].title}</button>
+              <button onClick={goToShows} className='small-nav-link'>{navLinks[4].title}</button>
+              <button onClick={goToContact} className='small-nav-link'>{navLinks[5].title}</button>
             </div>
             <i className='flex justify-center'>
               {icons.map((icon) => (

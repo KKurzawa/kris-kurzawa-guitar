@@ -3,15 +3,23 @@ import { ShowsList } from '../../assets/data/showsList'
 
 const SingleShowCard = () => {
     function notYetAvailable() {
-        alert("Either tickets are not yet available for purchase or they will be made available at the door.  Please check back later or contact the venue.")
+        setTimeout(() =>
+            alert("Either tickets are not yet available for purchase or they will be made available at the door.  Please check back later or contact the venue.")
+            , 500)
+
     }
 
     function noCover() {
-        alert("This is a free show!")
+        setTimeout(() =>
+            alert("This is a free show!")
+            , 500)
     }
 
     function reservations() {
-        alert("You must contact the venue directly for reservations.")
+        setTimeout(() =>
+            alert("You must contact the venue directly for reservations.")
+            , 500)
+
     }
 
     const date = ShowsList[0].date;
@@ -20,10 +28,6 @@ const SingleShowCard = () => {
     const venue = ShowsList[0].venue;
     const venueLink = ShowsList[0].venueLink;
     const ticketLink = ShowsList[0].ticketLink;
-
-    // const timeout = () => setTimeout(() =>
-    //     window.open(venueLink, '_blank')
-    //     , 500)
 
     return (
         <main>
