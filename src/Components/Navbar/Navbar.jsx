@@ -7,7 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaBars, FaTimes } from 'react-icons/fa';
 // import { FaHome } from 'react-icons/fa';
 import KrisKurzawaGuitar2 from '../../assets/images/KrisKurzawaGuitar2.jpg'
-import NavLogo from '../../assets/images/navLogo.png'
+// import NavLogo from '../../assets/images/navLogo.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -97,13 +97,13 @@ const Navbar = () => {
       {/* small and medium */}
       <main className='navbar flex flex-col lg:hidden text-[#f5f5f5] bg-[#971522]'>
         <article className='flex flex-row justify-between items-center '>
-          <button type='button' onClick={handleMenu} className='bars px-2 py-2  '>
+          <button type='button' onClick={handleMenu} className='bars px-2 py-2 bg-[rgba(16,6,7,0.5)] '>
             <span className='sr-only'>Open Main Menu</span>
             {open == true ? <FaTimes className='text-2xl' /> : <FaBars className='text-2xl ' />}
           </button>
-          <h1 className='text-4xl font-bold'>Kris Kurzawa</h1>
+          <h1 className='kk text-4xl font-bold'>Kris Kurzawa</h1>
           <button type='button' onClick={handleMenu} className='bars px-2
-          py-2 '>
+          py-2 bg-[rgba(16,6,7,0.5)]'>
             <span className='sr-only'>Open Main Menu</span>
             {open == true ? <FaTimes className='text-2xl' /> : <FaBars className='text-2xl ' />}
           </button>
