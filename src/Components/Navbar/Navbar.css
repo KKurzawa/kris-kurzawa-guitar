@@ -58,3 +58,9 @@
     border-bottom: 1px solid #eed29bb1;
     border-top: 1px solid #eed29bb1;
 }
+
+.bars {
+    border-right: 1px solid #eed29bb1;
+    border-left: 1px solid #eed29bb1;
+    background-color: #9715222e;
+}

@@ -96,12 +96,16 @@ const Navbar = () => {
       </main>
       {/* small and medium */}
       <main className='navbar flex flex-col lg:hidden text-[#f5f5f5] bg-[#971522]'>
-        <article className='flex flex-row justify-between items-center my-1'>
-          <img src={NavLogo} className='text-3xl pl-3 w-11 h-7' />
-          <h1 className='text-4xl font-bold'>Kris Kurzawa</h1>
-          <button type='button' onClick={handleMenu} className='pr-3'>
+        <article className='flex flex-row justify-between items-center '>
+          <button type='button' onClick={handleMenu} className='bars px-2 py-2  '>
             <span className='sr-only'>Open Main Menu</span>
-            {open == true ? <FaTimes className='text-3xl' /> : <FaBars className='text-3xl ' />}
+            {open == true ? <FaTimes className='text-2xl' /> : <FaBars className='text-2xl ' />}
+          </button>
+          <h1 className='text-4xl font-bold'>Kris Kurzawa</h1>
+          <button type='button' onClick={handleMenu} className='bars px-2
+          py-2 '>
+            <span className='sr-only'>Open Main Menu</span>
+            {open == true ? <FaTimes className='text-2xl' /> : <FaBars className='text-2xl ' />}
           </button>
         </article>
         <article className=''>
