@@ -97,7 +97,7 @@ const Navbar = () => {
       {/* small and medium */}
       <main className='navbar flex flex-col lg:hidden text-[#f5f5f5] bg-[#971522]'>
         <article className='flex flex-row justify-between items-center my-1'>
-          <img src={NavLogo} className='text-3xl pl-3 w-12 h-8' />
+          <img src={NavLogo} className='text-3xl pl-3 w-11 h-7' />
           <h1 className='text-4xl font-bold'>Kris Kurzawa</h1>
           <button type='button' onClick={handleMenu} className='pr-3'>
             <span className='sr-only'>Open Main Menu</span>
