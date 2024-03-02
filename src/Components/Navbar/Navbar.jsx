@@ -5,7 +5,7 @@ import { navLinks } from '../../assets/data/navLinks';
 import { icons } from '../../assets/data/icons';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { FaHome } from 'react-icons/fa';
+// import { FaHome } from 'react-icons/fa';
 import KrisKurzawaGuitar2 from '../../assets/images/KrisKurzawaGuitar2.jpg'
 import NavLogo from '../../assets/images/navLogo.png'
 
