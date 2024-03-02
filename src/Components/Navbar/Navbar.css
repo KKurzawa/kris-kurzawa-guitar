@@ -13,18 +13,16 @@
     transition: 500ms ease-in-out;
 }
   
-.nav-link:hover:after { 
+.nav-link:hover:after,
+.small-nav-link:hover:after { 
     transform: scaleX(1);
     border: solid 1px #eed29bd3;
 }
 
 .nav-link:hover,
-.small-nav-link:hover {
-    color: #eed29b;
-}
-
+.small-nav-link:hover,
 .nav-link:focus,
-.small-nav-link:focus{
+.small-nav-link:focus {
     color: #eed29b;
 }
 
@@ -35,17 +33,11 @@
 .small-nav-link:after {
     display:block;
     content: '';
-    /* width: inherit; */
     border: solid 1px #eed29bd3;  
     transform: scaleX(0);  
     transition: transform 500ms ease-in-out;
 }
   
-.small-nav-link:hover:after { 
-    transform: scaleX(1);
-    border: solid 1px #eed29bd3;
-}
-
 .large-icons,
 .small-icons {
     width: fit-content;
@@ -61,22 +53,8 @@
     animation: show 1s ease-in-out forwards;
 }
 
-.navbar{
-    border-bottom: 1px solid #eed29bb1;
-    border-top: 1px solid #eed29bb1;
-}
+.navbar,
 .navGuitarPic{
     border-bottom: 1px solid #eed29bb1;
     border-top: 1px solid #eed29bb1;
 }
-
-@media screen and (max-width: 1024px) {
-    .navbar{
-        border-bottom: 1px solid #eed29bb1;
-        border-top: 1px solid #eed29bb1;
-    }
-    .navGuitarPic{
-        border-bottom: 1px solid #eed29bb1;
-        border-top: 1px solid #eed29bb1;
-    }
-     }

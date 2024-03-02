@@ -1,7 +1,6 @@
 import './Music.css'
 import AudioPlayer from '../../Components/AudioPlayer/AudioPlayer'
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import { albumLinks } from '../../assets/data/albumLinks';
 import Sly from '../../assets/images/Sly.jpg';
 import VisionQuest from '../../assets/images/VisionQuest.jpg'
 import ZapToro from '../../assets/images/ZapToro.png'
@@ -15,7 +14,7 @@ const Music = () => {
                 <article className='mainMusic'>
                     <section className='w-full'>
                         <AudioPlayer />
-                    </section>````
+                    </section>
                 </article>
                 <header className='text-[whitesmoke] text-center text-3xl mt-5 font-bold'>Download</header>
                 <button onClick={() => setTimeout(() =>

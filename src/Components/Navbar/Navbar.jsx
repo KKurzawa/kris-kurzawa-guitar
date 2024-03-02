@@ -1,12 +1,13 @@
 import './Navbar.css';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { navLinks } from '../../assets/data/navLinks';
 import { icons } from '../../assets/data/icons';
-import { FaHome } from 'react-icons/fa';
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 import KrisKurzawaGuitar2 from '../../assets/images/KrisKurzawaGuitar2.jpg'
+import NavLogo from '../../assets/images/navLogo.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -65,9 +66,9 @@ const Navbar = () => {
       {/* // large screen  */}
       <main className='navbar hidden lg:block text-[whitesmoke] bg-[#97161D]'>
         <header className='flex justify-between w-full items-center py-2'>
-          <div className='justify-start'>
+          <article className='justify-start'>
             <h1 className='pl-4 text-6xl font-bold'>Kris Kurzawa</h1>
-          </div>
+          </article>
           <i className='flex justify-end'>
             {icons.map((icon) => (
               <button className='large-icons mx-5 p-2 text-4xl' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
@@ -94,11 +95,9 @@ const Navbar = () => {
         </nav>
       </main>
       {/* small and medium */}
-      <main className='navbar flex flex-col lg:hidden text-[whitesmoke] bg-[#971522]'>
-        <article className='flex flex-row justify-between my-1'>
-          <div className='invisible text-3xl pl-3'>
-            <FaHome />
-          </div>
+      <main className='navbar flex flex-col lg:hidden text-[#f5f5f5] bg-[#971522]'>
+        <article className='flex flex-row justify-between items-center my-1'>
+          <img src={NavLogo} className='text-3xl pl-3 w-12 h-8' />
           <h1 className='text-4xl font-bold'>Kris Kurzawa</h1>
           <button type='button' onClick={handleMenu} className='pr-3'>
             <span className='sr-only'>Open Main Menu</span>
@@ -110,15 +109,15 @@ const Navbar = () => {
           <h2 className='text-md text-center py-1'>Guitarist/Compsoser/Music Educator</h2>
         </article>
         {open ? (
-          <div className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen'>
-            <div className='text-5xl pb-3 pt-2 flex flex-col items-center'>
+          <article className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen'>
+            <ol className='text-5xl pb-3 pt-2 flex flex-col items-center'>
               <button onClick={goToHome} className='small-nav-link'>{navLinks[0].title}</button>
               <button onClick={goToMusic} className='small-nav-link'>{navLinks[1].title}</button>
               <button onClick={goToVideo} className='small-nav-link'>{navLinks[2].title}</button>
               <button onClick={goToBio} className='small-nav-link'>{navLinks[3].title}</button>
               <button onClick={goToShows} className='small-nav-link'>{navLinks[4].title}</button>
               <button onClick={goToContact} className='small-nav-link'>{navLinks[5].title}</button>
-            </div>
+            </ol>
             <i className='flex justify-center'>
               {icons.map((icon) => (
                 <button className='small-icons px-2 text-4xl' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
@@ -126,7 +125,7 @@ const Navbar = () => {
                 </button>
               ))}
             </i>
-          </div>
+          </article>
         ) : null}
       </main>
     </>

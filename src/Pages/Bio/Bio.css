@@ -45,15 +45,3 @@
 .gravy:hover {
     color: #eed29b;
 }
-
-/* @media (hover: hover) {
-    .meat,
-    .gravy{
-        color: #eed29b;
-    }
-    
-} */
-
-@media (hover: none) {
-
-}
