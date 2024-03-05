@@ -71,7 +71,7 @@ const Navbar = () => {
           </article>
           <i className='flex justify-end'>
             {icons.map((icon) => (
-              <button className='large-icons mx-5 p-2 text-4xl' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
+              <button className='large-icons mx-5 p-2 text-4xl' key={icon.id} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
                 {icon.symbol}
               </button>
             ))}

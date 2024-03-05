@@ -16,12 +16,12 @@ const Home = () => {
                 {/* large */}
                 <article className='text-[whitesmoke] hidden lg:flex flex-col py-5'>
                     <header className='pb-1 text-center text-3xl font-bold'>{singleVideoTitle}</header>
-                    <iframe className='singleVideo' width="750" height="421.875" src={singleVideoLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe className='singleVideo' width="750" height="421.875" src={singleVideoLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
                 </article>
                 {/* small and medium */}
                 <article className='text-[whitesmoke] lg:hidden flex flex-col py-5'>
                     <header className='pb-1 text-center text-3xl font-bold'>{singleVideoTitle}</header>
-                    <iframe className='singleVideo' width="350" height="196.875" src={singleVideoLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe className='singleVideo' width="350" height="196.875" src={singleVideoLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
                 </article>
                 <SingleShowCard />
             </article>
