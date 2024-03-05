@@ -95,25 +95,25 @@ const Navbar = () => {
         </nav>
       </main>
       {/* small and medium */}
-      <main className='navbar flex flex-col lg:hidden text-[#f5f5f5] bg-[#971522]'>
-        <article className='flex flex-row justify-between items-center '>
-          <button type='button' onClick={handleMenu} className='bars px-2 py-2 bg-[rgba(16,6,7,0.5)] '>
+      <main className='navbar flex flex-col lg:hidden text-[#f5f5f5]'>
+        <article className='flex flex-row justify-between items-center bg-[#971522]'>
+          <button type='button' onClick={handleMenu} className='bars px-2 py-2'>
             <span className='sr-only'>Open Main Menu</span>
             {open == true ? <FaTimes className='text-2xl' /> : <FaBars className='text-2xl ' />}
           </button>
           <h1 className='kk text-4xl font-bold'>Kris Kurzawa</h1>
           <button type='button' onClick={handleMenu} className='bars px-2
-          py-2 bg-[rgba(16,6,7,0.5)]'>
+          py-2'>
             <span className='sr-only'>Open Main Menu</span>
             {open == true ? <FaTimes className='text-2xl' /> : <FaBars className='text-2xl ' />}
           </button>
         </article>
-        <article className=''>
+        <article className='bg-[#971522]'>
           <LazyLoadImage src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
           <h2 className='text-md text-center py-1'>Guitarist/Compsoser/Music Educator</h2>
         </article>
         {open ? (
-          <article className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen bg-[#490b11]'>
+          <article className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen bg-none'>
             <ol className='text-5xl pb-3 pt-2 flex flex-col items-center'>
               <button onClick={goToHome} className='small-nav-link'>{navLinks[0].title}</button>
               <button onClick={goToMusic} className='small-nav-link'>{navLinks[1].title}</button>

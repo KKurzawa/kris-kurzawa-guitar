@@ -28,6 +28,7 @@
 
 .small-nav-link{
     width:fit-content;
+    padding: .25rem;
 }
 
 .small-nav-link:after {
