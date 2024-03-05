@@ -50,7 +50,7 @@
 }
 
 .dropdown{
-    animation: show 1s ease-in-out forwards;
+    border-top: solid 1px #eed29bd3; 
 }
 
 .navbar,
@@ -63,5 +63,4 @@
     border-right: 1px solid #eed29bb1;
     border-left: 1px solid #eed29bb1;
     background-color: #9715222e;
-    /* border-radius: 5px; */
 }

@@ -113,7 +113,7 @@ const Navbar = () => {
           <h2 className='text-md text-center py-1'>Guitarist/Compsoser/Music Educator</h2>
         </article>
         {open ? (
-          <article className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen'>
+          <article className='dropdown transition-all duration-[1s] ease-out lg:hidden h-screen bg-[#490b11]'>
             <ol className='text-5xl pb-3 pt-2 flex flex-col items-center'>
               <button onClick={goToHome} className='small-nav-link'>{navLinks[0].title}</button>
               <button onClick={goToMusic} className='small-nav-link'>{navLinks[1].title}</button>
