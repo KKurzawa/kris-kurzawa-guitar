@@ -1,5 +1,6 @@
 import './Music.css'
-import AudioPlayer from '../../Components/AudioPlayer/AudioPlayer'
+// import AudioPlayer from '../../Components/AudioPlayer/AudioPlayer';
+import AudioPlayer from '../../Components/APComponents/AudioPlayer/AudioPlayer';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Sly from '../../assets/images/Sly.jpg';
 import VisionQuest from '../../assets/images/VisionQuest.jpg'

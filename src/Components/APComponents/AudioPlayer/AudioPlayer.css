@@ -1,0 +1,24 @@
+.audio-player{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 40px; */
+    background-color: #100607;
+    color: whitesmoke;
+}
+
+.audio-player-header{
+    margin: 2rem 0;
+    font-size: 1.3rem;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(3px);
+}
+
+
