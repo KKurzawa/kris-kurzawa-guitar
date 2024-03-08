@@ -1,25 +1,15 @@
 import './Navbar.css';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { navLinks } from '../../assets/data/navLinks';
 import { icons } from '../../assets/data/icons';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { FaBars, FaTimes } from 'react-icons/fa';
-// import { FaHome } from 'react-icons/fa';
 import KrisKurzawaGuitar2 from '../../assets/images/KrisKurzawaGuitar2.jpg'
-// import NavLogo from '../../assets/images/navLogo.png'
-
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
-import { useClickAway } from "react-use";
 
 const Navbar = () => {
-  // const [open, setOpen] = useState(false);
-
-  const [isOpen, setOpen] = useState(false);
-  // const ref = useRef(null);
-
-  // useClickAway(ref, () => setOpen(false));
+  const [open, setOpen] = useState(false);
 
   const navigate = useNavigate();
 
@@ -142,14 +132,14 @@ const Navbar = () => {
         ) : null}
       </main> */}
       {/* hamburger experiment */}
-      <main className='navbar flex flex-col lg:hidden text-[#f5f5f5] text-center'>
+      <main className={!open ? "navbar flex flex-col lg:hidden text-[#f5f5f5] text-center" : 'navbar flex flex-col lg:hidden text-[#f5f5f5] text-center'}>
         <div className='flex justify-between items-center bg-[#97161D]'>
           <div className='hamburger-btn'>
-            <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+            <Hamburger toggled={open} size={20} toggle={setOpen} />
           </div>
           <h1 className=' text-4xl font-bold'>Kris Kurzawa</h1>
           <div className='hamburger-btn'>
-            <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+            <Hamburger toggled={open} size={20} toggle={setOpen} />
           </div>
         </div>
         <div>
@@ -157,17 +147,15 @@ const Navbar = () => {
           <h2 className='text-md text-center py-1 bg-[#97161D]'>Guitarist/Compsoser/Music Educator</h2>
         </div>
         <AnimatePresence>
-          {isOpen && (
+          {open && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-              className="relative left-0 right-0 pt-0 border-y-[1px] border-[#eed29bb1] flex justify-center"
+              transition={{ duration: 1.5 }}
+              className="relative left-0 right-0 pt-0 border-t-[1px] border-[#eed29bb1] flex justify-center"
             >
               <ul className="text-center">
-
-
                 <motion.li
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
@@ -175,21 +163,11 @@ const Navbar = () => {
                     type: "spring",
                     stiffness: 260,
                     damping: 20,
-                    delay: 0.5 + navLinks.id / 10,
+                    delay: 2 + navLinks.id / 10,
                   }}
-                  // key={route.title}
-                  className="w-full p-[0.08rem] rounded-xl "
+                  className={!open ? "hidden" : 'open-nav w-full'}
                 >
-                  {/* <a
-                        onClick={() => setOpen((prev) => !prev)}
-                        className={
-                          "flex items-center justify-center w-full rounded-xl"
-                        }
-                        href={route.link}
-                      >
-                        <span className="flex text-lg text-white justify-center text-center">{route.title}</span>
-                      </a> */}
-                  <ol className='text-5xl pb-3 pt-2 flex flex-col items-center'>
+                  <ol className='text-5xl flex flex-col items-center pb-[1rem]'>
                     <button onClick={goToHome} className='small-nav-link'>{navLinks[0].title}</button>
                     <button onClick={goToMusic} className='small-nav-link'>{navLinks[1].title}</button>
                     <button onClick={goToVideo} className='small-nav-link'>{navLinks[2].title}</button>
@@ -199,14 +177,12 @@ const Navbar = () => {
                   </ol>
                   <i className='flex justify-center'>
                     {icons.map((icon) => (
-                      <button className='small-icons px-2 text-4xl pb-10' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
+                      <button className='small-icons px-2 text-4xl pb-5' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
                         {icon.symbol}
                       </button>
                     ))}
                   </i>
                 </motion.li>
-
-
               </ul>
             </motion.div>
           )}

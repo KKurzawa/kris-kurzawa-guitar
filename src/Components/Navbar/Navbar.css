@@ -27,7 +27,7 @@
 }
 .small-nav-link{
     width:fit-content;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .small-nav-link:after {
@@ -51,6 +51,12 @@
 
 .dropdown{
     border-top: solid 1px #eed29bd3; 
+}
+
+.open-nav{
+    height: 76vh;
+    padding-top: 10%; 
+    padding-bottom: 10%;
 }
 
 .navbar,
