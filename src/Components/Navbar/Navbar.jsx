@@ -163,7 +163,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              className="relative left-0 right-0 p-5 pt-0 border-b-[1px] border-[#eed29bb1] flex justify-center"
+              className="relative left-0 right-0 pt-0 border-y-[1px] border-[#eed29bb1] flex justify-center"
             >
               <ul className="text-center">
 
@@ -199,7 +199,7 @@ const Navbar = () => {
                   </ol>
                   <i className='flex justify-center'>
                     {icons.map((icon) => (
-                      <button className='small-icons px-2 text-4xl' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
+                      <button className='small-icons px-2 text-4xl pb-10' key={icon.index} onClick={() => setTimeout(() => window.open(icon.link, '_blank'), 500)}>
                         {icon.symbol}
                       </button>
                     ))}

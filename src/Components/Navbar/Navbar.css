@@ -25,10 +25,9 @@
 .small-nav-link:focus {
     color: #eed29b;
 }
-
 .small-nav-link{
     width:fit-content;
-    padding: .25rem;
+    padding: 1rem;
 }
 
 .small-nav-link:after {
