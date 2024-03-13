@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import './Controls.css'
+import './Controls.css';
+import ProgressBar from '../ProgressBar/ProgressBar';
 
 import {
     IoPlayBackSharp,
@@ -20,10 +21,13 @@ const Controls = ({
     audioRef,
     progressBarRef,
     duration,
+    setDuration,
+    timeProgress,
     setTimeProgress,
     Musics,
     trackIndex,
     setTrackIndex,
+    currentTrack,
     setCurrentTrack,
     handleNext,
     isPlaying,
@@ -35,6 +39,31 @@ const Controls = ({
 
     const togglePlayPause = () => {
         setIsPlaying((prev) => !prev);
+        console.log('isPlaying2', isPlaying)
+    };
+
+    const onLoadedMetadata = () => {
+        const seconds = audioRef.current.duration;
+        setDuration(seconds);
+        progressBarRef.current.max = seconds;
+        console.log('isPlaying', isPlaying)
+    };
+
+    const handleProgressChange = () => {
+        audioRef.current.currentTime = progressBarRef.current.value
+    }
+
+    const formatTime = (time) => {
+        if (time && !isNaN(time)) {
+            const minutes = Math.floor(time / 60);
+            const formatMinutes =
+                minutes < 10 ? `0${minutes}` : `${minutes}`;
+            const seconds = Math.floor(time % 60);
+            const formatSeconds =
+                seconds < 10 ? `0${seconds}` : `${seconds}`;
+            return `${formatMinutes}:${formatSeconds}`;
+        }
+        return '00:00';
     };
 
     const playAnimationRef = useRef();
@@ -86,47 +115,79 @@ const Controls = ({
     }, [volume, audioRef, muteVolume]);
 
     return (
-        <main className="controls-wrapper">
-            <article className="controls">
-                <button onClick={handlePrevious}>
-                    <IoPlaySkipBackSharp />
-                </button>
-                <button onClick={skipBackward}>
-                    <IoPlayBackSharp />
-                </button>
-                <button id='playPause' onClick={togglePlayPause}>
-                    {isPlaying ? <IoPauseSharp /> : <IoPlaySharp />}
-                </button>
-                <button onClick={skipForward}>
-                    <IoPlayForwardSharp />
-                </button>
-                <button onClick={handleNext}>
-                    <IoPlaySkipForwardSharp />
-                </button>
-            </article>
-            <article className="volume">
-                <button className='volume-icons' onClick={() => setMuteVolume((prev) => !prev)}>
-                    {muteVolume || volume < 5 ? (
-                        <IoMdVolumeOff />
-                    ) : volume < 40 ? (
-                        <IoMdVolumeLow />
-                    ) : (
-                        <IoMdVolumeHigh />
-                    )}
-                </button>
-                <input
-                    type="range"
-                    min={0}
-                    max={100}
-                    value={volume}
-                    onChange={(e) => setVolume(e.target.value)}
-                    style={{
-                        background: `linear-gradient(to right, #971522 ${volume}%, #ccc ${volume}%)`,
-                    }}
+        <>
+            <main className='audio-image'>
+                <audio
+                    src={currentTrack.src}
+                    ref={audioRef}
+                    onLoadedMetadata={onLoadedMetadata}
+                    onEnded={handleNext}
                 />
-                <h3 className='volume-num'>{volume}</h3>
-            </article>
-        </main>
+                <article className="flex flex-col audio-info">
+                    <section className=" ">
+                        <img className={isPlaying ? 'album-cover-playing' : 'album-cover'} src={currentTrack.thumbnail} alt="audio avatar" />
+                    </section>
+                    <section className="text">
+                        <p className="title">{currentTrack.title}</p>
+                        <p>{currentTrack.artist}</p>
+                    </section>
+                </article>
+            </main>
+            <main className='progress-container'>
+                <div className="progress">
+                    <span className="current-time current">{formatTime(timeProgress)}</span>
+                    <input
+                        className='track-slider'
+                        type="range"
+                        ref={progressBarRef}
+                        defaultValue='0'
+                        onChange={handleProgressChange} />
+                    <span className="time">{formatTime(duration)}</span>
+                </div>
+            </main>
+            <main className="controls-wrapper">
+                <article className="controls">
+                    <button onClick={handlePrevious}>
+                        <IoPlaySkipBackSharp />
+                    </button>
+                    <button onClick={skipBackward}>
+                        <IoPlayBackSharp />
+                    </button>
+                    <button id='playPause' onClick={togglePlayPause}>
+                        {isPlaying ? <IoPauseSharp /> : <IoPlaySharp />}
+                    </button>
+                    <button onClick={skipForward}>
+                        <IoPlayForwardSharp />
+                    </button>
+                    <button onClick={handleNext}>
+                        <IoPlaySkipForwardSharp />
+                    </button>
+                </article>
+                <article className="volume">
+                    <button className='volume-icons' onClick={() => setMuteVolume((prev) => !prev)}>
+                        {muteVolume || volume < 5 ? (
+                            <IoMdVolumeOff />
+                        ) : volume < 40 ? (
+                            <IoMdVolumeLow />
+                        ) : (
+                            <IoMdVolumeHigh />
+                        )}
+                    </button>
+                    <input
+                        type="range"
+                        min={0}
+                        max={100}
+                        value={volume}
+                        onChange={(e) => setVolume(e.target.value)}
+                        style={{
+                            background: `linear-gradient(to right, #971522 ${volume}%, #ccc ${volume}%)`,
+                        }}
+                    />
+                    <h3 className='volume-num'>{volume}</h3>
+                </article>
+            </main>
+        </>
+
     );
 };
 

@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import Musics from '../../../assets/data/mp3s';
 import Controls from '../Controls/Controls';
-import DisplayTrack from "../DisplayTrack/DisplayTrack";
-import ProgressBar from "../ProgressBar/ProgressBar";
+// import DisplayTrack from "../DisplayTrack/DisplayTrack";
+// import ProgressBar from "../ProgressBar/ProgressBar";
 import './AudioPlayer.css'
 
 const AudioPlayer = () => {
@@ -31,25 +31,28 @@ const AudioPlayer = () => {
                 <section className='audio-player-header'>
                     <h3>Now Playing {trackIndex + 1}/{Musics.length}</h3>
                 </section>
-                <DisplayTrack
+                {/* <DisplayTrack
                     {...{
                         currentTrack,
                         audioRef,
                         setDuration,
                         progressBarRef,
                         handleNext
-                    }} />
-                <ProgressBar
-                    {...{ progressBarRef, audioRef, timeProgress, duration }} />
+                    }} /> */}
+                {/* <ProgressBar
+                    {...{ progressBarRef, audioRef, timeProgress, duration }} /> */}
                 <Controls
                     {...{
                         audioRef,
                         progressBarRef,
                         duration,
+                        setDuration,
+                        timeProgress,
                         setTimeProgress,
                         Musics,
                         trackIndex,
                         setTrackIndex,
+                        currentTrack,
                         setCurrentTrack,
                         handleNext,
                         isPlaying,

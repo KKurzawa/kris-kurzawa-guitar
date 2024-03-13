@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.audio-image img{
+.album-cover-playing{
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -18,6 +18,20 @@
     animation-iteration-count: infinite;
     margin-bottom: 1rem;
     animation-play-state: running;
+    padding: 2px;
+}
+.album-cover{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #971522;
+    outline: 2px solid #A67724;
+    outline-offset: 2px;
+    border-radius: 50%;
+    animation: rotate 45s linear;
+    animation-iteration-count: infinite;
+    margin-bottom: 1rem;
+    animation-play-state: paused;
     padding: 2px;
 }
 

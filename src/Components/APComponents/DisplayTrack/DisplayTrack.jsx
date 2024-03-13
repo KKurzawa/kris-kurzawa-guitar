@@ -26,7 +26,7 @@ const DisplayTrack = ({
             />
             <article className="flex flex-col audio-info">
                 <section className=" ">
-                    <img className='' src={currentTrack.thumbnail} alt="audio avatar" />
+                    <img className={!isPlaying ? 'album-cover-playing' : 'album-cover'} src={currentTrack.thumbnail} alt="audio avatar" />
                 </section>
                 <section className="text">
                     <p className="title">{currentTrack.title}</p>
