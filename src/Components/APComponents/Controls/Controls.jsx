@@ -18,7 +18,6 @@ import {
     IoMdVolumeOff,
     IoMdVolumeLow,
 } from 'react-icons/io';
-import { set } from 'mongoose';
 
 const Controls = ({
     audioRef,
