@@ -2,7 +2,6 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import './Controls.css';
 import { MdOutlineQueueMusic } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
-// import Musics from '../../../assets/data/mp3s';
 
 import {
     IoPlayBackSharp,
@@ -39,18 +38,18 @@ const Controls = ({
     const [volume, setVolume] = useState(60);
     const [muteVolume, setMuteVolume] = useState(false);
     const [musicNumber, setMusicNumber] = useState(0);
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+
+    const playAnimationRef = useRef();
 
     const togglePlayPause = () => {
         setIsPlaying((prev) => !prev);
-        console.log('isPlaying2', isPlaying)
     };
 
     const onLoadedMetadata = () => {
         const seconds = audioRef.current.duration;
         setDuration(seconds);
         progressBarRef.current.max = seconds;
-        console.log('isPlaying', isPlaying)
     };
 
     const handleProgressChange = () => {
@@ -69,8 +68,6 @@ const Controls = ({
         }
         return '00:00';
     };
-
-    const playAnimationRef = useRef();
 
     const repeat = useCallback(() => {
         const currentTime = audioRef.current.currentTime;
@@ -145,7 +142,7 @@ const Controls = ({
                                 setCurrentTrack(Musics[index]);
                                 setTrackIndex(music.id - 1);
                                 setIsPlaying(true);
-                            }} className={`${musicNumber === index ? 'playing' : ''}`}>
+                            }} className=''>
                                 <div className="row">
                                     <span>{music.title}</span>
                                     <p>{music.artist}</p>

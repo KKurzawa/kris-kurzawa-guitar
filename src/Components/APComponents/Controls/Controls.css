@@ -1,19 +1,19 @@
 .list{
     width: 100%;
-    /* height: 50%; */
+    /* height: 100%; */
     position: absolute;
     bottom: -70%;
     left: 0;
-    background: #fff;
+    background: whitesmoke;
     color: #080710;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-out;
+    transition: all 1s ease-out;
     border-radius: 10px;
     z-index: 10;
 }
 
 .list.show {
-bottom: 46%;
+bottom: 0%;
 }
 
 .list .header {
@@ -72,10 +72,10 @@ bottom: 46%;
 .list .duration{
     font-size: 0.9rem;
 }
-
+/* 
 .list .playing{
     background-color: hsla(354, 76%, 34%, 0.902);
-}
+} */
 
 /* everything below this line is working */
 .audio-image {
@@ -268,7 +268,7 @@ input[type="range"] {
     display: flex;
     width: 287px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     padding: .5rem;
 }
 
@@ -291,7 +291,4 @@ input[type="range"] {
 .volume {
     display: none;
 }
-.list.show {
-    bottom: 40%;
-    }
 }
