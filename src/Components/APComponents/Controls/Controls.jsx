@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import './Controls.css';
-import ProgressBar from '../ProgressBar/ProgressBar';
+import { MdOutlineQueueMusic } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
+// import Musics from '../../../assets/data/mp3s';
 
 import {
     IoPlayBackSharp,
@@ -16,6 +18,7 @@ import {
     IoMdVolumeOff,
     IoMdVolumeLow,
 } from 'react-icons/io';
+import { set } from 'mongoose';
 
 const Controls = ({
     audioRef,
@@ -36,6 +39,8 @@ const Controls = ({
 
     const [volume, setVolume] = useState(60);
     const [muteVolume, setMuteVolume] = useState(false);
+    const [musicNumber, setMusicNumber] = useState(0);
+    const [open, setOpen] = useState(false)
 
     const togglePlayPause = () => {
         setIsPlaying((prev) => !prev);
@@ -116,6 +121,43 @@ const Controls = ({
 
     return (
         <>
+            <main>
+                <section className='audio-player-header flex justify-between'>
+                    <i className=" text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
+                    <h3 className='mx-10'>Now Playing {trackIndex + 1}/{Musics.length}</h3>
+                    <i className=" text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
+                </section>
+                <div className={`list ${open ? 'show' : ''}`}>
+                    <div className="header">
+                        <div>
+                            <i className="react-icons">
+                                <MdOutlineQueueMusic />
+                            </i>
+                            <span>Music List</span>
+                        </div>
+                        <i className='react-icons' onClick={() => setOpen(false)}>
+                            <IoMdClose />
+                        </i>
+                    </div>
+                    <ul>
+                        {Musics.map((music, index) => (
+                            <li key={music.id} onClick={() => {
+                                setMusicNumber(index);
+                                setCurrentTrack(Musics[index]);
+                                setTrackIndex(music.id - 1);
+                                setIsPlaying(true);
+                            }} className={`${musicNumber === index ? 'playing' : ''}`}>
+                                <div className="row">
+                                    <span>{music.title}</span>
+                                    <p>{music.artist}</p>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+
+                </div>
+            </main>
+
             <main className='audio-image'>
                 <audio
                     src={currentTrack.src}

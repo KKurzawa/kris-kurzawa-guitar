@@ -28,9 +28,6 @@ const AudioPlayer = () => {
     return (
         <main className="audio-player">
             <article className="main-container">
-                <section className='audio-player-header'>
-                    <h3>Now Playing {trackIndex + 1}/{Musics.length}</h3>
-                </section>
                 {/* <DisplayTrack
                     {...{
                         currentTrack,
