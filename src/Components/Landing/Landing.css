@@ -15,8 +15,7 @@
 .logo-text {
   -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
 	        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
-          border-bottom: 1px solid #eed29bb1;
-          
+          border-bottom: 1px solid whitesmoke;
 }
 
 .fade-out{
@@ -123,7 +122,9 @@
 .sm-logo-text {
 -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
         animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-        border-bottom: 1px solid #eed29bb1;
+        transition: 500ms ease-in-out;
+        transform: scaleX(1);
+        border-bottom: 1px solid whitesmoke;
 }
 
 .sm-fade-out{
