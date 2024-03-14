@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <>
       {/* // large screen  */}
-      <main className='navbar hidden lg:block text-[whitesmoke] bg-[#97161D]'>
+      <main className='navbar hidden lg:block text-[#f5f5f5] bg-[#97161D]'>
         <header className='flex justify-between w-full items-center py-2'>
           <article className='justify-start'>
             <h1 className='pl-4 text-6xl font-bold'>Kris Kurzawa</h1>
@@ -77,7 +77,7 @@ const Navbar = () => {
           </i>
         </header>
         <LazyLoadImage src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
-        <nav className='flex justify-between w-full items-baseline py-2'>
+        <nav className='gca flex justify-between w-full items-baseline py-2'>
           <header className='justify-start'>
             <h2 className='pl-4 text-xl'>Guitarist/ Compsoser/Music Educator</h2>
           </header>
@@ -144,7 +144,7 @@ const Navbar = () => {
         </div>
         <div>
           <LazyLoadImage src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
-          <h2 className='text-md text-center py-1 bg-[#97161D]'>Guitarist/Compsoser/Music Educator</h2>
+          <h2 className='gca text-md text-center py-1 bg-[#97161D]'>Guitarist/Compsoser/Music Educator</h2>
         </div>
         <AnimatePresence>
           {open && (
@@ -153,7 +153,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5 }}
-              className="relative left-0 right-0 pt-0 border-t-[1px] border-[#eed29bb1] flex justify-center"
+              className="relative left-0 right-0 pt-0 border-b-[1px] border-[#eed29bb1] flex justify-center"
             >
               <ul className="text-center">
                 <motion.li

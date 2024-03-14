@@ -1,21 +1,25 @@
 .landing-container {
-  background-color:#100607;
+  background-color:#980D1C;
+  -webkit-animation: fade-out 1s ease-out 5s both;
+  animation: fade-out 1s ease-out 5s both;
 }
 /* md and lg  */
 .logo {
     height:auto;
     animation: logo 4s ease-in both;
-    filter: contrast(.8)
+    filter: contrast(.8);
+    /* background-image: url('/public/logo7.png');
+    background-size: cover; */
 }
 
 .logo-text {
   -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
 	        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
+          border-bottom: 1px solid #eed29bb1;
+          
 }
 
 .fade-out{
-  -webkit-animation: fade-out 1s ease-out 5s both;
-  animation: fade-out 1s ease-out 5s both;
   height:auto;
   width: 45vw;
   display: flex;
@@ -47,7 +51,7 @@
      width: 0;      
   }
   to {
-    width: 40rem;
+    width: 30rem;
   }
 }
 
@@ -56,7 +60,7 @@
       width: 0;      
   }
    to {
-    width: 40rem;
+    width: 30rem;
   }
 }
 
@@ -105,6 +109,12 @@
 
 /* sm */
 
+.sm-landing-container {
+  background-color:#980D1C;
+  -webkit-animation: fade-out 1s ease-out 5s both;
+  animation: fade-out 1s ease-out 5s both;
+}
+
 .sm-logo {
   height:auto;
   animation: logo 8s ease-in both;
@@ -113,11 +123,10 @@
 .sm-logo-text {
 -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
         animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+        border-bottom: 1px solid #eed29bb1;
 }
 
 .sm-fade-out{
--webkit-animation: fade-out 1s ease-out 5s both;
-animation: fade-out 1s ease-out 5s both;
 height:auto;
 width: 80vw;
 display: flex;
