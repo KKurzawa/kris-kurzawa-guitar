@@ -8,6 +8,28 @@
 
 html{
 background-color: #100607;
-background-image: url(../src/assets/images/Background1.png);
+/* background-image: url(../src/assets/images/Background1.png); */
 background-size: cover;
 }
+
+.app-main-container {
+	-webkit-animation: main-container 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
+	        animation: main-container 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
+}
+
+@-webkit-keyframes main-container {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes main-container {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

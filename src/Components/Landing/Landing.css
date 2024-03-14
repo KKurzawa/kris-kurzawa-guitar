@@ -1,0 +1,206 @@
+.landing-container {
+  background-color:#100607;
+}
+/* md and lg  */
+.logo {
+    height:auto;
+    animation: logo 4s ease-in both;
+    filter: contrast(.8)
+}
+
+.logo-text {
+  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
+	        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
+}
+
+.fade-out{
+  -webkit-animation: fade-out 1s ease-out 5s both;
+  animation: fade-out 1s ease-out 5s both;
+  height:auto;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@-webkit-keyframes logo-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes logo-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logo {
+  from {
+     width: 0;      
+  }
+  to {
+    width: 40rem;
+  }
+}
+
+@keyframes logo {
+  from {
+      width: 0;      
+  }
+   to {
+    width: 40rem;
+  }
+}
+
+  
+
+@-webkit-keyframes fade-out {
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}
+@keyframes fade-out {
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    height:auto;
+    animation: logo 4s ease-in both;
+}
+  @keyframes logo {
+    from {
+       width: 0;      
+    }
+    to {
+      width: 100rem;
+    }
+    }
+  
+    @keyframes logo {
+      from {
+         width: 0;      
+      }
+      to {
+        width: 100rem;
+      }
+      }
+}
+
+/* sm */
+
+.sm-logo {
+  height:auto;
+  animation: logo 8s ease-in both;
+}
+
+.sm-logo-text {
+-webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+}
+
+.sm-fade-out{
+-webkit-animation: fade-out 1s ease-out 5s both;
+animation: fade-out 1s ease-out 5s both;
+height:auto;
+width: 80vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+@-webkit-keyframes sm-logo-text {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes sm-logo-text {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+@keyframes sm-logo {
+from {
+   width: 0;      
+}
+to {
+  width: 80rem;
+}
+}
+
+@keyframes sm-logo {
+from {
+    width: 0;      
+}
+ to {
+  width: 80rem;
+}
+}
+
+
+
+@-webkit-keyframes fade-out {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+@keyframes fade-out {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.logo {
+  height:auto;
+  animation: logo 4s ease-in both;
+}
+@keyframes logo {
+  from {
+     width: 0;      
+  }
+  to {
+    width: 100rem;
+  }
+  }
+
+  @keyframes logo {
+    from {
+       width: 0;      
+    }
+    to {
+      width: 100rem;
+    }
+    }
+}

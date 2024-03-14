@@ -94,6 +94,14 @@ bottom: 0%;
     font-size: 0.9rem;
 }
 
+.queue-music-icon{
+    transition: all 500ms ease-in-out;
+}
+
+.queue-music-icon:hover {
+    color: #eed29b;
+}
+
 /* everything below this line is working */
 .audio-image {
     width: 100%;

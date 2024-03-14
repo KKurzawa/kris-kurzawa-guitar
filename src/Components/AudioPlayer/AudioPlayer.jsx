@@ -122,9 +122,9 @@ const AudioPlayer = () => {
             <article className="main-container">
                 <main>
                     <section className='audio-player-header flex justify-between'>
-                        <i className=" text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
+                        <i id='' className="queue-music-icon text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
                         <h3 className='mx-10'>Now Playing {trackIndex + 1}/{Musics.length}</h3>
-                        <i className=" text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
+                        <i className="queue-music-icon text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
                     </section>
                     <div className={`list ${open ? 'show' : ''}`}>
                         <div className="header">
