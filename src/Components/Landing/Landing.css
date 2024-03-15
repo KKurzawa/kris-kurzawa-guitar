@@ -12,11 +12,22 @@
     background-size: cover; */
 }
 
+#kk-text,
+#sm-kk-text{
+ 
+}
+
 .line {
   color: whitesmoke;
   height: 1px;
   -webkit-animation: line-one  1s ease-in 3.25s both;
   animation: line-one  1s ease-in 3.25s both;
+}
+
+.kk-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
+  animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
 }
 
 .logo-text {
@@ -140,6 +151,14 @@
   -webkit-animation: line-one  1s ease-in 2.25s both;
   animation: line-one  1s ease-in 2.25s both;
 }
+
+.sm-kk-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+          animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+          transition: 500ms ease-in-out;
+          transform: scaleX(1);
+  }
 
 .sm-logo-text {
 -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;

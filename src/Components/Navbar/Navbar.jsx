@@ -66,7 +66,7 @@ const Navbar = () => {
       <main className='navbar hidden lg:block text-[#f5f5f5] bg-[#97161D]'>
         <header className='flex justify-between w-full items-center py-2'>
           <article className='justify-start'>
-            <h1 className='pl-4 text-6xl font-bold'>Kris Kurzawa</h1>
+            <h1 className='kk-header pl-4 text-6xl'>Kris <span className='kk-header text-[#eed29bb1]'>Kurzawa</span></h1>
           </article>
           <i className='flex justify-end'>
             {icons.map((icon) => (
@@ -137,7 +137,7 @@ const Navbar = () => {
           <div className='hamburger-btn'>
             <Hamburger toggled={open} size={20} toggle={setOpen} />
           </div>
-          <h1 className=' text-4xl font-bold'>Kris Kurzawa</h1>
+          <h1 className='kk-header text-4xl font-bold'>Kris <span className='kk-header text-[#eed29bb1]'>Kurzawa</span></h1>
           <div className='hamburger-btn'>
             <Hamburger toggled={open} size={20} toggle={setOpen} />
           </div>

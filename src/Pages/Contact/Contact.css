@@ -4,7 +4,7 @@
 }
 
 .input {
-    border: 1px solid gray;
+    border: 1px solid #ffffff3f;
     font-size: x-large;
     padding-left: .5rem;
     padding-right: .5rem;
@@ -14,7 +14,11 @@
     background-color: #100607;
     overflow: hidden;
     backdrop-filter: blur(3px);
-    color:rgb(151, 151, 151);
+    color:whitesmoke;
+}
+
+.input::placeholder {
+    color: rgba(245, 245, 245, 0.709);
 }
 
 .kris {
@@ -22,11 +26,11 @@
     overflow: hidden;
     backdrop-filter: blur(3px);
     border-radius:15px;
-    border: 1px solid gray;
+    border: 1px solid #ffffff3f;
 }
 
 .submit-btn {
-    border: 1px solid gray;
+    border: 1px solid #ffffff3f;
     font-size: x-large;
     padding-left: .75rem;
     padding-right: .75rem;
@@ -36,17 +40,8 @@
     background-color: #97161D;
     overflow: hidden;
     backdrop-filter: blur(3px);
-    color:rgb(176, 176, 176);
+    color:whitesmoke;
     text-align: center;
-    transition: all 500ms ease-in-out;
-}
-
-.ticket-btn{
-    background-color: #97161D;
-    border-radius: 7.5px;
-    padding: 0 1rem 0 1rem; 
-    border: 1px solid #ffffff3f;
-    margin: .5rem 0 .4rem 0;
     transition: all 500ms ease-in-out;
 }
 
