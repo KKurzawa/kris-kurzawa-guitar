@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 html{
@@ -13,8 +12,8 @@ background-size: cover;
 }
 
 .app-main-container {
-	-webkit-animation: main-container 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
-	        animation: main-container 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
+	-webkit-animation: main-container 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
+	        animation: main-container 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
 }
 
 @-webkit-keyframes main-container {
