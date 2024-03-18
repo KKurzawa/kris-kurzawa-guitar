@@ -1,7 +1,6 @@
 .audio-player{
     display: flex;
     justify-content: center;
-    background-color: #100607;
     color: whitesmoke;
 }
 
@@ -15,8 +14,8 @@
     align-items: center;
     width: 360px;
     border-radius: 15px;
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
 
 .list{

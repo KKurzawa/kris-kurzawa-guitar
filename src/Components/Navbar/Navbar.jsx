@@ -152,8 +152,8 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 1.5 }}
-              className="absolute top-56 left-0 right-0 pt-0 border-b-[1px] border-[#eed29bb1] flex justify-center bg-black"
+              transition={{ duration: .5 }}
+              className="absolute z-10 top-56 left-0 right-0 pt-0 border-b-[1px] border-[#eed29bb1] flex justify-center bg-black"
             >
               <ul className="text-center">
                 <motion.li
