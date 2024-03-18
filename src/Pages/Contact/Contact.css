@@ -13,7 +13,6 @@
     box-shadow: 0 0 20px rgba(245, 245, 245, 0.306);
     background-color: #100607;
     overflow: hidden;
-    backdrop-filter: blur(3px);
     color:whitesmoke;
 }
 
@@ -24,7 +23,6 @@
 .kris {
     box-shadow: 0 0 20px rgba(245, 245, 245, 0.33);
     overflow: hidden;
-    backdrop-filter: blur(3px);
     border-radius:15px;
     border: 1px solid #ffffff3f;
 }
@@ -39,7 +37,6 @@
     box-shadow: 0 0 20px rgba(245, 245, 245, 0.306);
     background-color: #97161D;
     overflow: hidden;
-    backdrop-filter: blur(3px);
     color:whitesmoke;
     text-align: center;
     transition: all 500ms ease-in-out;

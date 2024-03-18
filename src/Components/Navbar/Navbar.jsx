@@ -132,7 +132,7 @@ const Navbar = () => {
         ) : null}
       </main> */}
       {/* hamburger experiment */}
-      <main className={!open ? "navbar flex flex-col lg:hidden text-[#f5f5f5] text-center" : 'navbar flex flex-col lg:hidden text-[#f5f5f5] text-center'}>
+      <main className={!open ? "navbar flex flex-col lg:hidden text-[#f5f5f5] text-center" : 'navbar flex flex-col lg:hidden text-[#f5f5f5] text-center '}>
         <div className='flex justify-between items-center bg-[#97161D]'>
           <div className='hamburger-btn'>
             <Hamburger toggled={open} size={20} toggle={setOpen} />
@@ -153,7 +153,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5 }}
-              className="relative left-0 right-0 pt-0 border-b-[1px] border-[#eed29bb1] flex justify-center"
+              className="absolute top-56 left-0 right-0 pt-0 border-b-[1px] border-[#eed29bb1] flex justify-center bg-black"
             >
               <ul className="text-center">
                 <motion.li
