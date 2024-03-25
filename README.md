@@ -12,8 +12,29 @@ A website for professional musician Kris Kurzawa built with React, styled with T
 
 ![screenshot4](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot4.png)
 
-![screenshot5](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot5.png)
-
 ![screenshot6](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot6.png)
 
 ![screenshot7](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot7.png)
+
+![screenshot8](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot8.png)
+
+[Github Repository](https://github.com/KKurzawa/kris-kurzawa-guitar/tree/main)
+
+[Deployed Site](https://kris-kurzawa-guitar.vercel.app/)
+
+## Credits
+
+n/a
+
+## Questions
+
+[Github Profile](https://github.com/KKurzawa)
+
+Email me at kurzawa1@yahoo.com for questions.
+
+## License
+
+MIT License
+
+Copyright (c) 2023 Kris Kurzawa
+
