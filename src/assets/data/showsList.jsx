@@ -1,18 +1,10 @@
 export const ShowsList = [
     {
-        date: 'March 2 2024',
-        time: '8:30pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        venue: 'The Cadieux Cafe',
-        venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: "https://www.eventbrite.com/e/revival-a-tribute-to-the-allman-brothers-tickets-809714276197?aff=oddtdtcreator&fbclid=IwAR1uOMXJs_xYGMmSYmaqiuYAmLUR4sAu92R_c2FCuViLj7zzUZLa24uTY74"
-    },
-    {
-        date: 'March 14 2024',
+        date: 'April 6 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
-        venue: "Cata Vino",
-        venueLink: "https://laferiadetroit.com/",
+        venue: "Vino and Vibes",
+        venueLink: "https://vinoandvibesbar.com/home",
         ticketLink: 1
     },
     {
@@ -24,7 +16,79 @@ export const ShowsList = [
         ticketLink: 1
     },
     {
+        date: 'April 18 2024',
+        time: '6:30',
+        band: 'The Kris Kurzawa Trio',
+        venue: "Daxton Hotel",
+        venueLink: "https://daxtonhotel.com/",
+        ticketLink: 1
+    },
+    {
         date: 'April 27 2024',
+        time: '8:30pm',
+        band: 'The Kris Kurzawa Group Plays Steely Dan',
+        venue: 'The Cadieux Cafe',
+        venueLink: 'https://www.cadieuxcafe.com',
+        ticketLink: false
+    },
+    {
+        date: 'April 29 2024',
+        time: '7pm',
+        band: 'Caravan Gypsy',
+        venue: "Harrison's Speakeasy",
+        venueLink: "http://harrisonsspeakeasy.com/",
+        ticketLink: 1
+    },
+    {
+        date: 'May 2 2024',
+        time: '7pm',
+        band: 'Caravan Gypsy',
+        venue: "Cata Vino",
+        venueLink: "https://laferiadetroit.com/",
+        ticketLink: 1
+    },
+    {
+        date: 'May 11 2024',
+        time: 'TBD',
+        band: 'Barbara Payton and the Instigators',
+        venue: "Boardwalk Theatre",
+        venueLink: "https://thumbcoasttheaters.com/boardwalk-theatre",
+        ticketLink: false
+    },
+    {
+        date: 'May 25 2024',
+        time: '7',
+        band: 'Barbara Payton and Kris Kurzawa play Zeppelin',
+        venue: "The Cadieux Cafe",
+        venueLink: "https://www.cadieuxcafe.com",
+        ticketLink: false
+    },
+    {
+        date: 'May 30 2024',
+        time: '7pm',
+        band: 'Caravan Gypsy',
+        venue: "Cata Vino",
+        venueLink: "https://laferiadetroit.com/",
+        ticketLink: 1
+    },
+    {
+        date: 'May 31 2024',
+        time: '8pm',
+        band: 'The Kris Kurzawa Trio',
+        venue: "Motor City Wine",
+        venueLink: "https://motorcitywine.com/",
+        ticketLink: 1
+    },
+    {
+        date: 'June 7 2024',
+        time: '7pm',
+        band: 'The Kris Kurzawa Group Plays Steely Dan',
+        venue: 'The Cadieux Cafe',
+        venueLink: 'https://www.cadieuxcafe.com',
+        ticketLink: false
+    },
+    {
+        date: 'June 14 2024',
         time: '8:30pm',
         band: 'The Kris Kurzawa Group Plays Steely Dan',
         venue: 'The Cadieux Cafe',
