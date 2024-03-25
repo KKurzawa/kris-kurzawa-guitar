@@ -12,6 +12,8 @@ A website for professional musician Kris Kurzawa built with React, styled with T
 
 ![screenshot4](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot4.png)
 
+![screenshot5](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot5.png)
+
 ![screenshot6](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot6.png)
 
 ![screenshot7](https://github.com/KKurzawa/kris-kurzawa-guitar/blob/main/public/Screenshot7.png)
