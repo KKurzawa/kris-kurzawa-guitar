@@ -1,39 +1,38 @@
 .landing-container {
   background-color:#980D1C;
-  -webkit-animation: fade-out 1s ease-out 5s both;
-  animation: fade-out 1s ease-out 5s both;
+  -webkit-animation: fade-out 1s linear 5s both;
+  animation: fade-out 1s linear 5s both;
 }
 /* md and lg  */
 .logo {
     height:auto;
-    animation: logo 4s ease-in both;
+    animation: logo 4s linear both;
+    -webkit-animation: logo 4s linear both;;
     filter: contrast(.8);
-    /* background-image: url('/public/logo7.png');
-    background-size: cover; */
 }
 
 .line {
   color: whitesmoke;
   height: 1px;
-  -webkit-animation: line-one  1s ease-in 3.25s both;
-  animation: line-one  1s ease-in 3.25s both;
+  -webkit-animation: line-one  1s linear 3.25s both;
+  animation: line-one  1s linear 3.25s both;
 }
 
 .kris-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
-  animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
+  -webkit-animation: logo-text 1.5s linear 3.5s both;
+  animation: logo-text 1.5s linear 3.5s both;
 }
 
 .kurzawa-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-  animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+  -webkit-animation: logo-text 1.5s linear 3s both;
+  animation: logo-text 1.5s linear 3s both;
 }
 
 .logo-text {
-  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
-	        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
+  -webkit-animation: logo-text 1.5s linear 3.5s both;
+	        animation: logo-text 1.5s linear 3.5s both;
 }
 
 .fade-out{
@@ -63,12 +62,25 @@
   }
 }
 
-@keyframes logo {
+@-webkit-keyframes logo {
   from {
-     width: 0;      
+     width: 0; 
+     opacity: 0;     
   }
   to {
     width: 30rem;
+    opacity: 1;
+  }
+}
+
+@keyframes logo {
+  from {
+     width: 0; 
+     opacity: 0;     
+  }
+  to {
+    width: 30rem;
+    opacity: 1;
   }
 }
 
@@ -109,70 +121,47 @@
 }
 }
 
-@media screen and (max-width: 1024px) {
-  .logo {
-    height:auto;
-    animation: logo 4s ease-in both;
-}
-  @keyframes logo {
-    from {
-       width: 0;      
-    }
-    to {
-      width: 100rem;
-    }
-    }
-  
-    @keyframes logo {
-      from {
-         width: 0;      
-      }
-      to {
-        width: 100rem;
-      }
-      }
-}
-
 /* sm */
 
 .sm-landing-container {
   background-color:#980D1C;
-  -webkit-animation: fade-out 1s ease-out 5s both;
-  animation: fade-out 1s ease-out 5s both;
+  -webkit-animation: fade-out 1s linear 5s both;
+  animation: fade-out 1s linear 5s both;
 }
 
 .sm-logo {
   height:auto;
-  animation: logo 8s ease-in both;
+  -webkit-animation: logo 5s linear both;
+  animation: logo 5s linear both;
 }
 
 .sm-line {
   color: whitesmoke;
   height: 1px;
-  -webkit-animation: line-one  1s ease-in 2.25s both;
-  animation: line-one  1s ease-in 2.25s both;
+  -webkit-animation: line-one  1s linear 2.25s both;
+  animation: line-one  1s linear 2.25s both;
 }
 
 .sm-kris-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-          animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-          transition: 500ms ease-in-out;
+  -webkit-animation: logo-text 1.5s linear 2.5s both;
+          animation: logo-text 1.5s linear 2.5s both;
+          transition: 500ms linear;
           transform: scaleX(1);
   }
 
   .sm-kurzawa-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-            animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-            transition: 500ms ease-in-out;
+    -webkit-animation: logo-text 1.5s linear 2s both;
+            animation: logo-text 1.5s linear 2s both;
+            transition: 500ms linear;
             transform: scaleX(1);
     }
 
 .sm-logo-text {
--webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-        transition: 500ms ease-in-out;
+-webkit-animation: logo-text 1.5s linear 2.5s both;
+        animation: logo-text 1.5s linear 2.5s both;
+        transition: 500ms linear;
         transform: scaleX(1);
 }
 
@@ -203,27 +192,35 @@ align-content: center;
 }
 }
 
+@-webkit-keyframes sm-logo {
+0% {
+   width: 0;   
+   /* opacity: 0;    */
+}
+10% {  
+  /* opacity: 1;    */
+}
+100% {
+  width: 70rem;
+}
+}
+
 @keyframes sm-logo {
-from {
-   width: 0;      
+0% {
+    width: 0;   
+    /* opacity: 0;    */
 }
-to {
-  width: 80rem;
+10% {
+  /* opacity: 1;    */
 }
-}
-
-@keyframes sm-logo {
-from {
-    width: 0;      
-}
- to {
-  width: 80rem;
+ 100% {
+  width: 70rem;
 }
 }
 
 
 
-@-webkit-keyframes fade-out {
+@-webkit-keyframes sm-fade-out {
 0% {
 opacity: 1;
 }
@@ -231,37 +228,13 @@ opacity: 1;
 opacity: 0;
 }
 }
-@keyframes fade-out {
+@keyframes sm-fade-out {
 0% {
 opacity: 1;
 }
 100% {
 opacity: 0;
 }
-}
-
-@media screen and (max-width: 1024px) {
-.logo {
-  height:auto;
-  animation: logo 4s ease-in both;
-}
-@keyframes logo {
-  from {
-     width: 0;      
-  }
-  to {
-    width: 100rem;
-  }
-  }
-
-  @keyframes logo {
-    from {
-       width: 0;      
-    }
-    to {
-      width: 100rem;
-    }
-    }
 }
 
 @-webkit-keyframes sm-line-one {
