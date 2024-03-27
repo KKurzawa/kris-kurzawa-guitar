@@ -82,8 +82,6 @@ const Music = () => {
                 </section>
             </main>
         </>
-
-
     )
 }
 

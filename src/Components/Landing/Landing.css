@@ -7,8 +7,7 @@
 .logo {
     height:auto;
     animation: logo 4s linear both;
-    -webkit-animation: logo 4s linear both;;
-    filter: contrast(.8);
+    -webkit-animation: logo 4s linear both;
 }
 
 .line {

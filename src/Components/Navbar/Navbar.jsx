@@ -148,8 +148,6 @@ const Navbar = () => {
             </motion.article>
           )}
         </AnimatePresence>
-
-
       </main>
     </>
   )

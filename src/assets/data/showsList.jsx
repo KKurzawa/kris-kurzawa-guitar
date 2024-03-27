@@ -58,7 +58,7 @@ export const ShowsList = [
     {
         date: 'May 25 2024',
         time: '7pm',
-        band: 'The Kris Kurzawa Group featuring Barbara Payton play Led Zeppelin',
+        band: 'The Kris Kurzawa Group featuring Barbara Payton plays Led Zeppelin',
         venue: "The Cadieux Cafe",
         venueLink: "https://www.cadieuxcafe.com",
         ticketLink: false
