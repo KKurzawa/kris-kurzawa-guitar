@@ -7,7 +7,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const Contact = () => {
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
@@ -50,7 +49,7 @@ const Contact = () => {
     return (
         <main className='flex flex-col items-center'>
             <h2 className="text-[whitesmoke] text-3xl font-bold lg:text-3xl mt-5">Contact Me</h2>
-            <LazyLoadImage src={krisKurzawa6} className='kris ] mt-1 lg:mt-2  w-[75%] h-auto' />
+            <LazyLoadImage src={krisKurzawa6} className='kris mt-1 lg:mt-2  w-[75%] h-auto' />
             <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center m-[10px] lg:m-[20px] w-[75%] lg:w-[50%]'>
                 <input
                     className='input'
@@ -82,13 +81,18 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
-                <button className='submit-btn w-32 lg:w-32 bg-[#97161D]' type='submit'>Submit</button>
-            </form>
-            {errorMessage && (
-                <article>
-                    <p className="error-text text-[whitesmoke] font-light text-2xl lg:text-4xl mb-5">{errorMessage}</p>
+                {/* small */}
+                <button className='submit-btn md:hidden w-32 bg-[#97161D]' type='submit'>Submit</button>
+                {errorMessage && (
+                    <article className='md:hidden'>
+                        <p className="error-text text-center mb-5 text-xl font-light">{errorMessage}</p>
+                    </article>
+                )}
+                <article className='hidden md:flex justify-between items-center'>
+                    <button className='submit-btn w-32 bg-[#97161D]' type='submit'>Submit</button>
+                    <p className="error-text mb-5 text-2xl font-light">{errorMessage}</p>
                 </article>
-            )}
+            </form>
         </main>
     )
 }

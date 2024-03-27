@@ -6,7 +6,6 @@ const SingleShowCard = () => {
         setTimeout(() =>
             alert("Either tickets are not yet available for purchase or they will be made available at the door.  Please check back later or contact the venue.")
             , 500)
-
     }
 
     function noCover() {
@@ -19,7 +18,6 @@ const SingleShowCard = () => {
         setTimeout(() =>
             alert("You must contact the venue directly for reservations.")
             , 500)
-
     }
 
     const date = ShowsList[0].date;
@@ -31,8 +29,8 @@ const SingleShowCard = () => {
 
     return (
         <main>
-            <header className='text-center text-[whitesmoke] text-3xl font-bold'>Next Show</header>
-            <ol className='single-show-container flex flex-col items-center justify-center text-[whitesmoke] text-base lg:text-2xl '>
+            <header className='text-center text-3xl font-bold'>Next Show</header>
+            <ol className='single-show-container flex flex-col items-center justify-center text-base lg:text-2xl '>
                 <section className='flex flex-row py-0 lg:py-[.1rem]'>
                     <li className='pr-1'>{date}</li>
                     <li className='pl-1'>{time}</li>

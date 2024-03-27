@@ -1,5 +1,5 @@
 .landing-container {
-  background-color:#980D1C;
+  background-color:var(--red-color);
   -webkit-animation: fade-out 1s linear 5s both;
   animation: fade-out 1s linear 5s both;
 }
@@ -12,20 +12,22 @@
 }
 
 .line {
-  color: whitesmoke;
+  color: var(--white-color);
   height: 1px;
   -webkit-animation: line-one  1s linear 3.25s both;
   animation: line-one  1s linear 3.25s both;
 }
 
 .kris-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: var(--impact);
+  color: var(--white-color);
   -webkit-animation: logo-text 1.5s linear 3.5s both;
   animation: logo-text 1.5s linear 3.5s both;
 }
 
 .kurzawa-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: var(--impact);
+  color: var(--yellow-color-two);
   -webkit-animation: logo-text 1.5s linear 3s both;
   animation: logo-text 1.5s linear 3s both;
 }
@@ -33,6 +35,7 @@
 .logo-text {
   -webkit-animation: logo-text 1.5s linear 3.5s both;
 	        animation: logo-text 1.5s linear 3.5s both;
+          color: var(--white-color);
 }
 
 .fade-out{
@@ -130,33 +133,32 @@
 }
 
 .sm-line {
-  color: whitesmoke;
+  color: var(--white-color);
   height: 1px;
   -webkit-animation: sm-line-one  1s linear 1.75s both;
   animation: sm-line-one  1s linear 1.75s both;
 }
 
 .sm-kris-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: var(--impact);
   -webkit-animation: sm-logo-text 1.5s linear 2s both;
           animation: sm-logo-text 1.5s linear 2s both;
           transition: 500ms linear;
           transform: scaleX(1);
+          color: var(--white-color);
   }
 
   .sm-kurzawa-text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--impact);
     -webkit-animation: sm-logo-text 1.5s linear 1.5s both;
-            animation: sm-logo-text 1.5s linear 1.5 both;
-            transition: 500ms linear;
-            transform: scaleX(1);
+            animation: sm-logo-text 1.5s linear 1.5s both;
+            color: var(--yellow-color-two);
     }
 
 .sm-logo-text {
 -webkit-animation: sm-logo-text 1.5s linear 2s both;
         animation: sm-logo-text 1.5s linear 2s both;
-        transition: 500ms linear;
-        transform: scaleX(1);
+        color: var(--white-color);
 }
 
 .sm-fade-out{
@@ -209,25 +211,6 @@ align-content: center;
 }
  100% {
   width: 70rem;
-}
-}
-
-
-
-@-webkit-keyframes sm-fade-out {
-0% {
-opacity: 1;
-}
-100% {
-opacity: 0;
-}
-}
-@keyframes sm-fade-out {
-0% {
-opacity: 1;
-}
-100% {
-opacity: 0;
 }
 }
 

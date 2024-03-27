@@ -7,39 +7,39 @@
     display:block;
     content: '';
     width: inherit;
-    border: solid 1px whitesmoke;  
+    border: solid 1px var(--white-color);  
     transform: scaleX(0);  
     transition: 500ms ease-in-out;
 }
   
 .single-venue:hover:after { 
     transform: scaleX(1);
-    border: solid 1px #eed29bd3;
+    border: solid 1px var(--yellow-color-two);
 }
 
 .single-venue:hover {
-    color: #eed29b;
+    color: var(--yellow-color-two);
 }
 
 .single-ticket-btn{
-    background-color: #97161D;
+    background-color: var(--red-color);
     border-radius: 7.5px;
     padding: 0 1rem 0 1rem; 
-    border: 1px solid #ffffff3f;
+    border: 1px solid var(--yellow-color-one);
     margin: .4rem 0 .4rem 0;
     transition: all 500ms ease-in-out;
 }
 
 .single-ticket-btn:hover{
-    background-color: #eed29b;
-    border: 1px solid #97161D;
-    color: #97161D;
+    background-color: var(--yellow-color-two);
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
 }
 
 .single-show-container{
     border-radius: 15px;
-    border: 1px solid #ffffff3f;
-    box-shadow: 0 0 20px rgba(245, 245, 245, 0.271);
+    border: 1px solid var(--gray-color-one);
+    box-shadow: 0 0 20px var(--gray-color-three);
     overflow: hidden;
     width: 36rem;
     padding: .75rem 0 .75rem 0;

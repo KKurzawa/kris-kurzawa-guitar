@@ -146,6 +146,7 @@ const AudioPlayer = () => {
                                     setTrackIndex(music.id - 1);
                                     setIsPlaying(true);
                                     setOpen(false);
+                                    console.log(musicNumber);
                                 }} className=''>
                                     <section className="row">
                                         <span>{music.title}</span>

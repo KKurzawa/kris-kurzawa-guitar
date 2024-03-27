@@ -6,7 +6,6 @@ const ShowCard = () => {
         setTimeout(() =>
             alert("Either tickets are not yet available for purchase or they will be made available at the door.  Please check back later or contact the venue.")
             , 500)
-
     }
 
     function noCover() {
@@ -19,13 +18,12 @@ const ShowCard = () => {
         setTimeout(() =>
             alert("You must contact the venue directly for reservations.")
             , 500)
-
     }
 
     return (
         <>
             {ShowsList.map((item) => (
-                <ol key={item.index} className='show-container flex flex-col items-center justify-center text-[whitesmoke] text-base lg:text-2xl '>
+                <ol key={item.index} className='show-container flex flex-col items-center justify-center text-base lg:text-2xl '>
                     <section className='flex flex-row py-0 lg:py-[.1rem]'>
                         <li className='pr-1'>{item.date}</li>
                         <li className='pl-1'>{item.time}</li>
@@ -35,7 +33,6 @@ const ShowCard = () => {
                     <button onClick={() => setTimeout(() =>
                         window.open(item.venueLink, '_blank')
                         , 500)}><li className='venue py-0 lg:py-[.1rem]'>{item.venue}</li></button>
-
                     <li>
                         {item.ticketLink === false ? (
                             <button onClick={notYetAvailable} className='ticket-btn '>Tickets</button>
