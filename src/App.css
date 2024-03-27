@@ -11,8 +11,8 @@ background-size: cover;
 }
 
 .app-main-container {
-	-webkit-animation: main-container 1s linear 1s both;
-	        animation: main-container 1s linear 1s both;
+	-webkit-animation: main-container 2s linear 1s both;
+	        animation: main-container 2s linear 1s both;
 }
 
 @-webkit-keyframes main-container {
