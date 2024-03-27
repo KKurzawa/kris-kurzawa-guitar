@@ -1,6 +1,8 @@
 .footer{
-    border-top: 1px solid #eed29bb1;
-    border-bottom: 1px solid #eed29bb1;
+    border-top: 1px solid var(--yellow-color-one);
+    border-bottom: 1px solid var(--yellow-color-one);
+    background-color: var(--red-color);
+    color: var(--white-color)
 }
 
 .webdev-link {
@@ -12,18 +14,18 @@
     display:block;
     content: '';
     width: inherit;
-    border: solid .5px whitesmoke;  
+    border: solid .5px var(--white-color);  
     transform: scaleX(0);  
     transition: 500ms ease-in-out;
 }
   
 .webdev-link:hover:after { 
     transform: scaleX(1);
-    border: solid .5px #eed29bd3; 
+    border: solid .5px var(--yellow-color-two); 
 }
 
 .webdev-link:hover{
-    color: #eed29b;
+    color: var(--yellow-color-two);
 }
 
 

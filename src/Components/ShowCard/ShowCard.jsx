@@ -31,7 +31,7 @@ const ShowCard = () => {
                         <li className='pl-1'>{item.time}</li>
                     </section>
 
-                    <li className='py-0 lg:py-[.1rem]'>{item.band}</li>
+                    <li className='text-center py-0 lg:py-[.1rem]'>{item.band}</li>
                     <button onClick={() => setTimeout(() =>
                         window.open(item.venueLink, '_blank')
                         , 500)}><li className='venue py-0 lg:py-[.1rem]'>{item.venue}</li></button>

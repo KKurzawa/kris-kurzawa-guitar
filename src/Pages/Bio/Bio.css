@@ -1,21 +1,25 @@
+.bio-main-container {
+    color: var(--white-color);
+}
+
 .section2,
 .section1{
     border-radius: 15px;
-    border: 1px solid #ffffff3f;
-    box-shadow: 0 0 20px rgba(245, 245, 245, 0.271);
+    border: 1px solid var(--gray-color-one);
+    box-shadow: 0 0 20px var(--gray-color-three);
     overflow: hidden;
     width: fit-content;
 }
 
 .gear-image {
     border-radius: 15px;
-    border: 1px solid #ffffff3f;
-    box-shadow: 0 0 20px rgba(245, 245, 245, 0.271);
+    border: 1px solid var(--gray-color-one);
+    box-shadow: 0 0 20px var(--gray-color-three);
     overflow: hidden;
 }
 
 .bioGuitarPic {
-    border-bottom: 2px solid #eed29bb1;
+    border-bottom: 2px solid var(--yellow-color-one);
 }
 
 .meat,
@@ -28,7 +32,7 @@
 .gravy:after {
     display:block;
     content: '';
-    border: solid 1px whitesmoke;  
+    border: solid 1px var(--white-color);  
     transform: scaleX(0);  
     transition: 500ms ease-in-out;
 }
@@ -36,10 +40,10 @@
 .meat:hover:after,
 .gravy:hover:after { 
     transform: scaleX(1);
-    border: solid 1px #eed29bd3;
+    border: solid 1px var(--yellow-color-two);
 }
 
 .meat:hover,
 .gravy:hover {
-    color: #eed29b;
+    color: var(--yellow-color-two);
 }

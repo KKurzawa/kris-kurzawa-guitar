@@ -17,7 +17,7 @@ export const ShowsList = [
     },
     {
         date: 'April 18 2024',
-        time: '6:30',
+        time: '6:30pm',
         band: 'The Kris Kurzawa Trio',
         venue: "Daxton Hotel",
         venueLink: "https://daxtonhotel.com/",
@@ -57,8 +57,8 @@ export const ShowsList = [
     },
     {
         date: 'May 25 2024',
-        time: '7',
-        band: 'Barbara Payton and Kris Kurzawa play Zeppelin',
+        time: '7pm',
+        band: 'The Kris Kurzawa Group featuring Barbara Payton play Led Zeppelin',
         venue: "The Cadieux Cafe",
         venueLink: "https://www.cadieuxcafe.com",
         ticketLink: false

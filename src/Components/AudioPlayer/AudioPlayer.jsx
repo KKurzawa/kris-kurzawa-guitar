@@ -121,23 +121,23 @@ const AudioPlayer = () => {
         <main className="audio-player">
             <article className="main-container">
                 <main>
-                    <section className='audio-player-header flex justify-between'>
-                        <i id='' className="queue-music-icon text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
+                    <article className='audio-player-header flex justify-between'>
+                        <i id='' className="queue-music-icon text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
                         <h3 className='mx-10'>Now Playing {trackIndex + 1}/{Musics.length}</h3>
-                        <i className="queue-music-icon text-white text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
-                    </section>
-                    <div className={`list ${open ? 'show' : ''}`}>
-                        <div className="header">
-                            <div>
+                        <i className="queue-music-icon text-3xl" onClick={() => setOpen(true)}><MdOutlineQueueMusic /></i>
+                    </article>
+                    <article className={`list ${open ? 'show' : ''}`}>
+                        <section className="header">
+                            <section>
                                 <i className="react-icons">
                                     <MdOutlineQueueMusic />
                                 </i>
                                 <span>Music List</span>
-                            </div>
+                            </section>
                             <i className='react-icons' onClick={() => setOpen(false)}>
                                 <IoMdClose />
                             </i>
-                        </div>
+                        </section>
                         <ul>
                             {Musics.map((music, index) => (
                                 <li key={music.id} onClick={() => {
@@ -147,17 +147,15 @@ const AudioPlayer = () => {
                                     setIsPlaying(true);
                                     setOpen(false);
                                 }} className=''>
-                                    <div className="row">
+                                    <section className="row">
                                         <span>{music.title}</span>
                                         <p>{music.artist}</p>
-                                    </div>
+                                    </section>
                                 </li>
                             ))}
                         </ul>
-
-                    </div>
+                    </article>
                 </main>
-
                 <main className='audio-image'>
                     <audio
                         src={currentTrack.src}
@@ -169,7 +167,7 @@ const AudioPlayer = () => {
                         <section className=" ">
                             <img className={isPlaying ? 'album-cover-playing' : 'album-cover'} src={currentTrack.thumbnail} alt="audio avatar" />
                         </section>
-                        <section className="text">
+                        <section className="title-artist">
                             <p className="title">{currentTrack.title}</p>
                             <p>{currentTrack.artist}</p>
                         </section>

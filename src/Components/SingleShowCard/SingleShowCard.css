@@ -47,7 +47,7 @@
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1030px) {
 .single-show-container {
     border-radius: 15px;
     width: 23rem;
@@ -56,7 +56,7 @@
 }
  }
 
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 1030px) {
     .single-ticket-btn {
         margin: .5rem 0 .25rem 0;
     }

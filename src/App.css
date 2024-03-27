@@ -1,12 +1,34 @@
 * {
+  /* css reset */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--poppins);
+
+  /* variables */
+
+  /* colors */
+  --black-color:#100607;
+  --black-color-two: #080710;
+  --red-color:#97161D;
+  --orange-color: #A67724;
+  --yellow-color-one: #eed29bb1;
+  --yellow-color-two: #eed29b;
+  --yellow-color-three: #eed29be5;
+  --white-color:#f5f5f5;
+  --gray-color-one: #ffffff3f;
+  --gray-color-two: #f5f5f5c1;
+  --gray-color-three: #f5f5f545;
+  --gray-color-four: #444;
+  --gray-color-five: #99999987;
+
+  /* fonts */
+  --poppins: 'Poppins', sans-serif;
+  --impact: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 html{
-background-color: #100607;
+background-color: var(--black-color);
 background-size: cover;
 }
 
