@@ -123,44 +123,38 @@
 
 /* sm */
 
-.sm-landing-container {
-  background-color:#980D1C;
-  -webkit-animation: fade-out 1s linear 5s both;
-  animation: fade-out 1s linear 5s both;
-}
-
 .sm-logo {
   height:auto;
-  -webkit-animation: logo 5s linear both;
-  animation: logo 5s linear both;
+  -webkit-animation: sm-logo 6s linear both;
+  animation: sm-logo 6s linear both;
 }
 
 .sm-line {
   color: whitesmoke;
   height: 1px;
-  -webkit-animation: line-one  1s linear 2.25s both;
-  animation: line-one  1s linear 2.25s both;
+  -webkit-animation: sm-line-one  1s linear 1.75s both;
+  animation: sm-line-one  1s linear 1.75s both;
 }
 
 .sm-kris-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  -webkit-animation: logo-text 1.5s linear 2.5s both;
-          animation: logo-text 1.5s linear 2.5s both;
+  -webkit-animation: sm-logo-text 1.5s linear 2s both;
+          animation: sm-logo-text 1.5s linear 2s both;
           transition: 500ms linear;
           transform: scaleX(1);
   }
 
   .sm-kurzawa-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-animation: logo-text 1.5s linear 2s both;
-            animation: logo-text 1.5s linear 2s both;
+    -webkit-animation: sm-logo-text 1.5s linear 1.5s both;
+            animation: sm-logo-text 1.5s linear 1.5 both;
             transition: 500ms linear;
             transform: scaleX(1);
     }
 
 .sm-logo-text {
--webkit-animation: logo-text 1.5s linear 2.5s both;
-        animation: logo-text 1.5s linear 2.5s both;
+-webkit-animation: sm-logo-text 1.5s linear 2s both;
+        animation: sm-logo-text 1.5s linear 2s both;
         transition: 500ms linear;
         transform: scaleX(1);
 }
@@ -195,10 +189,10 @@ align-content: center;
 @-webkit-keyframes sm-logo {
 0% {
    width: 0;   
-   /* opacity: 0;    */
+   opacity: 0;   
 }
-10% {  
-  /* opacity: 1;    */
+50% {  
+  opacity: 1;   
 }
 100% {
   width: 70rem;
@@ -208,10 +202,10 @@ align-content: center;
 @keyframes sm-logo {
 0% {
     width: 0;   
-    /* opacity: 0;    */
+    opacity: 0;   
 }
-10% {
-  /* opacity: 1;    */
+50% {
+  opacity: 1;   
 }
  100% {
   width: 70rem;
