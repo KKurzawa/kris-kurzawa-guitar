@@ -12,7 +12,7 @@ const Home = () => {
         <main className='mainHome text-[whitesmoke] flex flex-col'>
             <article className='flex flex-col items-center'>
                 <header className='text-[whitesmoke] text-3xl mt-5 font-bold'>Download</header>
-                <button onClick={() => setTimeout(() => window.open('https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W', '_blank'), 500)}><LazyLoadImage src={Sly} className=' sly w-[23rem] lg:w-[50rem] h-auto mt-1 mb-4' /></button>
+                <button onClick={() => setTimeout(() => window.open('https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W', '_blank'), 500)}><img src={Sly} className=' sly w-[23rem] lg:w-[50rem] h-auto mt-1 mb-4' /></button>
                 {/* large */}
                 <article className='text-[whitesmoke] hidden lg:flex flex-col py-5'>
                     <header className='pb-1 text-center text-3xl font-bold'>{singleVideoTitle}</header>

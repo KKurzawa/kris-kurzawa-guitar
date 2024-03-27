@@ -76,7 +76,7 @@ const Navbar = () => {
             ))}
           </i>
         </header>
-        <LazyLoadImage src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
+        <img src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
         <nav className='gca flex justify-between w-full items-baseline py-2'>
           <header className='justify-start'>
             <h2 className='pl-4 text-xl'>Guitarist/ Compsoser/Music Educator</h2>
@@ -143,7 +143,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <LazyLoadImage src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
+          <img src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
           <h2 className='gca text-md text-center py-1 bg-[#97161D]'>Guitarist/Compsoser/Music Educator</h2>
         </div>
         <AnimatePresence>
