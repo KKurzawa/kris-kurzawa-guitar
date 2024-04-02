@@ -1,6 +1,25 @@
 .mainHome {
-    color: var(--white-color)
+    color: var(--white-color);
+    -webkit-animation: home-fade-in .5s linear both;
+    animation: home-fade-in .5s linear both;
 }
+  
+  @-webkit-keyframes home-fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes home-fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
 .sly {
     border-radius: 15px;

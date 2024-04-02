@@ -1,3 +1,26 @@
+.shows-page-container {
+    -webkit-animation: shows-fade-in .5s linear both;
+    animation: shows-fade-in .5s linear both;
+}
+
+@-webkit-keyframes shows-fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shows-fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 header {
     color: var(--white-color);
 }

@@ -1,3 +1,24 @@
+.video-page-container {
+    -webkit-animation: video-fade-in .5s linear both;
+    animation: video-fade-in .5s linear both;
+}
+  
+  @-webkit-keyframes video-fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes video-fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 .video-title,
 .video-container {
     color: var(--white-color);

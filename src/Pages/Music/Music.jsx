@@ -7,7 +7,7 @@ import ZapToro from '../../assets/images/ZapToro.png'
 
 const Music = () => {
     return (
-        <>
+        <div className='music-page-container'>
             {/* small */}
             <main className='md:hidden flex flex-col justify-center items-center'>
                 <header className='text-center py-3 text-3xl font-bold'>Listen</header>
@@ -81,7 +81,7 @@ const Music = () => {
                     </section>
                 </section>
             </main>
-        </>
+        </div>
     )
 }
 

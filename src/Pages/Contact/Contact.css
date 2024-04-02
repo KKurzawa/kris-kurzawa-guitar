@@ -1,3 +1,26 @@
+.contact-page-container {
+    -webkit-animation: contact-fade-in .5s linear both;
+    animation: contact-fade-in .5s linear both;
+}
+
+@-webkit-keyframes contact-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes contact-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .kris {
     box-shadow: 0 0 20px var(--gray-color-three);
     overflow: hidden;

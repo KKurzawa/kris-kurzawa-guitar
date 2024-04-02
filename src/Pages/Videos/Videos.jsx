@@ -4,7 +4,7 @@ import { videoLinks } from '../../assets/data/videoLinks'
 
 const Videos = () => {
     return (
-        <>
+        <div className='video-page-container'>
             {/* large */}
             <main className='hidden lg:flex flex-row justify-evenly text-2xl font-semibold'>
                 <section className='flex flex-col py-3'>
@@ -34,7 +34,7 @@ const Videos = () => {
                     </article>
                 ))}
             </main>
-        </>
+        </div>
 
     )
 }
