@@ -32,11 +32,27 @@ export const ShowsList = [
         ticketLink: 1
     },
     {
+        date: 'May 9 2024',
+        time: '6:30pm',
+        band: 'The Kris Kurzawa Trio',
+        venue: "The Daxton Hotel",
+        venueLink: "https://www.daxtonhotel.com/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwrIixBhBbEiwACEqDJWa1goyn0UledR91YKvVSR0t5DDTQjsVpicrnd6eXsGQB8tC-SnQvRoCmKQQAvD_BwE",
+        ticketLink: 1
+    },
+    {
         date: 'May 16 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
         venue: "Cata Vino",
         venueLink: "https://laferiadetroit.com/",
+        ticketLink: 1
+    },
+    {
+        date: 'May 23 2024',
+        time: '6:30pm',
+        band: 'The Kris Kurzawa Trio',
+        venue: "The Daxton Hotel",
+        venueLink: "https://www.daxtonhotel.com/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwrIixBhBbEiwACEqDJWa1goyn0UledR91YKvVSR0t5DDTQjsVpicrnd6eXsGQB8tC-SnQvRoCmKQQAvD_BwE",
         ticketLink: 1
     },
     {
@@ -110,6 +126,14 @@ export const ShowsList = [
         venue: "The Cadieux Cafe",
         venueLink: "https://www.cadieuxcafe.com",
         ticketLink: false
+    },
+    {
+        date: 'July 19 2024',
+        time: '6pm',
+        band: 'Caravan Gypsy',
+        venue: "Ann Arbor Summer Fest",
+        venueLink: "https://laferiadetroit.com/",
+        ticketLink: 1
     },
     {
         date: 'July 20 2024',
