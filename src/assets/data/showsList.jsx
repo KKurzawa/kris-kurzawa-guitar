@@ -1,21 +1,5 @@
 export const ShowsList = [
     {
-        date: 'April 25 2024',
-        time: '6pm',
-        band: 'The Thom Monks Trio',
-        venue: "Sappori",
-        venueLink: "https://www.google.com/search?client=safari&rls=en&q=sappori&ie=UTF-8&oe=UTF-8&dlnr=1&sei=PdQhZtWRHbO1wN4P7sGn2AQ",
-        ticketLink: 1
-    },
-    {
-        date: 'April 27 2024',
-        time: '8:30pm',
-        band: 'The Kris Kurzawa Group Plays Steely Dan',
-        venue: 'The Cadieux Cafe',
-        venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: 'https://www.eventbrite.com/e/the-music-of-steely-dan-with-the-kris-kurzawa-group-and-michael-king-tickets-880491763567?aff=oddtdtcreator&fbclid=IwZXh0bgNhZW0CMTAAAR1rw-AKJA5TDpX4Da8SSnh2aBYMWHspV_8asqP4uBMeXvvWzitzK7O4JZs_aem_AQDuem7EvoQdxzLv7f6OABknLapJLxgu3pPN9R2lBfF68n7PgbTMJOJ_J8TAG5EaWu8lUN_LDr2gn8YhQ1ycM1Nz'
-    },
-    {
         date: 'April 29 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
