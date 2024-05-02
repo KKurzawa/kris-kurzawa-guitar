@@ -1,13 +1,5 @@
 export const ShowsList = [
     {
-        date: 'April 29 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        venue: "Harrison's Speakeasy",
-        venueLink: "http://harrisonsspeakeasy.com/",
-        ticketLink: 1
-    },
-    {
         date: 'May 2 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
@@ -44,8 +36,8 @@ export const ShowsList = [
         time: '7pm',
         band: 'The Kris Kurzawa Group featuring Barbara Payton plays Led Zeppelin',
         venue: "The Cadieux Cafe",
-        venueLink: "https://www.eventbrite.com/e/cadieux-cafe-presents-barbara-paytonkris-kurzawas-led-zeppelin-tribute-tickets-851746525787?aff=oddtdtcreator&fbclid=IwZXh0bgNhZW0CMTAAAR0lErMGcW6Ty2IzNSMr3nQN7lC-kZkTpZ-vwPANqzED1y5kMC23tD_P_dA_aem_Aei8yv1-7dZboMwUyloIv5H26ddTb_Dgvxeqp0-C49j0P3lo4IPhSB9VZxJLlpJltuiWBi5w53sfZtkLKWBzRF-S",
-        ticketLink: false
+        venueLink: 'https://www.cadieuxcafe.com',
+        ticketLink: "https://www.eventbrite.com/e/cadieux-cafe-presents-barbara-paytonkris-kurzawas-led-zeppelin-tribute-tickets-851746525787?aff=oddtdtcreator&fbclid=IwZXh0bgNhZW0CMTAAAR0lErMGcW6Ty2IzNSMr3nQN7lC-kZkTpZ-vwPANqzED1y5kMC23tD_P_dA_aem_Aei8yv1-7dZboMwUyloIv5H26ddTb_Dgvxeqp0-C49j0P3lo4IPhSB9VZxJLlpJltuiWBi5w53sfZtkLKWBzRF-S"
     },
     {
         date: 'May 30 2024',
@@ -69,7 +61,7 @@ export const ShowsList = [
         band: 'The Kris Kurzawa Group Plays Steely Dan',
         venue: 'The Cadieux Cafe',
         venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: false
+        ticketLink: 'https://www.eventbrite.com/e/the-music-of-steely-dan-with-the-kris-kurzawa-group-and-michael-king-tickets-887808768927?aff=oddtdtcreator&fbclid=IwZXh0bgNhZW0CMTAAAR00oQ75kWHjDf0d8QxA0Ep45pzeaxOe7_iuyIyP-fu97kibokeVgkiGAkg_aem_ARuXOhhgQhsj36IwKmj6E3rtnMtMIrgR1BBGYjnl-0jEfn-O2Em7tzAKTtp40R8J6McoEKz41_u37s5eB6H6gcni'
     },
     {
         date: 'June 8 2024',
@@ -93,7 +85,7 @@ export const ShowsList = [
         band: 'Revival: A Tribute to the Allman Brothers',
         venue: 'The Cadieux Cafe',
         venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: false
+        ticketLink: 'https://www.eventbrite.com/e/revival-a-tribute-to-the-allman-brothers-tickets-887819501027?aff=oddtdtcreator&fbclid=IwZXh0bgNhZW0CMTAAAR0GNjNTOTU6K_NPmrV7jNKNT9NUcAXDGX-v1LNyJKWZX4vDQ3mc57PCIEs_aem_ARsTqqz_6kC7vCAxOtkKSHKn3cHOBvRb0pPsn3OGbqqnzZAFogL9g8gkgaJOvUBdWfvSwct0kjzuSKvFsyu-piBB'
     },
     {
         date: 'June 22 2024',
@@ -102,6 +94,22 @@ export const ShowsList = [
         venue: 'Brighton, MI',
         venueLink: 'N/A',
         ticketLink: false
+    },
+    {
+        date: 'June 29 2024',
+        time: '7:30pm',
+        band: 'Zap Toro plays Santana',
+        venue: "The Cadieux Cafe",
+        venueLink: "https://www.cadieuxcafe.com",
+        ticketLink: 'https://www.facebook.com/events/1773054906519319/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22search_results%22%2C%22surface%22%3A%22bookmark_search%22%7D]%2C%22ref_notif_type%22%3Anull%7D'
+    },
+    {
+        date: 'June 30 3024',
+        time: '2pm',
+        band: 'Barbara Payton and the Instagaters',
+        venue: 'Bluewater Pride Fest',
+        vunueLink: 'https://www.bluewaterallies.com/event-details/port-huron-pride',
+        ticketLink: 1
     },
     {
         date: 'July 12 2024',
