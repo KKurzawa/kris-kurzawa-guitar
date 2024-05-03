@@ -1,13 +1,5 @@
 export const ShowsList = [
     {
-        date: 'May 2 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        venue: "Cata Vino",
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
         date: 'May 9 2024',
         time: '6:30pm',
         band: 'The Kris Kurzawa Trio',
