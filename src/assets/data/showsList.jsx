@@ -98,7 +98,7 @@ export const ShowsList = [
     {
         date: 'June 30 3024',
         time: '2pm',
-        band: 'Barbara Payton and the Instagaters',
+        band: 'Barbara Payton and the Instigators',
         venue: 'Bluewater Pride Fest',
         vunueLink: 'https://www.bluewaterallies.com/event-details/port-huron-pride',
         ticketLink: 1
