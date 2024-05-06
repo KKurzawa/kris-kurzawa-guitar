@@ -83,9 +83,9 @@ export const ShowsList = [
         date: 'June 22 2024',
         time: '4:30pm',
         band: 'Revival: A Tribute to the Allman Brothers',
-        venue: 'Brighton, MI',
-        venueLink: 'N/A',
-        ticketLink: false
+        venue: 'Brightons Yellowstone Music Festival',
+        venueLink: 'https://www.brightoncoc.org/brightons-yellowstone-country-music-festival/',
+        ticketLink: 'https://www.eventbrite.com/e/brightons-2nd-annual-yellowstone-country-music-festival-tickets-876814053437'
     },
     {
         date: 'June 29 2024',
