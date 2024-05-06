@@ -131,8 +131,8 @@ export const ShowsList = [
         date: 'July 25 2024',
         time: '7pm',
         band: 'Revival: A Tribute to the Allman Brothers',
-        venue: "Milford, MI",
-        venueLink: "n/a",
+        venue: "The LaFontaine Family Amphitheater",
+        venueLink: "https://www.meetmeinmilford.com/downtown-events/summer-concert-series/",
         ticketLink: false
     },
     {
@@ -147,8 +147,8 @@ export const ShowsList = [
         date: 'August 8 2024',
         time: '7pm',
         band: 'Revival: A Tribute to the Allman Brothers',
-        venue: "Royal Oak, MI",
-        venueLink: "n/a",
+        venue: "Centenial Commons Park",
+        venueLink: "https://www.royaloakchamber.com/summer-concert-series",
         ticketLink: 1
     },
     {
@@ -200,7 +200,7 @@ export const ShowsList = [
         ticketLink: 2
     },
     {
-        date: 'October 8 2024',
+        date: 'October 5 2024',
         time: '7pm',
         band: 'Revival: A Tribute to the Allman Brothers',
         venue: 'Wildwood Ampetheater',
