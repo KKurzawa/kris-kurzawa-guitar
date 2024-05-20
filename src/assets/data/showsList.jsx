@@ -1,29 +1,5 @@
 export const ShowsList = [
     {
-        date: 'May 9 2024',
-        time: '6:30pm',
-        band: 'The Kris Kurzawa Trio',
-        venue: "The Daxton Hotel",
-        venueLink: "https://www.daxtonhotel.com/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwrIixBhBbEiwACEqDJWa1goyn0UledR91YKvVSR0t5DDTQjsVpicrnd6eXsGQB8tC-SnQvRoCmKQQAvD_BwE",
-        ticketLink: 1
-    },
-    {
-        date: 'May 16 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        venue: "Cata Vino",
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'May 23 2024',
-        time: '6:30pm',
-        band: 'The Kris Kurzawa Trio',
-        venue: "The Daxton Hotel",
-        venueLink: "https://www.daxtonhotel.com/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwrIixBhBbEiwACEqDJWa1goyn0UledR91YKvVSR0t5DDTQjsVpicrnd6eXsGQB8tC-SnQvRoCmKQQAvD_BwE",
-        ticketLink: 1
-    },
-    {
         date: 'May 25 2024',
         time: '7pm',
         band: 'The Kris Kurzawa Group featuring Barbara Payton plays Led Zeppelin',
