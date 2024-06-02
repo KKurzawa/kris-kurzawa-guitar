@@ -1,43 +1,11 @@
 export const ShowsList = [
     {
-        date: 'May 25 2024',
-        time: '7pm',
-        band: 'The Kris Kurzawa Group featuring Barbara Payton plays Led Zeppelin',
-        venue: "The Cadieux Cafe",
-        venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: "https://www.eventbrite.com/e/cadieux-cafe-presents-barbara-paytonkris-kurzawas-led-zeppelin-tribute-tickets-851746525787?aff=oddtdtcreator&fbclid=IwZXh0bgNhZW0CMTAAAR0lErMGcW6Ty2IzNSMr3nQN7lC-kZkTpZ-vwPANqzED1y5kMC23tD_P_dA_aem_Aei8yv1-7dZboMwUyloIv5H26ddTb_Dgvxeqp0-C49j0P3lo4IPhSB9VZxJLlpJltuiWBi5w53sfZtkLKWBzRF-S"
-    },
-    {
-        date: 'May 30 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        venue: "Cata Vino",
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'May 31 2024',
-        time: '8pm',
-        band: 'The Kris Kurzawa Trio',
-        venue: "Motor City Wine",
-        venueLink: "https://motorcitywine.com/",
-        ticketLink: 1
-    },
-    {
         date: 'June 7 2024',
         time: '7pm',
         band: 'The Kris Kurzawa Group Plays Steely Dan',
         venue: 'The Cadieux Cafe',
         venueLink: 'https://www.cadieuxcafe.com',
         ticketLink: 'https://www.eventbrite.com/e/the-music-of-steely-dan-with-the-kris-kurzawa-group-and-michael-king-tickets-887808768927?aff=oddtdtcreator&fbclid=IwZXh0bgNhZW0CMTAAAR00oQ75kWHjDf0d8QxA0Ep45pzeaxOe7_iuyIyP-fu97kibokeVgkiGAkg_aem_ARuXOhhgQhsj36IwKmj6E3rtnMtMIrgR1BBGYjnl-0jEfn-O2Em7tzAKTtp40R8J6McoEKz41_u37s5eB6H6gcni'
-    },
-    {
-        date: 'June 8 2024',
-        time: '11am',
-        band: 'Caravan Gypsy',
-        venue: 'The Sardine Room',
-        venueLink: 'https://www.thesardineroom.com',
-        ticketLink: 1
     },
     {
         date: 'June 13 2024',
