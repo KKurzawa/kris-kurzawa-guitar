@@ -23,7 +23,9 @@ const SingleShowCard = () => {
     const date = ShowsList[0].date;
     const time = ShowsList[0].time;
     const band = ShowsList[0].band;
+    const bandLink = ShowsList[0].bandLink;
     const venue = ShowsList[0].venue;
+    const city = ShowsList[0].city;
     const venueLink = ShowsList[0].venueLink;
     const ticketLink = ShowsList[0].ticketLink;
 
@@ -35,12 +37,19 @@ const SingleShowCard = () => {
                     <li className='pr-1'>{date}</li>
                     <li className='pl-1'>{time}</li>
                 </section>
-
-                <li className='text-center py-0 lg:py-[.1rem]'>{band}</li>
+                <li className='single-band py-0 lg:py-[.1rem]'>
+                    {bandLink === false ? (
+                        <li>{band}</li>
+                    ) : (
+                        <button className='single-band-btn' onClick={() => setTimeout(() =>
+                            window.open(bandLink, '_blank')
+                            , 500)}>{band}</button>
+                    )}
+                </li>
                 <button onClick={() => setTimeout(() =>
                     window.open(venueLink, '_blank')
                     , 500)}><li className='single-venue py-0 lg:py-[.1rem]'>{venue}</li></button>
-
+                <li className='text-center py-0 lg:py-[.1rem]'>{city}</li>
                 <li>
                     {ticketLink === false ? (
                         <button onClick={notYetAvailable} className='single-ticket-btn '>Tickets</button>

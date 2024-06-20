@@ -1,9 +1,11 @@
-.single-venue {
+.single-venue,
+.single-band-btn {
     display: inline-block;
     transition: 500ms ease-in-out;
 }
   
-.single-venue:after {
+.single-venue:after,
+.single-band-btn:after {
     display:block;
     content: '';
     width: inherit;
@@ -12,12 +14,14 @@
     transition: 500ms ease-in-out;
 }
   
-.single-venue:hover:after { 
+.single-venue:hover:after,
+.single-band-btn:hover:after { 
     transform: scaleX(1);
     border: solid 1px var(--yellow-color-two);
 }
 
-.single-venue:hover {
+.single-venue:hover,
+.single-band-btn:hover {
     color: var(--yellow-color-two);
 }
 

@@ -28,11 +28,19 @@ const ShowCard = () => {
                         <li className='pr-1'>{item.date}</li>
                         <li className='pl-1'>{item.time}</li>
                     </section>
-
-                    <li className='text-center py-0 lg:py-[.1rem]'>{item.band}</li>
+                    <li className='band py-0 lg:py-[.1rem]'>
+                        {item.bandLink === false ? (
+                            <li>{item.band}</li>
+                        ) : (
+                            <button className='band-btn' onClick={() => setTimeout(() =>
+                                window.open(item.bandLink, '_blank')
+                                , 500)}>{item.band}</button>
+                        )}
+                    </li>
                     <button onClick={() => setTimeout(() =>
                         window.open(item.venueLink, '_blank')
                         , 500)}><li className='venue py-0 lg:py-[.1rem]'>{item.venue}</li></button>
+                    <li className='text-center py-0 lg:py-[.1rem]'>{item.city}</li>
                     <li>
                         {item.ticketLink === false ? (
                             <button onClick={notYetAvailable} className='ticket-btn '>Tickets</button>

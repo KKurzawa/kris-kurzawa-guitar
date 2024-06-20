@@ -10,12 +10,14 @@
     color: var(--white-color);
 }
 
-.venue {
+.venue,
+.band-btn {
     display: inline-block;
     transition: 500ms ease-in-out;
 }
   
-.venue:after {
+.venue:after,
+.band-btn:after {
     display:block;
     content: '';
     width: inherit;
@@ -24,12 +26,14 @@
     transition: 500ms ease-in-out;
 }
   
-.venue:hover:after { 
+.venue:hover:after,
+.band-btn:hover:after { 
     transform: scaleX(1);
     border: solid 1px var(--yellow-color-two);
 }
 
-.venue:hover {
+.venue:hover,
+.band-btn:hover {
     color: var(--yellow-color-two);
 }
 
