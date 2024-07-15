@@ -270,6 +270,16 @@ export const ShowsList = [
         ticketLink: 1
     },
     {
+        date: 'November 1 2024',
+        time: '8:30pm',
+        band: 'The Kris Kurzawa Group plays Steely Dan',
+        bandLink: false,
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
         date: 'November 4 2024',
         time: '6pm',
         band: 'The Kris Kurzawa Group',
@@ -330,6 +340,16 @@ export const ShowsList = [
         ticketLink: 2
     },
     {
+        date: 'November 23 2024',
+        time: '8:30pm',
+        band: 'The Kris Kurzawa Group plays Santana',
+        bandLink: false,
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
         date: 'December 5 2024',
         time: '6pm',
         band: 'Chain Reaction: The Joe Sample Tribute',
@@ -377,6 +397,76 @@ export const ShowsList = [
         venue: 'The Dirty Dog Jazz Cafe',
         city: 'Grosse Point Farms, MI',
         venueLink: 'https://dirtydogjazz.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'January 11 2025',
+        time: '8:30pm',
+        band: 'The Kris Kurzawa Group plays Zappa',
+        bandLink: false,
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'January 17 2025',
+        time: '8:30pm',
+        band: 'Revival: A Tribute to the Allman Brothers',
+        bandLink: 'https://www.revivalbanddetroit.com/',
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'January 18 2025',
+        time: '8:30pm',
+        band: 'Revival: A Tribute to the Allman Brothers',
+        bandLink: 'https://www.revivalbanddetroit.com/',
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'Febuary 7 2025',
+        time: '8:30pm',
+        band: 'Led Detroit',
+        bandLink: false,
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'Febuary 8 2025',
+        time: '8:30pm',
+        band: 'Led Detroit',
+        bandLink: false,
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'March 22 2024',
+        time: '8:30pm',
+        band: 'The Kris Kurzawa Group plays Hendrix',
+        bandLink: false,
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'April 4 2024',
+        time: '8:30pm',
+        band: 'The Kris Kurzawa Group plays Steely Dan',
+        bandLink: false,
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
         ticketLink: 2
     },
 ]
