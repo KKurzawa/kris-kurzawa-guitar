@@ -1,62 +1,12 @@
 export const ShowsList = [
     {
-        date: 'June 22 2024',
-        time: '4:30pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        bandLink: 'https://www.revivalbanddetroit.com/',
-        venue: 'Brightons Yellowstone Music Festival',
-        city: 'Brighton, MI',
-        venueLink: 'https://www.brightoncoc.org/brightons-yellowstone-country-music-festival/',
-        ticketLink: 'https://www.eventbrite.com/e/brightons-2nd-annual-yellowstone-country-music-festival-tickets-876814053437'
-    },
-    {
-        date: 'June 29 2024',
-        time: '7:30pm',
-        band: 'Zap Toro plays Santana',
+        date: 'July 18 2024',
+        time: '7pm',
+        band: 'Caravan Gypsy',
         bandLink: false,
-        venue: "The Cadieux Cafe",
+        venue: "Cata Vino",
         city: 'Detroit, MI',
-        venueLink: "https://www.cadieuxcafe.com",
-        ticketLink: 'https://www.facebook.com/events/1773054906519319/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22search_results%22%2C%22surface%22%3A%22bookmark_search%22%7D]%2C%22ref_notif_type%22%3Anull%7D'
-    },
-    {
-        date: 'June 30 3024',
-        time: '2pm',
-        band: 'Barbara Payton and the Instigators',
-        bandLink: false,
-        venue: 'Bluewater Pride Fest',
-        city: 'Port Huron, MI',
-        vunueLink: 'https://www.bluewaterallies.com/event-details/port-huron-pride',
-        ticketLink: 1
-    },
-    {
-        date: 'July 1 2024',
-        time: '6pm',
-        band: 'The Kris Kurzawa Group',
-        bandLink: false,
-        venue: "Harrison's Speakeasy",
-        city: 'Harrison Twp, MI',
-        venueLink: 'http://harrisonsspeakeasy.com/',
-        ticketLink: 1
-    },
-    {
-        date: 'July 12 2024',
-        time: '7:30pm',
-        band: 'Led Detroit',
-        bandLink: false,
-        venue: "The Cadieux Cafe",
-        city: 'Detroit, MI',
-        venueLink: "https://www.cadieuxcafe.com",
-        ticketLink: false
-    },
-    {
-        date: 'July 13 2024',
-        time: '6:30pm',
-        band: 'The Kris Kurzawa Trio',
-        bandLink: false,
-        venue: "Fishbones",
-        city: 'St. Clair Shores, MI',
-        venueLink: "https://www.fishbonesusa.com/",
+        venueLink: "https://laferiadetroit.com/",
         ticketLink: 1
     },
     {
@@ -65,6 +15,7 @@ export const ShowsList = [
         band: 'Caravan Gypsy',
         bandLink: false,
         venue: "Ann Arbor Summer Fest",
+        city: 'Ann Arbor, MI',
         venueLink: "https://laferiadetroit.com/",
         ticketLink: 1
     },
@@ -79,14 +30,14 @@ export const ShowsList = [
         ticketLink: false
     },
     {
-        date: 'July 25 2024',
-        time: '7pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        bandLink: 'https://www.revivalbanddetroit.com/',
-        venue: "The LaFontaine Family Amphitheater",
-        city: 'Milford, MI',
-        venueLink: "https://www.meetmeinmilford.com/downtown-events/summer-concert-series/",
-        ticketLink: false
+        date: 'July 26 2024',
+        time: '5:30pm',
+        band: 'Caravan Gypsy',
+        bandLink: false,
+        venue: "Fiamma Grille",
+        city: 'Plymouth, MI',
+        venueLink: "https://www.fiammagrillandbar.com/",
+        ticketLink: 1
     },
     {
         date: 'August 1 2024',
@@ -96,6 +47,16 @@ export const ShowsList = [
         venue: "Cata Vino",
         city: 'Detroit, MI',
         venueLink: "https://laferiadetroit.com/",
+        ticketLink: 1
+    },
+    {
+        date: 'August 2 2024',
+        time: '5:30pm',
+        band: 'Caravan Gypsy',
+        bandLink: false,
+        venue: "Fiamma Grille",
+        city: 'Plymouth, MI',
+        venueLink: "https://www.fiammagrillandbar.com/",
         ticketLink: 1
     },
     {
@@ -149,6 +110,16 @@ export const ShowsList = [
         ticketLink: 1
     },
     {
+        date: 'August 30 2024',
+        time: '5:30pm',
+        band: 'Caravan Gypsy',
+        bandLink: false,
+        venue: "Fiamma Grille",
+        city: 'Plymouth, MI',
+        venueLink: "https://www.fiammagrillandbar.com/",
+        ticketLink: 1
+    },
+    {
         date: 'August 31 2024',
         time: '6pm',
         band: 'Beth Stalker',
@@ -156,6 +127,26 @@ export const ShowsList = [
         venue: "State Fair",
         city: 'Novi, MI',
         venueLink: "https://www.michiganstatefairllc.com/home",
+        ticketLink: 1
+    },
+    {
+        date: 'September 5 2024',
+        time: '7pm',
+        band: 'Revival: A Tribute to the Allman Brothers',
+        bandLink: 'https://www.revivalbanddetroit.com/',
+        venue: "LaFontaine Family Ampetheater",
+        city: 'Milford, MI',
+        venueLink: "https://www.meetmeinmilford.com/downtown-events/summer-concert-series/",
+        ticketLink: 1
+    },
+    {
+        date: 'September 6 2024',
+        time: '5:30pm',
+        band: 'Caravan Gypsy',
+        bandLink: false,
+        venue: "Fiamma Grille",
+        city: 'Plymouth, MI',
+        venueLink: "https://www.fiammagrillandbar.com/",
         ticketLink: 1
     },
     {
@@ -229,6 +220,26 @@ export const ShowsList = [
         ticketLink: false
     },
     {
+        date: 'September 26 2024',
+        time: '7pm',
+        band: 'Caravan Gypsy',
+        bandLink: false,
+        venue: "Cata Vino",
+        city: 'Detroit, MI',
+        venueLink: "https://laferiadetroit.com/",
+        ticketLink: 1
+    },
+    {
+        date: 'September 27 2024',
+        time: '5:30pm',
+        band: 'Caravan Gypsy',
+        bandLink: false,
+        venue: "Fiamma Grille",
+        city: 'Plymouth, MI',
+        venueLink: "https://www.fiammagrillandbar.com/",
+        ticketLink: 1
+    },
+    {
         date: 'September 28 2024',
         time: '7:00pm',
         band: 'Caravan Gypsy',
@@ -249,7 +260,7 @@ export const ShowsList = [
         ticketLink: false
     },
     {
-        date: 'October 2024',
+        date: 'October 24 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
         bandLink: false,
