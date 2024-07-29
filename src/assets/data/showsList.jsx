@@ -1,45 +1,5 @@
 export const ShowsList = [
     {
-        date: 'July 18 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Cata Vino",
-        city: 'Detroit, MI',
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'July 19 2024',
-        time: '6pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Ann Arbor Summer Fest",
-        city: 'Ann Arbor, MI',
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'July 20 2024',
-        time: '7pm',
-        band: 'Barbara Payton and the Instigators',
-        bandLink: false,
-        venue: "Port Huron",
-        city: 'Port Huron, MI',
-        venueLink: "n/a",
-        ticketLink: false
-    },
-    {
-        date: 'July 26 2024',
-        time: '5:30pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Fiamma Grille",
-        city: 'Plymouth, MI',
-        venueLink: "https://www.fiammagrillandbar.com/",
-        ticketLink: 1
-    },
-    {
         date: 'August 1 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
@@ -450,7 +410,7 @@ export const ShowsList = [
         ticketLink: 2
     },
     {
-        date: 'March 22 2024',
+        date: 'March 22 2025',
         time: '8:30pm',
         band: 'The Kris Kurzawa Group plays Hendrix',
         bandLink: false,
@@ -460,7 +420,7 @@ export const ShowsList = [
         ticketLink: 2
     },
     {
-        date: 'April 4 2024',
+        date: 'April 4 2025',
         time: '8:30pm',
         band: 'The Kris Kurzawa Group plays Steely Dan',
         bandLink: false,
