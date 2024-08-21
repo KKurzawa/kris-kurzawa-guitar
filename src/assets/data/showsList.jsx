@@ -1,55 +1,5 @@
 export const ShowsList = [
     {
-        date: 'August 1 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Cata Vino",
-        city: 'Detroit, MI',
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'August 2 2024',
-        time: '5:30pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Fiamma Grille",
-        city: 'Plymouth, MI',
-        venueLink: "https://www.fiammagrillandbar.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'August 8 2024',
-        time: '7pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        bandLink: 'https://www.revivalbanddetroit.com/',
-        venue: "Centenial Commons Park",
-        city: 'Royal Oak, MI',
-        venueLink: "https://www.royaloakchamber.com/summer-concert-series",
-        ticketLink: 1
-    },
-    {
-        date: 'August 16 2024',
-        time: '7:30pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        bandLink: 'https://www.revivalbanddetroit.com/',
-        venue: 'The Cadieux Cafe',
-        city: 'Detroit, MI',
-        venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: false
-    },
-    {
-        date: 'August 17 2024',
-        time: '7pm',
-        band: 'Led Detroit',
-        bandLink: false,
-        venue: 'Wildwood Ampetheater',
-        city: 'Lake Orion, MI',
-        venueLink: 'https://www.orionparks.com/facilities/parks_and_trails/wildwood.php',
-        ticketLink: false
-    },
-    {
         date: 'August 23 2024',
         time: '7pm',
         band: 'Led Detroit',
