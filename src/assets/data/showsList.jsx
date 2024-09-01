@@ -1,45 +1,5 @@
 export const ShowsList = [
     {
-        date: 'August 23 2024',
-        time: '7pm',
-        band: 'Led Detroit',
-        bandLink: false,
-        venue: 'Stony Creek',
-        city: 'Shelby Twp, MI',
-        venueLink: 'https://www.metroparks.com/concerts/',
-        ticketLink: false
-    },
-    {
-        date: 'August 24 2024',
-        time: '7:30pm',
-        band: 'The Kris Kurzawa Trio',
-        bandLink: false,
-        venue: "Fishbones",
-        city: 'Southfield, MI',
-        venueLink: "https://www.fishbonesusa.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'August 30 2024',
-        time: '5:30pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Fiamma Grille",
-        city: 'Plymouth, MI',
-        venueLink: "https://www.fiammagrillandbar.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'August 31 2024',
-        time: '6pm',
-        band: 'Beth Stalker',
-        bandLink: false,
-        venue: "State Fair",
-        city: 'Novi, MI',
-        venueLink: "https://www.michiganstatefairllc.com/home",
-        ticketLink: 1
-    },
-    {
         date: 'September 5 2024',
         time: '7pm',
         band: 'Revival: A Tribute to the Allman Brothers',
@@ -123,11 +83,11 @@ export const ShowsList = [
         date: 'September 20 2024',
         time: '7:30pm',
         band: 'The Abby Road Project',
-        bandLink: false,
+        bandLink: 'https://www.abbeyroadproject.com/',
         venue: 'The Cadieux Cafe',
         city: 'Detroit, MI',
         venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: false
+        ticketLink: 'https://www.eventbrite.com/e/the-abbey-road-project-tickets-966677457297?aff=efbevent&fbclid=IwY2xjawEWdahleHRuA2FlbQIxMAABHfe57W94TxSIb-Mp6Mr2HZzR9aTGAS7kFRH2qCjtj4kJ0EJKpe_LQICW_g_aem_tpyhHu3fdcj8sWjUu9SQaQ'
     },
     {
         date: 'September 26 2024',
