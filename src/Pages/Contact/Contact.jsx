@@ -29,6 +29,7 @@ const Contact = () => {
             from_name: name,
             subject: subject,
             message: message,
+            email: email
         };
 
         emailjs.send(serviceId, templateId, templateParams, publicKey)
