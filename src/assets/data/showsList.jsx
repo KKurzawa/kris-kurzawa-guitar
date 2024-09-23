@@ -1,95 +1,5 @@
 export const ShowsList = [
     {
-        date: 'September 5 2024',
-        time: '7pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        bandLink: 'https://www.revivalbanddetroit.com/',
-        venue: "LaFontaine Family Ampetheater",
-        city: 'Milford, MI',
-        venueLink: "https://www.meetmeinmilford.com/downtown-events/summer-concert-series/",
-        ticketLink: 1
-    },
-    {
-        date: 'September 6 2024',
-        time: '5:30pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Fiamma Grille",
-        city: 'Plymouth, MI',
-        venueLink: "https://www.fiammagrillandbar.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'September 8 2024',
-        time: '2pm',
-        band: 'Barbara Payton and the Instigators',
-        bandLink: false,
-        venue: "Lighthouse Porch Concert",
-        city: 'Port Huron, MI',
-        venueLink: "n/a",
-        ticketLink: 1
-    },
-    {
-        date: 'September 11 2024',
-        time: '7pm',
-        band: 'Led Detroit',
-        bandLink: false,
-        venue: 'Brighton',
-        city: 'Brighton, MI',
-        venueLink: '',
-        ticketLink: false
-    },
-    {
-        date: 'September 12 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Cata Vino",
-        city: 'Detroit, MI',
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'September 13 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Cliff Bells",
-        city: 'Detroit, MI',
-        venueLink: "https://cliffbells.com",
-        ticketLink: 2
-    },
-    {
-        date: 'September 14 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Cliff Bells",
-        city: 'Detroit, MI',
-        venueLink: "https://cliffbells.com",
-        ticketLink: 2
-    },
-    {
-        date: 'September 19 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Cata Vino",
-        city: 'Detroit, MI',
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'September 20 2024',
-        time: '7:30pm',
-        band: 'The Abby Road Project',
-        bandLink: 'https://www.abbeyroadproject.com/',
-        venue: 'The Cadieux Cafe',
-        city: 'Detroit, MI',
-        venueLink: 'https://www.cadieuxcafe.com',
-        ticketLink: 'https://www.eventbrite.com/e/the-abbey-road-project-tickets-966677457297?aff=efbevent&fbclid=IwY2xjawEWdahleHRuA2FlbQIxMAABHfe57W94TxSIb-Mp6Mr2HZzR9aTGAS7kFRH2qCjtj4kJ0EJKpe_LQICW_g_aem_tpyhHu3fdcj8sWjUu9SQaQ'
-    },
-    {
         date: 'September 26 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
@@ -267,6 +177,26 @@ export const ShowsList = [
         venue: 'The Dirty Dog Jazz Cafe',
         city: 'Grosse Point Farms, MI',
         venueLink: 'https://dirtydogjazz.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'January 3 2025',
+        time: '8:30pm',
+        band: 'The Abbey Road Project',
+        bandLink: 'https://www.abbeyroadproject.com/',
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: 2
+    },
+    {
+        date: 'January 4 2025',
+        time: '8:30pm',
+        band: 'Led Detroit',
+        bandLink: 'https://www.leddetroitband.com/',
+        venue: "Blind Owl",
+        city: 'Royal Oak, MI',
+        venueLink: 'https://www.blindowlrestaurant.com',
         ticketLink: 2
     },
     {
