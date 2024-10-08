@@ -114,7 +114,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: .5 }}
-              className="dropdown md:hidden flex justify-center absolute z-10 top-[13.75rem] left-0 right-0 pt-0 border-b-[1px]"
+              className="dropdown md:hidden flex justify-center absolute z-10 top-[13.4rem] left-0 right-0 pt-0 border-b-[1px]"
             >
               <ul className="text-center">
                 <motion.li

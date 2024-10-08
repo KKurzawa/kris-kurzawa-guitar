@@ -28,7 +28,7 @@ const Landing = () => {
                         <hr className='sm-line mb-4' />
                     </article>
                     <article className='flex flex-col items-center'>
-                        <h2 className='sm-logo-text text-md mb-[.2rem]'>Guitarist/Composer/Music Educator</h2>
+                        <h2 className='sm-logo-text text-sm mb-[.2rem]'>Guitarist/Composer/Music Educator</h2>
                         <hr className='sm-line mb-4' />
                     </article>
 

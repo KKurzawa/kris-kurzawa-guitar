@@ -1,45 +1,5 @@
 export const ShowsList = [
     {
-        date: 'September 26 2024',
-        time: '7pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Cata Vino",
-        city: 'Detroit, MI',
-        venueLink: "https://laferiadetroit.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'September 27 2024',
-        time: '5:30pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: "Fiamma Grille",
-        city: 'Plymouth, MI',
-        venueLink: "https://www.fiammagrillandbar.com/",
-        ticketLink: 1
-    },
-    {
-        date: 'September 28 2024',
-        time: '7:00pm',
-        band: 'Caravan Gypsy',
-        bandLink: false,
-        venue: 'The Library',
-        city: 'Detroit, MI',
-        venueLink: 'https://www.thedetroitclub.com/thelibrary',
-        ticketLink: false
-    },
-    {
-        date: 'October 5 2024',
-        time: '7pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        bandLink: 'https://www.revivalbanddetroit.com/',
-        venue: 'Wildwood Ampetheater',
-        city: 'Lake Orion, MI',
-        venueLink: 'https://www.orionparks.com/facilities/parks_and_trails/wildwood.php',
-        ticketLink: false
-    },
-    {
         date: 'October 24 2024',
         time: '7pm',
         band: 'Caravan Gypsy',
