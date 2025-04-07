@@ -190,6 +190,16 @@ export const ShowsList = [
         ticketLink: false
     },
     {
+        date: 'June 29 2025',
+        time: '2pm',
+        band: 'Barbara Payton',
+        bandLink: false,
+        venue: "Port Huron Pride Fest",
+        city: 'Port Huron, MI',
+        venueLink: 'https://allevents.in/port%20huron/blue-water-pride-festival-and-march/200027954127442',
+        ticketLink: false
+    },
+    {
         date: 'July 3',
         time: '7pm',
         band: 'Revival: A Tribute to the Allman Brothers',
