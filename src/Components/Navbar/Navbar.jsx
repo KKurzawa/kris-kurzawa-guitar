@@ -105,7 +105,7 @@ const Navbar = () => {
         </article>
         <article>
           <img src={KrisKurzawaGuitar2} className='navGuitarPic w-full' />
-          <h2 className='gca text-center py-1 text-md'>Guitarist/Compsoser/Music Educator</h2>
+          <h2 className='gca text-center py-1 text-md'>Guitarist/Composer/Music Educator</h2>
         </article>
         <AnimatePresence>
           {open && (
