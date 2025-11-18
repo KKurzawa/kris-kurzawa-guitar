@@ -1,23 +1,13 @@
 export const ShowsList = [
     {
-        date: 'November 7 2025',
-        time: '8:30pm',
-        band: 'The Kris Kurzawa Group plays Steely Dan',
+        date: 'December 5 2025',
+        time: '6:45pm',
+        band: 'The Kris Kurzawa Trio with Beth Stalker',
         bandLink: false,
-        venue: "Cadieux Cafe",
-        city: 'Detroit, MI',
-        venueLink: 'https://www.cadieuxcafe.com/',
-        ticketLink: false
-    },
-    {
-        date: 'November 14 2025',
-        time: '8:30pm',
-        band: 'The Kris Kurzawa Group plays Zappa',
-        bandLink: false,
-        venue: "Cadieux Cafe",
-        city: 'Detroit, MI',
-        venueLink: 'https://www.cadieuxcafe.com/',
-        ticketLink: false
+        venue: "Chicane",
+        city: 'Plymouth, MI',
+        venueLink: 'https://www.chicane.com',
+        ticketLink: 1
     },
     {
         date: 'December 6 2025',
@@ -28,6 +18,26 @@ export const ShowsList = [
         city: 'Detroit, MI',
         venueLink: 'https://www.cadieuxcafe.com/',
         ticketLink: false
+    },
+    {
+        date: 'December 13 2025',
+        time: '6:45pm',
+        band: 'The Kris Kurzawa Quartet',
+        bandLink: false,
+        venue: "Chicane",
+        city: 'Plymouth, MI',
+        venueLink: 'https://www.chicane.com',
+        ticketLink: 1
+    },
+    {
+        date: 'December 31 2025',
+        time: '9:30pm',
+        band: 'The Kris Kurzawa Trio with Beth Stalker',
+        bandLink: false,
+        venue: "Chicane",
+        city: 'Plymouth, MI',
+        venueLink: 'https://www.chicane.com',
+        ticketLink: 1
     },
     {
         date: 'January 31 2026',
