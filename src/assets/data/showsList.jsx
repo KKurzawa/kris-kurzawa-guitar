@@ -50,7 +50,7 @@ export const ShowsList = [
         ticketLink: false
     },
     {
-        date: 'December 9 2025',
+        date: 'January 9 2025',
         time: '6:45pm',
         band: 'The Kris Kurzawa Trio with Beth Stalker',
         bandLink: false,
@@ -60,7 +60,7 @@ export const ShowsList = [
         ticketLink: 1
     },
     {
-        date: 'December 10 2025',
+        date: 'January 10 2025',
         time: '6:45pm',
         band: 'The Kris Kurzawa Trio with Beth Stalker',
         bandLink: false,
