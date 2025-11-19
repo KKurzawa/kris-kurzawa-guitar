@@ -40,6 +40,36 @@ export const ShowsList = [
         ticketLink: 1
     },
     {
+        date: 'January 2 2026',
+        time: '8:30pm',
+        band: 'Countdown to Ecstasy',
+        bandLink: 'https://www.countdowntoecstasydetroit.com/',
+        venue: "Cadieux Cafe",
+        city: 'Detroit, MI',
+        venueLink: 'https://www.cadieuxcafe.com/',
+        ticketLink: false
+    },
+    {
+        date: 'December 9 2025',
+        time: '6:45pm',
+        band: 'The Kris Kurzawa Trio with Beth Stalker',
+        bandLink: false,
+        venue: "Chicane",
+        city: 'Plymouth, MI',
+        venueLink: 'https://www.chicane.com',
+        ticketLink: 1
+    },
+    {
+        date: 'December 10 2025',
+        time: '6:45pm',
+        band: 'The Kris Kurzawa Trio with Beth Stalker',
+        bandLink: false,
+        venue: "Chicane",
+        city: 'Plymouth, MI',
+        venueLink: 'https://www.chicane.com',
+        ticketLink: 1
+    },
+    {
         date: 'January 31 2026',
         time: '8:30pm',
         band: 'Revival: A Tribute to the Allman Brothers',
