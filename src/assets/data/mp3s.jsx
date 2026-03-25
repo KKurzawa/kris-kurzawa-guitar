@@ -1,6 +1,7 @@
 import zapToro from '../images/ZapToro.png';
 import visionQuest from '../images/VisionQuest.jpg';
 import sly from '../images/Sly.jpg';
+import electricWizard from '../images/ElectricWizardAlbumCover.png'
 import blueEyesForPalestine from '../musics/BlueEyesForPalestine.mp3';
 import funhouseStrut from '../musics/FunhouseStrut.mp3';
 import kutiKuti from '../musics/KutiKuti.mp3';
@@ -11,73 +12,112 @@ import highLife from '../musics/HighLife.mp3'
 import paco from '../musics/Paco.mp3'
 import elaGosta from '../musics/ElaGosta.mp3'
 import peroAzul from '../musics/PeroAzul.mp3'
+import weRide from '../musics/WeRide.mp3'
+import tuesdayDog from '../musics/TuesdayDog.mp3'
+import electricWizardSong from '../musics/ElectricWizard.mp3'
+import babySteps from '../musics/BabySteps.mp3'
 
 const Musics = [
     {
         id: 1,
+        title: "We Ride",
+        artist: "Kris Kurzawa",
+        thumbnail: electricWizard,
+        src: weRide
+    },
+    {
+        id: 2,
         title: "Funhouse Strut",
         artist: "Kris Kurzawa",
         thumbnail: sly,
         src: funhouseStrut
     },
     {
-        id: 2,
+        id: 3,
         title: "Kuti Kuti",
         artist: "Zap Toro",
         thumbnail: visionQuest,
         src: kutiKuti
     },
     {
-        id: 3,
+        id: 4,
         title: "Blue Eyes For Palestine",
         artist: "Zap Toro",
         thumbnail: zapToro,
         src: blueEyesForPalestine
     },
     {
-        id: 4,
+        id: 5,
+        title: "Tuesday Dog",
+        artist: "Kris Kurzawa",
+        thumbnail: electricWizard,
+        src: tuesdayDog
+    },
+    {
+        id: 6,
         title: "Number 23",
         artist: "Kris Kurzawa",
         thumbnail: sly,
         src: number23
     },
     {
-        id: 5,
+        id: 7,
         title: "High Life",
         artist: "Zap Toro",
         thumbnail: visionQuest,
         src: highLife
     },
     {
-        id: 6,
+        id: 8,
         title: "Paco",
         artist: "Zap Toro",
         thumbnail: zapToro,
         src: paco
     },
     {
-        id: 7,
+        id: 9,
+        title: "Electric Wizard",
+        artist: "Kris Kurzawa",
+        thumbnail: electricWizard,
+        src: electricWizardSong
+    },
+    {
+        id: 10,
+        title: "Funhouse Strut",
+        artist: "Kris Kurzawa",
+        thumbnail: sly,
+        src: funhouseStrut
+    },
+    {
+        id: 11,
         title: "Perto Do Sol",
         artist: "Kris Kurzawa",
         thumbnail: sly,
         src: pertoDoSol
     },
     {
-        id: 8,
+        id: 12,
         title: "Ela Gosta",
         artist: "Zap Toro",
         thumbnail: visionQuest,
         src: elaGosta,
     },
     {
-        id: 9,
+        id: 13,
+        title: "Baby Steps",
+        artist: "Kris Kurzawa",
+        thumbnail: electricWizard,
+        src: babySteps
+    },
+    {
+        id: 14,
         title: "Pero Azul",
         artist: "Zap Toro",
         thumbnail: zapToro,
         src: peroAzul
     },
     {
-        id: 10,
+        id: 15,
         title: "Zaptista",
         artist: "Kris Kurzawa",
         thumbnail: sly,

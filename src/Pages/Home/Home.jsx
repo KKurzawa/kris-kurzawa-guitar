@@ -1,5 +1,6 @@
 import './Home.css'
-import Sly from '../../assets/images/Sly.jpg';
+// import Sly from '../../assets/images/Sly.jpg';
+import ElectricWizard from '../../assets/images/ElectricWizardAlbumCover.png'
 import SingleShowCard from '../../Components/SingleShowCard/SingleShowCard';
 import { videoLinks } from '../../assets/data/videoLinks';
 
@@ -11,7 +12,7 @@ const Home = () => {
         <main className='mainHome flex flex-col'>
             <article className='flex flex-col items-center'>
                 <header className=' mt-5 text-3xl font-bold'>Download</header>
-                <button onClick={() => setTimeout(() => window.open('https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W', '_blank'), 500)}><img src={Sly} className='sly w-[20rem] md:w-[35rem] lg:w-[50rem] h-auto mt-1 mb-4' /></button>
+                <button onClick={() => setTimeout(() => window.open('https://www.amazon.com/Baby-Steps/dp/B0GLXJGSFP', '_blank'), 500)}><img src={ElectricWizard} className='sly w-[20rem] md:w-[35rem] lg:w-[50rem] h-auto mt-1 mb-4' /></button>
                 {/* large */}
                 <article className='hidden lg:flex flex-col py-5'>
                     <header className='text-center pb-1 text-3xl font-bold'>{singleVideoTitle}</header>
