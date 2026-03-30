@@ -83,41 +83,34 @@ const Musics = [
     },
     {
         id: 10,
-        title: "Funhouse Strut",
-        artist: "Kris Kurzawa",
-        thumbnail: sly,
-        src: funhouseStrut
-    },
-    {
-        id: 11,
         title: "Perto Do Sol",
         artist: "Kris Kurzawa",
         thumbnail: sly,
         src: pertoDoSol
     },
     {
-        id: 12,
+        id: 11,
         title: "Ela Gosta",
         artist: "Zap Toro",
         thumbnail: visionQuest,
         src: elaGosta,
     },
     {
-        id: 13,
+        id: 12,
         title: "Baby Steps",
         artist: "Kris Kurzawa",
         thumbnail: electricWizard,
         src: babySteps
     },
     {
-        id: 14,
+        id: 13,
         title: "Pero Azul",
         artist: "Zap Toro",
         thumbnail: zapToro,
         src: peroAzul
     },
     {
-        id: 15,
+        id: 14,
         title: "Zaptista",
         artist: "Kris Kurzawa",
         thumbnail: sly,
