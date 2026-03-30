@@ -1,15 +1,5 @@
 export const ShowsList = [
     {
-        date: 'March 28 2026',
-        time: '8:30pm',
-        band: 'Revival: A Tribute to the Allman Brothers',
-        bandLink: 'https://www.revivalbanddetroit.com',
-        venue: "Cadieux Cafe",
-        city: 'Detroit, MI',
-        venueLink: 'https://www.cadieuxcafe.com/',
-        ticketLink: 'https://www.eventbrite.com/e/revival-a-tribute-to-the-allman-brothers-band-tickets-1985106717630?aff=efbevent&fbclid=IwY2xjawQudoBleHRuA2FlbQIxMABicmlkETFTelNGWHJDQ0R5MW02S1gwc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHnXDnxQrVaNQBPtRBW1bz_nuNGz4dpLf8r9621q1nd5LvJ2vUE8FZa3vjsiU_aem_CQFrjCOUr72dcw9GEmUPzQ'
-    },
-    {
         date: 'April 3 2026',
         time: '8:30pm',
         band: 'The Kris Kurzawa Group Plays Hendrix',

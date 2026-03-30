@@ -4,6 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Sly from '../../assets/images/Sly.jpg';
 import VisionQuest from '../../assets/images/VisionQuest.jpg'
 import ZapToro from '../../assets/images/ZapToro.png'
+import ElectricWizard from '../../assets/images/ElectricWizardAlbumCover.png'
 
 const Music = () => {
     return (
@@ -17,6 +18,9 @@ const Music = () => {
                     </section>
                 </article>
                 <header className='text-center mt-5 text-3xl font-bold'>Download</header>
+                <button onClick={() => setTimeout(() =>
+                    window.open('https://www.amazon.com/Baby-Steps/dp/B0GLXJGSFP', '_blank')
+                    , 500)}><LazyLoadImage src={ElectricWizard} className='downloads w-[325px] h-auto my-4' /></button>
                 <button onClick={() => setTimeout(() =>
                     window.open('https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W', '_blank')
                     , 500)}><LazyLoadImage src={Sly} className='downloads w-[325px] h-auto my-4' /></button>
@@ -38,15 +42,23 @@ const Music = () => {
                 <header className='text-center mt-10 text-3xl font-bold'>Download</header>
                 <article className='flex justify-evenly w-full'>
                     <button onClick={() => setTimeout(() =>
+                        window.open('https://www.amazon.com/Baby-Steps/dp/B0GLXJGSFP', '_blank')
+                        , 500)}><LazyLoadImage src={ElectricWizard} className='downloads w-[290px] h-[290px] my-4' /></button>
+                    <button onClick={() => setTimeout(() =>
+                        window.open('https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC', '_blank')
+                        , 500)}><LazyLoadImage src={VisionQuest} className='downloads w-[290px] h-[290px] my-4' /></button>
+                </article>
+                <article className='flex justify-evenly w-full'>
+                    <button onClick={() => setTimeout(() =>
                         window.open('https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W', '_blank')
-                        , 500)}><LazyLoadImage src={Sly} className='downloads w-[290px] h-auto my-4' /></button>
+                        , 500)}><LazyLoadImage src={Sly} className='downloads w-[290px] h-[290px] my-4' /></button>
                     <button onClick={() => setTimeout(() =>
                         window.open('https://www.amazon.com/Zap-Toro/dp/B004P91DSU', '_blank')
-                        , 500)}><LazyLoadImage src={ZapToro} className='downloads w-[325px] h-auto my-4' /></button>
+                        , 500)}><LazyLoadImage src={ZapToro} className='downloads w-[290px] h-[290px] my-4' /></button>
                 </article>
-                <button onClick={() => setTimeout(() =>
+                {/* <button onClick={() => setTimeout(() =>
                     window.open('https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC', '_blank')
-                    , 500)}><LazyLoadImage src={VisionQuest} className='downloads w-[325px] h-auto mt-4 mb-10' /></button>
+                    , 500)}><LazyLoadImage src={VisionQuest} className='downloads w-[325px] h-auto mt-4 mb-10' /></button> */}
             </main>
             {/* large */}
             <main className='hidden lg:flex w-full justify-center mt-5 mb-10'>
@@ -65,17 +77,25 @@ const Music = () => {
                             <article className='flex flex-col ml-20 mt-1'>
                                 <section className='flex flex-row mb-6'>
                                     <button onClick={() => setTimeout(() =>
+                                        window.open('https://www.amazon.com/Baby-Steps/dp/B0GLXJGSFP', '_blank')
+                                        , 500)} className=' h-[250px] mr-3'><img src={ElectricWizard} className='downloads w-[250px] h-[250px] my-4' /></button>
+                                    <button onClick={() => setTimeout(() =>
+                                        window.open('https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC', '_blank')
+                                        , 500)} className='h-[250px] ml-3'><img src={VisionQuest} className='downloads w-[250px] h-[250px] my-4' /></button>
+                                </section>
+                                <section className='flex flex-row mb-6'>
+                                    <button onClick={() => setTimeout(() =>
                                         window.open('https://www.amazon.com/Sly-Kris-Kurzawa/dp/B01AXGA21W', '_blank')
-                                        , 500)} className=' h-[250px] mr-3'><img src={Sly} className='downloads w-[250px] h-auto my-4' /></button>
+                                        , 500)} className=' h-[250px] mr-3'><img src={Sly} className='downloads w-[250px] h-[250px] my-4' /></button>
                                     <button onClick={() => setTimeout(() =>
                                         window.open('https://www.amazon.com/Zap-Toro/dp/B004P91DSU', '_blank')
-                                        , 500)} className='h-[250px] ml-3'><img src={ZapToro} className='downloads w-[279px] h-auto my-4' /></button>
+                                        , 500)} className='h-[250px] ml-3'><img src={ZapToro} className='downloads w-[250px] h-[250px] my-4' /></button>
                                 </section>
-                                <section className='w-[250px]'>
+                                {/* <section className='w-[250px]'>
                                     <button onClick={() => setTimeout(() =>
                                         window.open('https://www.amazon.com/Vision-Quest-Zap-Toro/dp/B01M9CIBPC', '_blank')
                                         , 500)} className='h-[250px] '><img src={VisionQuest} className='downloads w-[250px] h-auto my-4 mb-4 ml-36' /></button>
-                                </section>
+                                </section> */}
                             </article>
                         </article>
                     </section>
